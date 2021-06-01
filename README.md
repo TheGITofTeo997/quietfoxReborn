@@ -1,7 +1,7 @@
 ### Some Notes
 We are a group of two people that loved Quietfox. Unluckily Firefox updates have broken it over time, so our goal is to fix it and restore the old look as much as possible, that's why we have this fork. 
 
-============================================================================================
+=============================================================================
 
 ### No longer being maintained
 Quietfox was fun to build, but with the [upcoming updates to Firefox's UI](https://wiki.mozilla.org/Firefox/Proton#Feature_2_-_Address_bar), much of its role of modernizing Firefox's interface is no longer needed. I would like to think I had some influence on some of Firefox's new design decisions, but either way I think they're doing good work. Thank you for enjoying Quietfox, best wishes to everyone.
