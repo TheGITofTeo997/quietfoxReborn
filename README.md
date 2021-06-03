@@ -1,4 +1,5 @@
-### Some Notes
+## Some Notes
+
 We are a group of two people that loved Quietfox. Unluckily Firefox updates have broken it over time, so our goal is to fix it and restore the old look as much as possible, that's why we have this fork. 
 
 Every credit goes to the original creator
