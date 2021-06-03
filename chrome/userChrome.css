@@ -76,7 +76,6 @@ stack,
 vbox
 {
     transition: background-color var(--animation-speed) !important;
-
 } 
 
 
@@ -105,7 +104,6 @@ scrollbox[part="scrollbox"][flex="1"][orient="horizontal"] {
 .tab-background, .tab-loading-burst  {
     border-radius: var(--tab-corner-rounding) var(--tab-corner-rounding) 0px 0px !important;
     margin: -1px !important;
-
 }
 
 tab:not(:active) .tab-background {
@@ -135,7 +133,6 @@ tab:not([beforeselected-visible])::after {
     margin-top: 4px !important;
     margin-bottom: 4px !important;
     transition: border-color var(--animation-speed), margin-top var(--animation-speed) !important;
-
 }
 
 tab[beforehovered]::after,
@@ -260,8 +257,8 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #identity-icon, 
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #tracking-protection-icon-box {
-    margin-left: 1px !important;
-    margin-right: 1px !important;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
 }
 
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #urlbar {
@@ -469,7 +466,7 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 
 :root[uidensity="touch"] #PersonalToolbar {
    height: 35px !important;
-    margin-top: -3px !important;
+   margin-top: -3px !important;
 }
 
 /* various */
@@ -487,7 +484,6 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     border-radius: var(--button-corner-rounding)!important;
 }
 
-
 .findbar-find-next {
     border-radius: 0px var(--button-corner-rounding) var(--button-corner-rounding) 0px !important;
 }
@@ -501,8 +497,10 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     padding-right: 7px !important;
     margin-right: 0px !important;
 }
-
-
+#star-button-box:hover{
+    border-radius:var(--menu-corner-rounding);
+    background:var(--toolbarbutton-hover-background) !important;
+}
 
 #urlbar {
     border-radius: calc(1px + var(--button-corner-rounding)) !important;
@@ -510,11 +508,10 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 }
 
 /* style identity box */
-#identity-box {
+/*#identity-box {
+    opacity: 0;
     margin-right: 0px !important;
-}
-
-
+}*/
 
 /* style address bar */
 #urlbar-background {
@@ -681,12 +678,19 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 #urlbar {
     transition: background-color var(--animation-speed) !important;
 }
-
 #tracking-protection-icon,
 #identity-box image {
     transition: fill-opacity var(--animation-speed) !important;
+}/*
+#tracking-protection-icon-container{   
+    opacity: 0;
+    margin-right:0px !important;
 }
-
+#tracking-protection-icon-container:hover{
+    opacity: 1;
+    transition: var(--animation-speed) !important;
+}
+*/
 [lwthemetextcolor="dark"] .urlbarView-body-outer {
     background-color: #f5f6f7 !important;
     color: var(--toolbar-color) !important;
@@ -703,7 +707,8 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 /* -------------------- Style context menus -------------------- */
 #context-navigation,
 #context-sep-navigation,
-#context-bookmarklink,
+#context-
+link,
 #context-viewinfo,
 #context-viewpartialsource-selection,
 #inspect-separator,
@@ -736,7 +741,12 @@ menu[open] menupopup:not(#BMB_bookmarksPopup) {
 #BMB_bookmarksPopup menu[open] menupopup {
     transform: translateY(4px) !important;
 }
-
+menupopup#contentAreaContextMenu menu:hover,
+menupopup#contentAreaContextMenu menuitem:hover{
+    border-radius:var(--menu-corner-rounding) !important;
+    margin-left:5px;
+    margin-right:-30px;
+}
 menupopup menuseparator
 {
 	margin-top: 5px !important;
@@ -782,7 +792,7 @@ menuitem,
 menucaption {
     -moz-appearance: none !important;
     height: var(--menu-item-height) !important;
-    margin-left:30px !important;
+    margin-left:15px !important;
     margin-right:12px !important;
 }
 
@@ -792,7 +802,6 @@ menucaption {
     padding-left: 5px !important;
     padding-right: 5px !important;
 }
-
 menu:not(.subviewbutton) > .menu-right  {
     margin-top: 2px !important;
     margin-right: 0px !important;
