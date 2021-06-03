@@ -196,7 +196,6 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 }
 
 
-
 /* touch and normal density buttons */
 
 :root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
@@ -540,6 +539,11 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     margin-bottom: -5px !important;
     margin-top: -1px !important;
 }
+#urlbar-input:not(:focus):hover{
+    border-radius: var(--button-corner-rounding) !important;
+    background: var(--toolbarbutton-hover-background) !important;
+    transition: var(--animation-speed) !important;
+}
 
 /* urlbarView = the menu when you expand the address bar */
 .urlbarView {
@@ -550,7 +554,6 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     border: none !important;
     padding-top: 0px !important;
 }
-
 .urlbarView-body-inner {
     border:none !important;    
     padding-left:15px;
