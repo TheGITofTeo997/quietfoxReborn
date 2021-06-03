@@ -3,8 +3,6 @@ We are a group of two people that loved Quietfox. Unluckily Firefox updates have
 
 Every credit goes to the original creator
 
-============================================================================
-
 ![quietfox](https://coekuss.com/quietfox/logo.png)
 ![](https://coekuss.com/quietfox/quietfox70/clean2.png)
 
