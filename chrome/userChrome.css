@@ -488,7 +488,7 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 }
 
 .findbar-textbox {
-    border-radius: var(--button-corner-rounding) 0px 0px var(--button-corner-rounding) !important;
+    border-radius: var(--button-corner-rounding) var(--button-corner-rounding) var(--button-corner-rounding) var(--button-corner-rounding) !important;
 }
 
 .bookmark-item {
@@ -497,8 +497,13 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     margin-right: 0px !important;
 }
 #star-button-box:hover{
-    border-radius:var(--menu-corner-rounding);
+    transition: var(--animation-speed) !important;
+    border-radius:var(--button-corner-rounding) !important; 
     background:var(--toolbarbutton-hover-background) !important;
+}
+#identity-icon-box:hover{
+    transition: var(--animation-speed) !important;
+    border-radius:var(--button-corner-rounding) !important;
 }
 
 #urlbar {
@@ -536,11 +541,11 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     margin-top: -1px !important;
 }
 #urlbar-input:not(:focus):hover{
+    margin-left:2px !important;
     border-radius: var(--button-corner-rounding) !important;
     background: var(--toolbarbutton-hover-background) !important;
     transition: var(--animation-speed) !important;
 }
-
 /* urlbarView = the menu when you expand the address bar */
 .urlbarView {
     width: 100% !important;
@@ -651,7 +656,6 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 }
 
 
-
 #urlbar:not([focused]) .urlbar-input-box:hover,
 #identity-box:hover, 
 #tracking-protection-icon-container:hover,
@@ -726,6 +730,13 @@ menupopup menuitem,
 menupopup menu,
 menupopup menuseparator:hover{
     border-radius:var(--menu-corner-rounding);
+    transition: var(--animation-speed) !important;
+}
+/*There's a bug here, so i've set the border-radius to 19px*/
+menupopup,
+menupopup menuitem,
+menupopup menu{
+    border-radius:19px !important;
 }
 
 menupopup,
