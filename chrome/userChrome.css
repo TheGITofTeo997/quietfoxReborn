@@ -183,7 +183,6 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 .tab-close-button {
     transition: fill-opacity var(--animation-speed) !important;
 }
-
 .findbar-textbox:focus {
     border: 1px solid grey !important;
 }
@@ -721,6 +720,12 @@ link,
 .bookmarks-actions-menuseparator,
 .openintabs-menuitem {
     display: none !important;
+}
+menupopup,
+menupopup menuitem,
+menupopup menu,
+menupopup menuseparator:hover{
+    border-radius:var(--menu-corner-rounding);
 }
 
 menupopup,
