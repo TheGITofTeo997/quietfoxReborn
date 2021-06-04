@@ -150,11 +150,9 @@ tab:hover::after {
 tab[visuallyselected] .tab-background {
         box-shadow: 0px 3px 12px -5px black !important;
 }
-
 [last-visible-tab] {
-    margin-right: calc(var(--tab-corner-rounding) + 2px) !important; /* fix unexpected tab overflow */
+    margin-right: calc(var(--tab-corner-rounding)) !important; /* fix unexpected tab overflow */
 }
-
 
 
 
@@ -732,7 +730,7 @@ menupopup menuseparator:hover{
     border-radius:var(--menu-corner-rounding);
     transition: var(--animation-speed) !important;
 }
-/*There's a bug here, so i've set the border-radius to 19px*/
+/*There's a bug here, so i had to set the border-radius to 19px in order to prevent it*/
 menupopup,
 menupopup menuitem,
 menupopup menu{
