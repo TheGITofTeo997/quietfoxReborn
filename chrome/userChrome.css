@@ -489,6 +489,11 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     border-radius: var(--button-corner-rounding) var(--button-corner-rounding) var(--button-corner-rounding) var(--button-corner-rounding) !important;
 }
 
+#identity-box #identity-permission-box:hover{
+    border-radius:var(--button-corner-rounding) !important;
+    animation-delay:var(--animation-speed) !important;
+}
+
 .bookmark-item {
     padding-left: 7px !important;
     padding-right: 7px !important;
@@ -556,14 +561,20 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 .urlbarView-body-inner {
     border:none !important;    
     padding-left:15px;
-    margin-right:15px;
     background-color: var(--toolbar-bgcolor) !important;
+}
+.urlbarView-body-inner .urlbarView-row{
+    padding-right:30px;
 }
 
 .search-one-offs {
     background-color: var(--toolbar-bgcolor) !important;
     padding-left:15px;
     padding-right:10px;
+}
+.search-one-offs button:hover{
+   transition:var(--animation-speed) !important;
+   border-radius:var(--button-corner-rounding) !important;
 }
 
 
