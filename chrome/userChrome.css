@@ -743,9 +743,9 @@ menupopup menuseparator:hover{
 }
 /*There's a bug here, so i had to set the border-radius to 19px in order to prevent it*/
 menupopup,
-menupopup menuitem,
-menupopup menu{
-    border-radius:19px !important;
+menuitem
+menucaption{
+    border-radius:19px!important;
 }
 
 menupopup,
