@@ -76,7 +76,7 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 
 
 ## How to install
-1. [Download](https://github.com/TheGITofTeo997/quietfox/releases/latest/download/quietfox.zip) and unzip
+1. Download and unzip
 2. Go to `about:support` in Firefox and open your Profile Folder
 3. Drop your unzipped "chrome" folder into the folder that appears
 4. Go to `about:config` in your Firefox and set the value of `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` (this enables the loading of userChrome mods)
