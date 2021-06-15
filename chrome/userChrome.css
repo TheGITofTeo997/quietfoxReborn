@@ -737,7 +737,7 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 #userContext-icons:hover{
   border-radius: var(--button-corner-rounding) !important;
   background:var(--identity-tab-color)!important;
-  animation-delay : 2s !important;  
+  -moz-transition: 0.5s !important;  
 }
 #reader-mode-button.urlbar-icon:hover{
  background:var(--toolbarbutton-hover-background) !important;   
