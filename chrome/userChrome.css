@@ -145,16 +145,27 @@ tab:hover::after {
     --tabs-border-color: transparent !important;
 }
 
-
-
 tab[visuallyselected] .tab-background {
         box-shadow: 0px 3px 12px -5px black !important;
 }
 [last-visible-tab] {
     margin-right: calc(var(--tab-corner-rounding)) !important; /* fix unexpected tab overflow */
 }
-
-
+.tab-context-line {
+    transform:scaleX(0.9);
+    -moz-transition: 0.7s !important;
+    margin: 1.2px var(--inline-tab-padding) 0 !important;
+}
+tab:not([selected]):hover .tab-context-line{
+    transform:scaleX(1.07);
+    -moz-transition: 0.7s !important;
+    overflow-x:: hidden !important;
+    margin: 1.2px var(--inline-tab-padding) 0 !important;
+}
+tab[visuallyselected] .tab-context-line{
+    transform:scaleX(1.08);
+    margin: 1.2px var(--inline-tab-padding) 0 !important;
+}
 
 /* -------------------- Style toolbar -------------------- */
 .toolbarbutton-icon, .toolbarbutton-badge-stack {
@@ -747,6 +758,7 @@ menuitem
 menucaption{
     border-radius:19px!important;
 }
+
 
 menupopup,
 menupopup menuitem,
