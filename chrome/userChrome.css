@@ -510,6 +510,9 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     padding-right: 7px !important;
     margin-right: 0px !important;
 }
+.bookmark-item menupopup menuitem {
+    margin-right: 11px !important;
+}
 #star-button-box:hover{
     transition: var(--animation-speed) !important;
     border-radius:var(--button-corner-rounding) !important; 
@@ -613,7 +616,7 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 #urlbar[focused] .urlbar-icon {
     fill: var(--toolbar-color) !important;
 }
-
+/*
 #urlbar:hover #userContext-indicator,
 #urlbar:active #userContext-indicator, 
 #urlbar[focused] #userContext-indicator,
@@ -622,7 +625,7 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 #urlbar[focused] #userContext-label {
     color: var(--identity-tab-color) !important;
     fill: var(--identity-tab-color) !important;
-}
+}*/
 
 .urlbar-page-action[open] {
     background-color: var(--toolbarbutton-active-background) !important;
@@ -725,6 +728,32 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 
 .downloadsPanelFooterButton:hover {
     outline: none !important;
+}
+#userContext-icons{
+  margin:auto 3px!important;
+  border-radius:2px!important;
+  padding:0 2px 0 5px!important;
+}
+#userContext-icons:hover{
+  border-radius: var(--button-corner-rounding) !important;
+  background:var(--identity-tab-color)!important;
+  animation-delay : 2s !important;  
+}
+#reader-mode-button.urlbar-icon:hover{
+ background:var(--toolbarbutton-hover-background) !important;   
+ animation-delay:var(--animation-speed) !important;
+}
+
+
+#userContext-label{
+  color:#fff!important;
+}
+#userContext-indicator {
+  fill:#fff!important;
+  margin-right:2px!important;
+}
+#userContext-indicator[data-identity-icon="circle"] {
+  display:none!important;
 }
 
 /* -------------------- Style context menus -------------------- */
