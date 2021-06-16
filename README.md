@@ -83,7 +83,7 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 5. Restart Firefox
 
 
-✔ Tested on Firefox 89, Nord Polar Dark Theme on Windows 10 and Windows 10
+✔ Tested on Firefox 89, Nord Polar Dark Theme on Windows 10 
 
 ---
 
