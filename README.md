@@ -2,10 +2,10 @@
 
 We are a group of two people that loved Quietfox. Unluckily Firefox updates have broken it over time, so our goal is to fix it and restore the old look as much as possible, that's why we have this fork. 
 
-Every credit goes to the original creator
+Every credit goes to the original ![creator](https://github.com/coekuss)
 
-![quietfox](https://coekuss.com/quietfox/logo.png)
-![](https://coekuss.com/quietfox/quietfox70/clean2.png)
+![quietfox](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/logo.png)
+![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/clean2.PNG)
 
 ## The Goal
 This userChrome mod was created to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can still use themes, and you can still use Compact Mode and Touch Mode. You can pretty much forget that you have a mod installed, it works *quietly* in the background. Here are some of the notable features:
