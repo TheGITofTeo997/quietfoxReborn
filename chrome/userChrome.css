@@ -1,13 +1,13 @@
 /*
 
-Quietfox for Firefox 89
+Quietfox Reborn v0.8.2r
 
-https://github.com/coekuss/quietfox
+https://github.com/TheGITofTeo997/quietfoxReborn
 
-Thanks for using my file
+Thanks for using our file!
 
 Edit by: Krokko&Teo
- */
+*/
 
 * { 
 /* -------------------- 🎨 Customization 🎨 -------------------- */
@@ -787,7 +787,9 @@ menuitem
 menucaption{
     border-radius:19px!important;
 }
-
+menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
+	color: #a5a58d !important;
+}
 
 menupopup,
 menupopup menuitem,
@@ -848,11 +850,11 @@ menupopup menuseparator
 
 
 
-
 .in-bookmarks-menu {
     padding-bottom: 5px !important;
     padding-top: 5px !important;
 }
+
 menu,
 menuitem, 
 menucaption {
@@ -861,6 +863,7 @@ menucaption {
     margin-left:15px !important;
     margin-right:12px !important;
 }
+
 
 menu,
 menuitem, 
@@ -882,7 +885,6 @@ menu:not(.subviewbutton) > .menu-right image {
     border-right-color: transparent !important;
     border-bottom-color: transparent !important;
 }
-
 panelview toolbarbutton:not(#fxa-manage-account-button) {
     height: var(--menu-item-height) !important;
 }
@@ -897,6 +899,20 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
 
 #customization-lwtheme-menu-header {
     margin-top: 0px !important;
+}
+/*Alertbox customization code*/
+@-moz-document url("chrome://global/content/alerts/alert.xhtml") {
+  #alertBox{
+    border-radius: var(--menu-corner-rounding) !important;
+    background-color: rgb(60,57,76) !important;
+    color: white !important;
+  }
+  #alertSourceLabel{
+    color: white !important;
+  }
+  #alertBox, image{
+        border-radius: var(--button-corner-rounding) !important;
+  }
 }
 
 /* windows-specific adjustments */
