@@ -1,7 +1,7 @@
 ## Some Notes ℹ️
 We are a group of two people that loved Quietfox. Unluckily Firefox updates have broken it over time, so our goal is to fix it and restore the old look as much as possible, that's why we have this fork. 
 
-We will keep supporting this project through the upcoming Firefox updates.
+We will keep supporting this project through the upcoming Firefox updates, however we can still consider this in beta so expect glitches.
 
 Most of the credits go to the original ![creator](https://github.com/coekuss)
 
@@ -88,7 +88,7 @@ However, we might be able to restore that behaviour in the future.
 5. Restart Firefox
 
 
-✔️ Tested and working currently on *Firefox 89.0.1*, Nord Polar Dark Theme on Windows 10 
+✔️ Tested and working currently on `Firefox 89.0.1`, Nord Polar Dark Theme on Windows 10 
 
 
 ### Older version ℹ️
