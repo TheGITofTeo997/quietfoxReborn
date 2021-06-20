@@ -97,7 +97,7 @@ If you need Quietfox for an older version of Firefox, [see the original version 
 
 ## P.S. ℹ️
 
-We have put so much effort into this project to enhanche your Firefox experience and to make it always up to date, if you want, consider a small donation 💖
+We have put so much effort into this project to enhance your Firefox experience and to make it always up to date, if you want, consider a small donation 💖
 
 <img align="top" width="25px" src="https://coekuss.com/quietfox/bitcoin.png"> Bitcoin: 3QAFBtp2r8L2Ea6Ty2nbkC6pBAqE2LQCMR
 
