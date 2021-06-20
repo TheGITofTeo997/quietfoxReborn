@@ -836,7 +836,13 @@ menupopup menuseparator
     padding-top: 0px !important;
     border: none !important;
 }
-
+/*Temporary fix for history and bookmarks sidebars right-click menus*/
+#history-panel menupopup{
+   color: black !important;
+}
+#bookmarksPanel menupopup{
+    color: black !important;
+}
 /* shadows and rounded corners for menus */
 .menupopup-arrowscrollbox:not(.in-bookmarks-menu) {
     border-radius:var(--menu-corner-rounding) !important;
