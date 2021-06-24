@@ -689,6 +689,7 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 }
 
 
+
 #identity-box:active,
 #tracking-protection-icon-container:active,
 .urlbar-icon:active,
@@ -729,15 +730,46 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 .downloadsPanelFooterButton:hover {
     outline: none !important;
 }
+#urlbar-input-container:focus #pageAction-urlbar-_testpilot-containers{
+    opacity:1;
+}
+#urlbar-input-container:focus #userContext-icons{
+    opacity:1;
+}
+
 #userContext-icons{
+  opacity:0;
   margin:auto 3px!important;
   border-radius:2px!important;
   padding:0 2px 0 5px!important;
 }
+#urlbar-input-container:hover #userContext-icons {
+    opacity:1;
+    -moz-transition: var(--animation-speed) !important;
+}
+#urlbar-input-container:hover #pageAction-urlbar-_testpilot-containers{
+    opacity:1;
+    -moz-transition: var(--animation-speed) !important;
+}
+#pageAction-urlbar-_testpilot-containers{
+    opacity:0;
+    -moz-transition: var(--animation-speed) !important;
+}
+#pageAction-urlbar-_testpilot-containers:hover{
+    opacity:1;
+    background: var(--toolbarbutton-hover-background) !important;
+}
+
 #userContext-icons:hover{
+  opacity:1;
   border-radius: var(--button-corner-rounding) !important;
   background:var(--identity-tab-color)!important;
-  -moz-transition: 0.5s !important;  
+  -moz-transition: var(--animation-speed) !important;  
+}
+#urlbar-input-container:hover{
+    opacity:1;
+    border-radius: var(--button-corner-rounding) !important;
+    -moz-transition:var(--animation-speed) !important;
 }
 #reader-mode-button.urlbar-icon:hover{
  background:var(--toolbarbutton-hover-background) !important;   
@@ -806,6 +838,7 @@ menu[open] menupopup:not(#BMB_bookmarksPopup) {
 	margin: -7px -0px !important;
 }
 
+
 #BMB_bookmarksPopup menu[open] menupopup {
     transform: translateY(4px) !important;
 }
@@ -830,18 +863,19 @@ menupopup menuseparator
 .menupopup-arrowscrollbox:not(.in-bookmarks-menu) {
 	padding: 6px 0 !important;
 }
-
+#history-panel menupopup{
+  color: black !important;
+}
+#bookmarksPanel menupopup{
+    color: black !important;
+}
+#bookmarksMenu menupopup{
+    color:black !important;
+}
 
 .panel-arrowcontent {
     padding-top: 0px !important;
     border: none !important;
-}
-/*Temporary fix for history and bookmarks sidebars right-click menus*/
-#history-panel menupopup{
-   color: black !important;
-}
-#bookmarksPanel menupopup{
-    color: black !important;
 }
 /* shadows and rounded corners for menus */
 .menupopup-arrowscrollbox:not(.in-bookmarks-menu) {
@@ -882,6 +916,12 @@ menu:not(.subviewbutton) > .menu-right  {
     margin-right: 0px !important;
     width: 0px !important;
 }
+@-moz-document url(chrome://browser/content/places/places.xhtml){
+    #placesToolbox .menupopup{
+        background: aqua!important;
+    }
+}
+
 
 menu:not(.subviewbutton) > .menu-right image {
     margin-right: -5px !important;
