@@ -730,11 +730,12 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 .downloadsPanelFooterButton:hover {
     outline: none !important;
 }
-#urlbar-input-container:focus #pageAction-urlbar-_testpilot-containers{
-    opacity:1;
+
+#urlbar[focused] #pageAction-urlbar-_testpilot-containers{
+    opacity:1 !important;
 }
-#urlbar-input-container:focus #userContext-icons{
-    opacity:1;
+#urlbar[focused] #userContext-icons{
+    opacity:1 !important;
 }
 
 #userContext-icons{
@@ -743,11 +744,11 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
   border-radius:2px!important;
   padding:0 2px 0 5px!important;
 }
-#urlbar-input-container:hover #userContext-icons {
+#urlbar:hover #userContext-icons {
     opacity:1;
     -moz-transition: var(--animation-speed) !important;
 }
-#urlbar-input-container:hover #pageAction-urlbar-_testpilot-containers{
+#urlbar:hover #pageAction-urlbar-_testpilot-containers{
     opacity:1;
     -moz-transition: var(--animation-speed) !important;
 }
@@ -775,7 +776,41 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
  background:var(--toolbarbutton-hover-background) !important;   
  animation-delay:var(--animation-speed) !important;
 }
-
+/*This part is bugged: the library button, the sidebar button and the download button will disappear if you click on urlbar*/
+#nav-bar-customization-target:hover #library-button{
+    animation-delay:var(--animation-speed);
+    opacity:1;
+} 
+#nav-bar-customization-target:active #library-button { 
+    opacity:1;
+}
+#library-button{
+    animation-delay:var(--animation-speed);
+    opacity:0;
+}
+#sidebar-button{
+    animation-delay:var(--animation-speed);
+    opacity:0;
+}
+#nav-bar-customization-target:hover #sidebar-button{
+    animation-delay:var(--animation-speed);
+    opacity:1;
+} 
+#nav-bar-customization-target:active #sidebar-button { 
+    opacity:1;
+}
+#downloads-button{
+    animation-delay:var(--animation-speed);
+    opacity:0;
+}
+#nav-bar-customization-target:hover #download-button{
+    animation-delay:var(--animation-speed);
+    opacity:1;
+} 
+#nav-bar-customization-target:active #download-button { 
+    opacity:1;
+}
+/*End of the bugged part*/
 
 #userContext-label{
   color:#fff!important;
