@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.8.2r
+Quietfox Reborn v0.8.3r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -483,7 +483,7 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 #tracking-protection-icon-container,
 .urlbar-history-dropmarker, 
 .urlbar-page-action,
-#reader-mode-button, 
+#reader-mode-button-icon, 
 [anonid=urlbar-go-button],
 .toolbarbutton-1 > stack,
 toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="scrollbutton"]),
@@ -760,6 +760,10 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     opacity:1;
     background: var(--toolbarbutton-hover-background) !important;
 }
+#pageAction-urlbar-_testpilot-containers.urlbar-page-action[focused]{
+    opacity:1 !important;
+}
+
 
 #userContext-icons:hover{
   opacity:1;
@@ -772,46 +776,13 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     border-radius: var(--button-corner-rounding) !important;
     -moz-transition:var(--animation-speed) !important;
 }
-#reader-mode-button.urlbar-icon:hover{
+#reader-mode-button-icon.urlbar-icon:hover{
  background:var(--toolbarbutton-hover-background) !important;   
  animation-delay:var(--animation-speed) !important;
 }
-/*This part is bugged: the library button, the sidebar button and the download button will disappear if you click on urlbar*/
-#nav-bar-customization-target:hover #library-button{
-    animation-delay:var(--animation-speed);
-    opacity:1;
-} 
-#nav-bar-customization-target:active #library-button { 
-    opacity:1;
+#reader-mode-button-icon.urlbar-icon[focused]{
+    opacity:1 !important;
 }
-#library-button{
-    animation-delay:var(--animation-speed);
-    opacity:0;
-}
-#sidebar-button{
-    animation-delay:var(--animation-speed);
-    opacity:0;
-}
-#nav-bar-customization-target:hover #sidebar-button{
-    animation-delay:var(--animation-speed);
-    opacity:1;
-} 
-#nav-bar-customization-target:active #sidebar-button { 
-    opacity:1;
-}
-#downloads-button{
-    animation-delay:var(--animation-speed);
-    opacity:0;
-}
-#nav-bar-customization-target:hover #download-button{
-    animation-delay:var(--animation-speed);
-    opacity:1;
-} 
-#nav-bar-customization-target:active #download-button { 
-    opacity:1;
-}
-/*End of the bugged part*/
-
 #userContext-label{
   color:#fff!important;
 }
