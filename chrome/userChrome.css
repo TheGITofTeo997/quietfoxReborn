@@ -729,6 +729,10 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 
 .downloadsPanelFooterButton:hover {
     outline: none !important;
+    border-radius:var(--menu-corner-rounding) !important;
+}
+.downloadsPanelFooterButton{
+    border-radius:var(--menu-corner-rounding) !important;
 }
 
 #urlbar[focused] #pageAction-urlbar-_testpilot-containers{
