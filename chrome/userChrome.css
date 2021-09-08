@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.8.3r
+Quietfox Reborn v0.8.4r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -585,10 +585,12 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     background-color: var(--toolbar-bgcolor) !important;
     padding-left:15px;
     padding-right:10px;
+    color:white !important;
 }
 .search-one-offs button:hover{
    transition:var(--animation-speed) !important;
    border-radius:var(--button-corner-rounding) !important;
+    color:white !important;
 }
 
 
@@ -729,10 +731,6 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 
 .downloadsPanelFooterButton:hover {
     outline: none !important;
-    border-radius:var(--menu-corner-rounding) !important;
-}
-.downloadsPanelFooterButton{
-    border-radius:var(--menu-corner-rounding) !important;
 }
 
 #urlbar[focused] #pageAction-urlbar-_testpilot-containers{
@@ -780,12 +778,23 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     border-radius: var(--button-corner-rounding) !important;
     -moz-transition:var(--animation-speed) !important;
 }
+#urlbar-input-container{
+    color:white !important;
+}
+.urlbarView-row-inner{
+    color:white !important;
+}
+
 #reader-mode-button-icon.urlbar-icon:hover{
  background:var(--toolbarbutton-hover-background) !important;   
  animation-delay:var(--animation-speed) !important;
 }
 #reader-mode-button-icon.urlbar-icon[focused]{
     opacity:1 !important;
+}
+#reader-mode-button image{
+    max-width:100% !important;
+    height:auto !important;
 }
 #userContext-label{
   color:#fff!important;
