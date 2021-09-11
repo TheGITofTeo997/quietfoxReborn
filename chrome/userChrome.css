@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.8.4r
+Quietfox Reborn v0.8.3r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -592,10 +592,9 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
    border-radius:var(--button-corner-rounding) !important;
     color:white !important;
 }
-
-
-
-
+hbox.urlbar-page-action{
+    padding:0px !important;
+}
 
 #tracking-protection-icon-container {
     border-inline-end: none !important;
@@ -766,7 +765,6 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     opacity:1 !important;
 }
 
-
 #userContext-icons:hover{
   opacity:1;
   border-radius: var(--button-corner-rounding) !important;
@@ -906,8 +904,6 @@ menupopup menuseparator
 .panel-arrowcontainer .panel-arrowcontent, .menupopup-arrowscrollbox, hbox[flex="1"][part="innerbox"] {
     border-radius: var(--menu-corner-rounding) !important;
 }
-
-
 
 .in-bookmarks-menu {
     padding-bottom: 5px !important;
