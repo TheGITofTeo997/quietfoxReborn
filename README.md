@@ -88,7 +88,7 @@ However, we might be able to restore that behaviour in the future.
 5. Restart Firefox
 
 
-✔️ Tested and working currently on `Firefox 91.0.2`, Nord Polar Dark Theme on Windows 10 
+✔️ Tested and working currently on `Firefox 92.0`, Nord Polar Dark Theme on Windows 10 
 
 
 ### Older version ℹ️
