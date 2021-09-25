@@ -592,9 +592,27 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
    border-radius:var(--button-corner-rounding) !important;
     color:white !important;
 }
+
 hbox.urlbar-page-action{
     padding:0px !important;
 }
+/*Action bar buttons
+hbox.urlbar-page-action#star-button-box[focused]{
+    opacity:1;
+}
+hbox.urlbar-page-action#pageAction-urlbar-_testpilot-containers[focused]{
+    opacity:1;
+}
+hbox.urlbar-page-action#reader-mode-button[focused]{
+    opacity:1;
+}
+hbox.urlbar-page-action#cfr-button[focused]{
+    opacity:1;
+}
+hbox.urlbar-page-action#pageActionButton[focused]{
+    opacity:1;
+}
+*/
 
 #tracking-protection-icon-container {
     border-inline-end: none !important;
@@ -936,7 +954,9 @@ menu:not(.subviewbutton) > .menu-right  {
         background: aqua!important;
     }
 }
-
+menuitem.menuitem-iconic.bookmark-item.menuitem-iconic.menuitem-with-favicon:hover{
+    border-radius: var(--menu-corner-rounding) !important;
+}
 
 menu:not(.subviewbutton) > .menu-right image {
     margin-right: -5px !important;
