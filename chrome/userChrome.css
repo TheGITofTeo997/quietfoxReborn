@@ -804,6 +804,9 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 .urlbarView-row-inner{
     color:white !important;
 }
+.urlbarView-results{
+    color:white;
+}
 
 #reader-mode-button-icon.urlbar-icon:hover{
  background:var(--toolbarbutton-hover-background) !important;   
