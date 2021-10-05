@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.8.3r
+Quietfox Reborn v0.9.1r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -795,7 +795,11 @@ hbox.urlbar-page-action#pageActionButton[focused]{
     -moz-transition:var(--animation-speed) !important;
 }
 #urlbar-input-container{
-    color:white !important;
+    color:white !important;   
+}
+#urlbar-background{
+    border-radius: var(--button-corner-rounding) !important;
+    display:none !important;
 }
 .urlbarView-row-inner{
     color:white !important;
