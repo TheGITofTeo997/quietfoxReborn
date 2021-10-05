@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.9.1r
+Quietfox Reborn v0.9.2r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -522,10 +522,8 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     transition: var(--animation-speed) !important;
     border-radius:var(--button-corner-rounding) !important;
 }
-
-#urlbar {
-    border-radius: calc(1px + var(--button-corner-rounding)) !important;
-    border: none !important;
+toolbarbutton#library-button.toolbarbutton-1{
+    padding-left:23px !important;
 }
 
 /* style identity box */
@@ -548,6 +546,9 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     height: auto !important;
     width: 100% !important;
 }
+#urlbar[breakout]{
+    width:99.5% !important;
+}
 
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
     height: var(--urlbar-toolbar-height) !important;
@@ -556,6 +557,10 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     padding-bottom: 6px !important;
     margin-bottom: -5px !important;
     margin-top: -1px !important;
+}
+#urlbar {
+    border-radius: calc(1px + var(--button-corner-rounding)) !important;
+    border: none !important;
 }
 #urlbar-input:not(:focus):hover{
     margin-left:2px !important;
@@ -669,7 +674,6 @@ hbox.urlbar-page-action#pageActionButton[focused]{
     margin-left: -1px !important;
     margin-right: -1px !important;
 }
-
 .urlbar-input-box {
     padding: 0px 5px !important;
 }
@@ -678,8 +682,13 @@ hbox.urlbar-page-action#pageActionButton[focused]{
     background-color: transparent !important;
     color: var(--lwt-toolbar-field-color, black) !important;
 }
-
-
+#urlbar-go-button:hover{
+    background-color: var(--toolbarbutton-hover-background) !important;
+    border-radius: var(--button-corner-rounding);
+}
+.urlbar-input-box input{
+    padding-left: 5px !important;
+}
 #urlbar:not(.hidden-focus)[focused="true"] {
     background-color: var(--toolbarbutton-hover-background) !important;
 }
@@ -742,10 +751,6 @@ hbox.urlbar-page-action#pageActionButton[focused]{
     color: var(--toolbar-color) !important;
 }
 
-.urlbarView-body-inner {
-    background-color: var(--toolbar-bgcolor) !important;
-}
-
 .downloadsPanelFooterButton:hover {
     outline: none !important;
 }
@@ -802,7 +807,7 @@ hbox.urlbar-page-action#pageActionButton[focused]{
     display:none !important;
 }
 .urlbarView-row-inner{
-    color:white !important;
+    font:white !important;
 }
 .urlbarView-results{
     color:white;
@@ -1001,6 +1006,22 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
   #alertBox, image{
         border-radius: var(--button-corner-rounding) !important;
   }
+  #alertSettings{
+        color:white !important;
+  }
+   
+    menupopup,
+    menuitem#openSettingsMenuItem{
+        color: black !important;
+    }
+    menupopup,
+    menuitem#disableForOriginMenuItem{
+        color:black !important;
+    }
+    menupopup,
+    menuitem#doNotDisturbMenuItem{
+        color:black !important;
+    }
 }
 
 /* windows-specific adjustments */
