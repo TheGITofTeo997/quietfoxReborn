@@ -1024,6 +1024,9 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
         color:black !important;
     }
 }
+#ContentSelectDropdown > menupopup > :not([_moz-menuactive="true"]) {
+    background:transparent !important;
+}
 
 /* windows-specific adjustments */
 @media (-moz-os-version: windows-win7), (-moz-os-version: windows-win8), (-moz-os-version: windows-win10) {
