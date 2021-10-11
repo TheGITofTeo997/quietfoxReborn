@@ -809,6 +809,12 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 .urlbarView-row-inner{
     font:white !important;
 }
+.urlbarView-row-inner:hover{
+    background:var(--toolbarbutton-hover-background) !important;
+    color:white !important;
+}
+
+
 .urlbarView-results{
     color:white;
 }
@@ -961,11 +967,6 @@ menu:not(.subviewbutton) > .menu-right  {
     margin-right: 0px !important;
     width: 0px !important;
 }
-@-moz-document url(chrome://browser/content/places/places.xhtml){
-    #placesToolbox .menupopup{
-        background: aqua!important;
-    }
-}
 menuitem.menuitem-iconic.bookmark-item.menuitem-iconic.menuitem-with-favicon:hover{
     border-radius: var(--menu-corner-rounding) !important;
 }
@@ -1107,6 +1108,16 @@ menu[_moz-menuactive="true"]:not([disabled="true"]),
 menuitem[_moz-menuactive="true"]:not([disabled="true"]), 
 menucaption[_moz-menuactive="true"]:not([disabled="true"]) {
     background-color: var(--toolbarbutton-hover-background, rgba(127,127,127,0.5)) !important;
+}
+@media (-moz-windows-non-native-menus) {
+  menupopup {
+    --panel-color: black !important;
+    --panel-border-radius: 4px;
+    --panel-padding: 4px 0;
+    --panel-border-color: var(--menu-border-color);
+    --panel-background: black !important;
+    --nested-margin: -6px;
+  }
 }
 
 menu[disabled="true"], 
