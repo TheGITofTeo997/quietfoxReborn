@@ -504,6 +504,10 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     border-radius:var(--button-corner-rounding) !important;
     animation-delay:var(--animation-speed) !important;
 }
+#identity-permission-box{
+     border-radius:var(--button-corner-rounding) !important;
+     margin-left:7px !important;
+}
 
 .bookmark-item {
     padding-left: 7px !important;
@@ -715,7 +719,14 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 [anonid=urlbar-go-button]:hover {
     
 }
+.identity-box-button:hover:active, .identity-box-button[open="true"], #tracking-protection-icon-container:hover:active, #tracking-protection-icon-container[open="true"] {
+    background-color: hsla(0,0%,70%,.3);
+    border-radius: var(--button-corner-rounding) !important;
+}
 
+#identity-box[pageproxystate="valid"].notSecureText > .identity-box-button, #identity-box[pageproxystate="valid"].chromeUI > .identity-box-button, #identity-box[pageproxystate="valid"].extensionPage > .identity-box-button, #urlbar-label-box {
+    border-radius:var(--button-corner-rounding) !important;
+}
 
 
 #identity-box:active,
