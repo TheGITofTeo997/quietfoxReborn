@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.9.4r
+Quietfox Reborn v0.9.5r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -499,6 +499,10 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
     padding-right: 3px !important;
     padding-left: 3px !important;
     padding-bottom: 1px !important;
+}
+/*Selected tab bug fix*/
+.tab-background:is([selected], [multiselected]):-moz-lwtheme {
+  border: hidden !important;
 }
 
 :root[uidensity="touch"] #PersonalToolbar {
