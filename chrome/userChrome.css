@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.9.5r
+Quietfox Reborn v0.9.6r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -754,6 +754,14 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 [anonid=urlbar-go-button]:hover {
     
 }
+#notification-popup-box {
+  position: relative;
+  left: 13px !important;
+  border-radius:var(--button-corner-rounding);
+}
+#notification-popup-box:hover{
+    border-radius:var(--button-corner-rounding);
+}
 .identity-box-button:hover:active, .identity-box-button[open="true"], #tracking-protection-icon-container:hover:active, #tracking-protection-icon-container[open="true"] {
     background-color: hsla(0,0%,70%,.3);
     border-radius: var(--button-corner-rounding) !important;
@@ -919,8 +927,12 @@ menucaption{
     border-radius:19px!important;
 }
 menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
-	color: #a5a58d !important;
+	color: #838584 !important;
 }
+menuitem > .menu-text{
+    color:white !important;
+}
+
 
 menupopup,
 menupopup menuitem,
@@ -962,15 +974,33 @@ menupopup menuseparator
 .menupopup-arrowscrollbox:not(.in-bookmarks-menu) {
 	padding: 6px 0 !important;
 }
+/*History panel changes*/
 #history-panel menupopup{
   color: black !important;
 }
-#bookmarksPanel menupopup{
-    color: black !important;
+#history-panel menupopup menuitem{
+    color: white !important;
 }
+#history-panel #sidebar-search-container {
+  height: 45px !important;
+}
+/*Bookmark panel changes*/
+#bookmarksPanel menupopup menuitem{
+    color: white !important;
+}
+#bookmarksPanel search-textbox{
+    height: 30px !important;
+}
+/*Miscellaneous menus*/
+
+
+/*bookmarks menu changes*/
 #bookmarksMenu menupopup{
     color:black !important;
 }
+
+
+
 
 .panel-arrowcontent {
     padding-top: 0px !important;
@@ -1044,7 +1074,7 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
 @-moz-document url("chrome://global/content/alerts/alert.xhtml") {
   #alertBox{
     border-radius: var(--menu-corner-rounding) !important;
-    background-color: rgb(60,57,76) !important;
+    background-color: rgb(58,67,82) !important;
     color: white !important;
   }
   #alertSourceLabel{
@@ -1056,18 +1086,20 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
   #alertSettings{
         color:white !important;
   }
-   
+    menupopup{
+       color:rgb(58,67,82) !important;
+    }
     menupopup,
     menuitem#openSettingsMenuItem{
-        color: black !important;
+        color: white !important;
     }
     menupopup,
     menuitem#disableForOriginMenuItem{
-        color:black !important;
+       color: white !important;
     }
     menupopup,
     menuitem#doNotDisturbMenuItem{
-        color:black !important;
+        color: white !important;
     }
 }
 #ContentSelectDropdown > menupopup > :not([_moz-menuactive="true"]) {
