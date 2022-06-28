@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.9.7r
+Quietfox Reborn v0.9.6r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -935,6 +935,9 @@ menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 }
 menuitem > .menu-text{
     color:white !important;
+}
+menuitem, .menu-text {
+  color: rgb(116, 116, 116) !important;
 }
 
 
