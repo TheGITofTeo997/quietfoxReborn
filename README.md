@@ -22,10 +22,10 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 ```CSS
 /* -------------------- 🎨 Customization 🎨 -------------------- */
     --tab-corner-rounding: 7px;
-    /* --menu-corner-rounding: 10px; */
-    /* --menu-item-height: 30px;     */
     --button-corner-rounding: 20px;
-    --animation-speed: 0.4s;
+    /* --menu-item-height: 35px;     */
+    --animation-speed: 0.4s
+    /* --menu-corner-rounding: 11px; */
 ```
 ![](https://coekuss.com/quietfox/quietfox70/fluid2.gif)
 
@@ -34,10 +34,10 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 ```CSS
 /* -------------------- 🎨 Customization 🎨 -------------------- */
     --tab-corner-rounding: 0px;
-    /* --menu-corner-rounding: 10px; */
-    /* --menu-item-height: 30px;     */
     --button-corner-rounding: 0px;
-    --animation-speed: 0.0s;
+    /* --menu-item-height: 35px;     */
+    --animation-speed: 0.0s
+    /* --menu-corner-rounding: 11px; */
 ```
 ![](https://coekuss.com/quietfox/quietfox70/snappy2.gif)
 
@@ -45,10 +45,10 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 ```CSS
 /* -------------------- 🎨 Customization 🎨 -------------------- */
     /* --tab-corner-rounding: 7px;     */
-    --menu-corner-rounding: 10px;
-    --menu-item-height: 30px;
     /* --button-corner-rounding: 20px; */
+    --menu-item-height: 30px;
     /* --animation-speed: 0.4s;        */
+    --menu-corner-rounding: 10px;
 ```
 
 <p align="center">
@@ -60,10 +60,10 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 ```CSS
 /* -------------------- 🎨 Customization 🎨 -------------------- */
     /* --tab-corner-rounding: 7px;     */
-    --menu-corner-rounding: 0px;
-    --menu-item-height: 25px;
     /* --button-corner-rounding: 20px; */
+    --menu-item-height: 25px;
     /* --animation-speed: 0.4s;        */
+    --menu-corner-rounding: 0px;
 ```
 <p align="center">
     <img src="https://coekuss.com/quietfox/short_sharp.png">
