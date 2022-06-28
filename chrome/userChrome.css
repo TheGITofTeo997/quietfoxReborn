@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.9.6r
+Quietfox Reborn v0.9.7r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -47,6 +47,10 @@ tab[visuallyselected] .tab-background::after {
     pointer-events: none !important;
     background-color: transparent !important;
     transition: var(--animation-speed) !important;
+}
+/*Useless blue border on tabs fix (DO NOT TOUCH UNLESS YOU DON'T WANT THOSE LITTLE PEKSY TABS COLORED OF BLUE ON BORDERS)*/
+#TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon:-moz-lwtheme, .tab-background[selected]:-moz-lwtheme {
+    outline:none !important;
 }
 
 
