@@ -936,9 +936,6 @@ menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 menuitem > .menu-text{
     color:white !important;
 }
-menuitem, .menu-text {
-  color: rgb(116, 116, 116) !important;
-}
 
 
 menupopup,
