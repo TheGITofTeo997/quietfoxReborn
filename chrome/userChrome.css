@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.9.7r
+Quietfox Reborn v0.9.8r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -289,13 +289,13 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 }
 
 
-
+/*
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #identity-box,
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #tracking-protection-icon-container {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    padding-left: 8px;
+    padding-right: 8px;
 }
-
+*/
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #identity-icon, 
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #tracking-protection-icon-box {
     margin-left: 2px !important;
@@ -544,8 +544,11 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 #identity-permission-box{
      border-radius:var(--button-corner-rounding) !important;
      transition: var(--animation-speed) !important;
-     margin-left: 6px;
+     margin-left: 12px;
      margin-right: -12px;
+}
+#eme-notification-icon{
+    
 }
 
 .bookmark-item {
@@ -759,12 +762,28 @@ hbox.urlbar-page-action#pageActionButton[focused]{
     
 }
 #notification-popup-box {
-  position: relative;
-  left: 13px !important;
-  border-radius:var(--button-corner-rounding);
+  position: relative !important;
+  padding-left:2px !important;
+  padding-right:2px !important;
+  left: 12px !important;
+  transition: all 500ms !important;
+  border-radius:var(--button-corner-rounding) !important;
 }
+
+#identity-permission-box {
+ position:  relative !important;
+ left: -14px !important;
+}
+
+#identity-permission-box[open="true"], #identity-permission-box[hasPermissions], #identity-permission-box[hasSharingIcon] {
+  display: -webkit-inline-box;
+  margin-right: 1px !important;
+  margin-left: 1px !important;
+}
+
 #notification-popup-box:hover{
-    border-radius:var(--button-corner-rounding);
+    border-radius:var(--button-corner-rounding) !important;
+    background-color: hsla(0,0%,70%,0.35) !important;
 }
 .identity-box-button:hover:active, .identity-box-button[open="true"], #tracking-protection-icon-container:hover:active, #tracking-protection-icon-container[open="true"] {
     background-color: hsla(0,0%,70%,.3);
@@ -936,6 +955,7 @@ menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 menuitem > .menu-text{
     color:white !important;
 }
+
 
 
 menupopup,
