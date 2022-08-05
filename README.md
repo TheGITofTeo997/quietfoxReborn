@@ -1,3 +1,14 @@
+[![GitHub issues](https://img.shields.io/github/issues/TheGITofTeo997/quietfoxReborn)](https://github.com/TheGITofTeo997/quietfoxReborn/issues)
+[![GitHub closed issues](https://badgen.net/github/closed-issues/TheGITofTeo997/quietfoxReborn?color=green)](https://github.com/TheGITofTeo997/quietfoxReborn/issues?q=is%3Aissue+is%3Aclosed)
+![GitHub repo size](https://img.shields.io/github/repo-size/TheGITofTeo997/quietfoxReborn)
+![GitHub](https://img.shields.io/github/license/TheGITofTeo997/quietfoxReborn?color=blue)
+![GitHub Maintained](https://img.shields.io/badge/Open%20Source-Yes-green)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/TheGITofTeo997/quietfoxReborn)
+![GitHub last commit](https://img.shields.io/github/last-commit/TheGITofTeo997/quietfoxReborn)
+![GitHub Maintained](https://img.shields.io/badge/maintained-yes-green)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTheGITofTeo997%2FquietfoxReborn&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+
 ## Some Notes ℹ️
 We are a group of two people that loved Quietfox. Unluckily Firefox updates have broken it over time, so our goal is to fix it and restore the old look as much as possible, that's why we have this fork. 
 
