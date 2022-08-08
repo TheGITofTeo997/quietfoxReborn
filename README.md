@@ -14,7 +14,7 @@ We are a group of two people that loved Quietfox. Unluckily Firefox updates have
 
 We will keep supporting this project through the upcoming Firefox updates, however we can still consider this in beta so expect glitches.
 
-Most of the credits go to the original ![creator](https://github.com/coekuss)
+Most of the credits go to the original ![creator](https://github.com/kamrynsite)
 
 ![quietfox](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/logo.png)
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/clean2.PNG)
@@ -103,7 +103,7 @@ However, we might be able to restore that behaviour in the future.
 
 
 ### Older version ℹ️
-If you need Quietfox for an older version of Firefox, [see the original version releases page.](https://github.com/coekuss/quietfox/releases)
+If you need Quietfox for an older version of Firefox, [see the original version releases page.](https://github.com/kamrynsite/quietfox/releases)
 
 
 ## P.S. ℹ️
