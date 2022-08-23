@@ -99,7 +99,7 @@ However, we might be able to restore that behaviour in the future.
 5. Restart Firefox
 
 
-✔️ Tested and working currently on `Firefox 103.0.2`, Nord Polar Dark Theme on Windows 10 
+✔️ Tested and working currently on `Firefox 104`, Nord Polar Dark Theme on Windows 10 
 
 
 ### Older version ℹ️
