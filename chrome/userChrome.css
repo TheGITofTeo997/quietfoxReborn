@@ -772,7 +772,7 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 
 #identity-permission-box {
  position:  relative !important;
- left: -14px !important;
+ left: 0px !important;
 }
 
 #identity-permission-box[open="true"], #identity-permission-box[hasPermissions], #identity-permission-box[hasSharingIcon] {
