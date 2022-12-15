@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.9.8r
+Quietfox Reborn v0.9.9r
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -544,8 +544,10 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 #identity-permission-box{
      border-radius:var(--button-corner-rounding) !important;
      transition: var(--animation-speed) !important;
-     margin-left: 12px;
-     margin-right: -12px;
+}
+#reader-mode-button:hover {
+  background-color: initial !important;
+  border-radius: var(--button-corner-rounding) !important;
 }
 #eme-notification-icon{
     
@@ -559,6 +561,16 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 .bookmark-item menupopup menuitem {
     margin-right: 11px !important;
 }
+#star-button-box {
+  height: initial !important;
+  width: initial !important;
+  padding: initial !important;
+}
+#pageAction-urlbar-_testpilot-containers {
+     height: initial !important;
+  width: initial !important;
+  padding: initial !important;
+}
 #star-button-box:hover{
     transition: var(--animation-speed) !important;
     border-radius:var(--button-corner-rounding) !important; 
@@ -571,7 +583,8 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 toolbarbutton#library-button.toolbarbutton-1{
     padding-left:23px !important;
 }
-
+#identity-box {
+}
 /* style identity box */
 /*#identity-box {
     opacity: 0;
@@ -765,7 +778,8 @@ hbox.urlbar-page-action#pageActionButton[focused]{
   position: relative !important;
   padding-left:2px !important;
   padding-right:2px !important;
-  left: 12px !important;
+  height: initial !important;
+  left: 0px !important;
   transition: all 500ms !important;
   border-radius:var(--button-corner-rounding) !important;
 }
@@ -904,11 +918,16 @@ hbox.urlbar-page-action#pageActionButton[focused]{
     opacity:1 !important;
 }
 #reader-mode-button image{
-    max-width:100% !important;
+    max-width:200% !important;
     height:auto !important;
+}
+#reader-mode-button {
+  width: initial !important;
+  height: initial !important;
 }
 #userContext-label{
   color:#fff!important;
+  margin: 6px !important;
 }
 #userContext-indicator {
   fill:#fff!important;
