@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v0.9.9r
+Quietfox Reborn v108
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -17,6 +17,7 @@ Edit by: Krokko&Teo
     --animation-speed: 0.15s;
     --menu-corner-rounding: 11px;
     --toolbarbutton-hover-background: rgba(127, 127, 127, 0.5);
+    --toolbarbutton-focus-background: rgb(115, 118, 124);
 }
 
 
@@ -182,7 +183,7 @@ tab[visuallyselected] .tab-background {
     margin: 1.2px var(--inline-tab-padding) 0 !important;
 }
 tab:not([selected]):hover .tab-context-line{
-    transform:scaleX(1.07);
+    transform:scaleX(1.08);
     -moz-transition: 0.7s !important;
     overflow-x:: hidden !important;
     margin: 1.2px var(--inline-tab-padding) 0 !important;
@@ -546,13 +547,19 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
      transition: var(--animation-speed) !important;
 }
 #reader-mode-button:hover {
-  background-color: initial !important;
   border-radius: var(--button-corner-rounding) !important;
 }
 #eme-notification-icon{
     
 }
-
+.identity-box-button:hover:not([open="true"]), #tracking-protection-icon-container:hover:not([open="true"]) {
+  background-color: rgb(115, 118, 124) !important;
+  color: var(--urlbar-box-hover-text-color);
+}
+.urlbar-page-action:not([disabled]):hover, #urlbar-go-button:hover, .search-go-button:hover {
+  background-color: rgb(115, 118, 124) !important;
+  color: var(--urlbar-box-hover-text-color);
+}
 .bookmark-item {
     padding-left: 7px !important;
     padding-right: 7px !important;
@@ -567,14 +574,14 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
   padding: initial !important;
 }
 #pageAction-urlbar-_testpilot-containers {
-     height: initial !important;
+  height: initial !important;
   width: initial !important;
   padding: initial !important;
 }
 #star-button-box:hover{
     transition: var(--animation-speed) !important;
     border-radius:var(--button-corner-rounding) !important; 
-    background:var(--toolbarbutton-hover-background) !important;
+    background-color:rgb(115, 118, 124) !important;
 }
 #identity-icon-box:hover{
     transition: var(--animation-speed) !important;
@@ -582,6 +589,15 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 }
 toolbarbutton#library-button.toolbarbutton-1{
     padding-left:23px !important;
+}
+#library-button[open="true"] {
+  background: var(--toolbarbutton-focus-background) !important;
+}
+#downloads-button[open="true"] {
+    background: var(--toolbarbutton-focus-background) !important;
+}
+#PanelUI-menu-button[open="true"]{
+    background: var(--toolbarbutton-focus-background) !important;
 }
 #identity-box {
 }
@@ -607,6 +623,7 @@ toolbarbutton#library-button.toolbarbutton-1{
 }
 #urlbar[breakout]{
     width:99.5% !important;
+    transition:background-color 0.25s ease !important;
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
@@ -748,9 +765,18 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 .urlbar-input-box input{
     padding-left: 5px !important;
 }
-#urlbar:not(.hidden-focus)[focused="true"] {
-    background-color: var(--toolbarbutton-hover-background) !important;
+#urlbar:not(.hidden-focus)[focused="true"]{
+    /*background: linear-gradient(transparent,transparent,transparent,transparent,transparent,transparent,transparent) !important;*/
+    animation: crunch 0.15s ease-out forwards;
 }
+@keyframes crunch{
+    0% {background: linear-gradient(to left, transparent,transparent,transparent,transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent,transparent,transparent,transparent)}
+    25% {background: linear-gradient(to left, transparent,transparent,transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent,transparent,transparent)}
+    50% {background: linear-gradient(to left, transparent,transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent,transparent)}
+    75% {background: linear-gradient(to left, transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent)}
+    100% {background: linear-gradient(to left, var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background))}
+}
+
 
 #pocket-button {
     padding-bottom: 4px !important;
@@ -873,7 +899,7 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 }
 #pageAction-urlbar-_testpilot-containers:hover{
     opacity:1;
-    background: var(--toolbarbutton-hover-background) !important;
+    background-color: rgb(115, 118, 124) !important;
 }
 #pageAction-urlbar-_testpilot-containers.urlbar-page-action[focused]{
     opacity:1 !important;
@@ -895,7 +921,7 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 }
 #urlbar-background{
     border-radius: var(--button-corner-rounding) !important;
-    display:none !important;
+    display: none !important;
 }
 .urlbarView-row-inner{
     font:white !important;
