@@ -16,11 +16,16 @@ We will keep supporting this project through the upcoming Firefox updates, howev
 
 Most of the credits go to the original ![creator](https://github.com/kamrynsite)
 
-![quietfox](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master//images/logo.png)
-![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/clean2.PNG)
+![quietfox](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/logo.png)
+![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/main.gif)
+
 
 ## The Goal ℹ️
-This userChrome mod was created by the original creator to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can pretty much forget that you have a mod installed, it works *quietly* in the background. Our additional goal is to have a smoother and sleeker experience. Here are some of the notable features:
+This userChrome mod was created by the original creator to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can pretty much forget that you have a mod installed, it works *quietly* in the background. Our additional goal is to have a smoother and sleeker experience.
+
+![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/smoothbar.gif)
+
+Here are some of the notable features:
 
 
 ## Customizable values 
@@ -38,19 +43,9 @@ Simply open userChrome.css in a text editor and change the values at the top of 
     --animation-speed: 0.4s
     /* --menu-corner-rounding: 11px; */
 ```
-![](https://coekuss.com/quietfox/quietfox70/fluid2.gif)
+![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/bar.gif)
 
 <br>
-
-```CSS
-/* -------------------- 🎨 Customization 🎨 -------------------- */
-    --tab-corner-rounding: 0px;
-    --button-corner-rounding: 0px;
-    /* --menu-item-height: 35px;     */
-    --animation-speed: 0.0s
-    /* --menu-corner-rounding: 11px; */
-```
-![](https://coekuss.com/quietfox/quietfox70/snappy2.gif)
 
 ### Menu Customizations ℹ️
 ```CSS
@@ -63,23 +58,8 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 ```
 
 <p align="center">
-    <img src="https://coekuss.com/quietfox/tall_rounded.png">
+    <img src="https://raw.githubusercontent.com/TheGITofTeo997/quietfoxReborn/master/images/context.jpg">
 </p>
-
-<br>
-
-```CSS
-/* -------------------- 🎨 Customization 🎨 -------------------- */
-    /* --tab-corner-rounding: 7px;     */
-    /* --button-corner-rounding: 20px; */
-    --menu-item-height: 25px;
-    /* --animation-speed: 0.4s;        */
-    --menu-corner-rounding: 0px;
-```
-<p align="center">
-    <img src="https://coekuss.com/quietfox/short_sharp.png">
-</p>
-
 
 ## Theme-adapted menus ℹ️
 💡 Please note that we can consider this feature *disabled* (or broken/deprecated) for now. This theme has just been tested and will *JUST* be used with the [Nord Polar Dark](https://addons.mozilla.org/it/firefox/addon/nord-polar-night-theme/) theme. Other Firefox themes *MIGHT* work, but things have been set up on to work best with it, so expect glitches and bugs if you are not going to use that theme.
@@ -87,7 +67,10 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 However, we might be able to restore that behaviour in the future.
 
 ## Address bar buttons appear when needed ℹ️
-![](https://coekuss.com/quietfox/urlbar_buttons.gif)
+![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/buttons.gif)
+
+## Smooth support for containerized tabs ℹ️
+![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/container.gif)
 
 
 
