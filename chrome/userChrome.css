@@ -17,6 +17,7 @@ Edit by: Krokko&Teo
     --animation-speed: 0.15s;
     --menu-corner-rounding: 11px;
     --toolbarbutton-hover-background: rgba(127, 127, 127, 0.5);
+    --toolbarbutton-hover-mozilla-button: rgb(115, 118, 124);
     --toolbarbutton-focus-background: rgb(115, 118, 124);
 }
 
@@ -288,15 +289,6 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
     margin-top: -1px !important;
     margin-bottom: -1px !important;
 }
-
-
-/*
-:root:not([uidensity="touch"]):not([uidensity="compact"]) #identity-box,
-:root:not([uidensity="touch"]):not([uidensity="compact"]) #tracking-protection-icon-container {
-    padding-left: 8px;
-    padding-right: 8px;
-}
-*/
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #identity-icon, 
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #tracking-protection-icon-box {
     margin-left: 2px !important;
@@ -505,7 +497,6 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
     padding-left: 3px !important;
     padding-bottom: 1px !important;
 }
-/*Selected tab bug fix*/
 .tab-background:is([selected], [multiselected]):-moz-lwtheme {
   border: hidden !important;
 }
@@ -515,7 +506,6 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
    margin-top: -3px !important;
 }
 
-/* various */
 .urlbar-input-box,
 #identity-box, 
 #tracking-protection-icon-container,
@@ -548,9 +538,6 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 }
 #reader-mode-button:hover {
   border-radius: var(--button-corner-rounding) !important;
-}
-#eme-notification-icon{
-    
 }
 .identity-box-button:hover:not([open="true"]), #tracking-protection-icon-container:hover:not([open="true"]) {
   background-color: rgb(115, 118, 124) !important;
@@ -599,13 +586,6 @@ toolbarbutton#library-button.toolbarbutton-1{
 #PanelUI-menu-button[open="true"]{
     background: var(--toolbarbutton-focus-background) !important;
 }
-#identity-box {
-}
-/* style identity box */
-/*#identity-box {
-    opacity: 0;
-    margin-right: 0px !important;
-}*/
 
 /* style address bar */
 #urlbar-background {
@@ -644,7 +624,6 @@ toolbarbutton#library-button.toolbarbutton-1{
     background: var(--toolbarbutton-hover-background) !important;
     transition: var(--animation-speed) !important;
 }
-/* urlbarView = the menu when you expand the address bar */
 .urlbarView {
     width: 100% !important;
     margin-inline: 0px !important;
@@ -677,23 +656,6 @@ toolbarbutton#library-button.toolbarbutton-1{
 hbox.urlbar-page-action{
     padding:0px !important;
 }
-/*Action bar buttons
-hbox.urlbar-page-action#star-button-box[focused]{
-    opacity:1;
-}
-hbox.urlbar-page-action#pageAction-urlbar-_testpilot-containers[focused]{
-    opacity:1;
-}
-hbox.urlbar-page-action#reader-mode-button[focused]{
-    opacity:1;
-}
-hbox.urlbar-page-action#cfr-button[focused]{
-    opacity:1;
-}
-hbox.urlbar-page-action#pageActionButton[focused]{
-    opacity:1;
-}
-*/
 
 #tracking-protection-icon-container {
     border-inline-end: none !important;
@@ -716,16 +678,6 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 #urlbar[focused] .urlbar-icon {
     fill: var(--toolbar-color) !important;
 }
-/*
-#urlbar:hover #userContext-indicator,
-#urlbar:active #userContext-indicator, 
-#urlbar[focused] #userContext-indicator,
-#urlbar:hover #userContext-label,
-#urlbar:active #userContext-label, 
-#urlbar[focused] #userContext-label {
-    color: var(--identity-tab-color) !important;
-    fill: var(--identity-tab-color) !important;
-}*/
 
 .urlbar-page-action[open] {
     background-color: var(--toolbarbutton-active-background) !important;
@@ -766,7 +718,6 @@ hbox.urlbar-page-action#pageActionButton[focused]{
     padding-left: 5px !important;
 }
 #urlbar:not(.hidden-focus)[focused="true"]{
-    /*background: linear-gradient(transparent,transparent,transparent,transparent,transparent,transparent,transparent) !important;*/
     animation: crunch 0.15s ease-out forwards;
 }
 @keyframes crunch{
@@ -789,16 +740,6 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 .urlbar-icon-wrapper {
     background-color: transparent !important;
     transition: background-color var(--animation-speed) !important;
-}
-
-
-#urlbar:not([focused]) .urlbar-input-box:hover,
-#identity-box:hover, 
-#tracking-protection-icon-container:hover,
-.urlbar-icon:hover,
-.urlbar-icon-wrapper:hover,
-[anonid=urlbar-go-button]:hover {
-    
 }
 #notification-popup-box {
   position: relative !important;
@@ -823,10 +764,10 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 
 #notification-popup-box:hover{
     border-radius:var(--button-corner-rounding) !important;
-    background-color: hsla(0,0%,70%,0.35) !important;
+    background-color: rgb(115, 118, 124) !important;
 }
 .identity-box-button:hover:active, .identity-box-button[open="true"], #tracking-protection-icon-container:hover:active, #tracking-protection-icon-container[open="true"] {
-    background-color: hsla(0,0%,70%,.3);
+    background-color: var(--toolbarbutton-hover-mozilla-button);
     border-radius: var(--button-corner-rounding) !important;
 }
 
@@ -853,16 +794,7 @@ hbox.urlbar-page-action#pageActionButton[focused]{
 #tracking-protection-icon,
 #identity-box image {
     transition: fill-opacity var(--animation-speed) !important;
-}/*
-#tracking-protection-icon-container{   
-    opacity: 0;
-    margin-right:0px !important;
 }
-#tracking-protection-icon-container:hover{
-    opacity: 1;
-    transition: var(--animation-speed) !important;
-}
-*/
 [lwthemetextcolor="dark"] .urlbarView-body-outer {
     background-color: #f5f6f7 !important;
     color: var(--toolbar-color) !important;
@@ -988,7 +920,6 @@ menupopup menuseparator:hover{
     border-radius:var(--menu-corner-rounding);
     transition: var(--animation-speed) !important;
 }
-/*There's a bug here, so i had to set the border-radius to 19px in order to prevent it*/
 menupopup,
 menuitem
 menucaption{
@@ -1043,7 +974,6 @@ menupopup menuseparator
 .menupopup-arrowscrollbox:not(.in-bookmarks-menu) {
 	padding: 6px 0 !important;
 }
-/*History panel changes*/
 #history-panel menupopup{
   color: black !important;
 }
@@ -1053,17 +983,12 @@ menupopup menuseparator
 #history-panel #sidebar-search-container {
   height: 45px !important;
 }
-/*Bookmark panel changes*/
 #bookmarksPanel menupopup menuitem{
     color: white !important;
 }
 #bookmarksPanel search-textbox{
     height: 30px !important;
 }
-/*Miscellaneous menus*/
-
-
-/*bookmarks menu changes*/
 #bookmarksMenu menupopup{
     color:black !important;
 }
@@ -1075,7 +1000,6 @@ menupopup menuseparator
     padding-top: 0px !important;
     border: none !important;
 }
-/* shadows and rounded corners for menus */
 .menupopup-arrowscrollbox:not(.in-bookmarks-menu) {
     border-radius:var(--menu-corner-rounding) !important;
     box-shadow: 0px 2px -3px -4px black !important;
@@ -1139,7 +1063,6 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
 #customization-lwtheme-menu-header {
     margin-top: 0px !important;
 }
-/*Alertbox customization code*/
 @-moz-document url("chrome://global/content/alerts/alert.xhtml") {
   #alertBox{
     border-radius: var(--menu-corner-rounding) !important;
@@ -1174,8 +1097,6 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
 #ContentSelectDropdown > menupopup > :not([_moz-menuactive="true"]) {
     background:transparent !important;
 }
-
-/* windows-specific adjustments */
 @media (-moz-os-version: windows-win7), (-moz-os-version: windows-win8), (-moz-os-version: windows-win10) {
     .bookmark-item .scrollbutton-up {
         margin-top: -3px !important;
@@ -1222,8 +1143,6 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
         transform: translateY(-1px) !important;
     }
 }
-
-/* linux and mac-specific adjustments */
 @media not (-moz-os-version: windows-win10)  {
     @media not (-moz-os-version: windows-win8) {
        @media not (-moz-os-version: windows-win7)  {
@@ -1242,8 +1161,6 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
     }
 }
 
-
-/* make menus adapt to theme */
 menu,
 menuitem,
 menucaption {
@@ -1261,7 +1178,7 @@ menucaption[_moz-menuactive="true"]:not([disabled="true"]) {
 }
 @media (-moz-windows-non-native-menus) {
   menupopup {
-    --panel-color: black !important;
+    --panel-color: white !important;
     --panel-border-radius: 4px;
     --panel-padding: 4px 0;
     --panel-border-color: var(--menu-border-color);
@@ -1275,50 +1192,13 @@ menuitem[disabled="true"],
 menucaption[disabled="true"] {
     color: var(--toolbarbutton-hover-background, rgba(127,127,127,0.5)) !important;
 }
-
-menu[disabled="true"][_moz-menuactive="true"], 
-menuitem[disabled="true"][_moz-menuactive="true"], 
-menucaption[disabled="true"][_moz-menuactive="true"] {
-    /*background-color: transparent !important; 
+#placesToolbar #back-button image{
+    width:16px !important;
+    height: 16px !important;
 }
-
-.panel-arrow {
-    fill: var(--toolbar-bgcolor) !important;
+#placesToolbar #back-button:hover{
+    background-color: var(--toolbarbutton-hover-background) !important;
 }
-
-[lwthemetextcolor="dark"] panelview:not([extension]),
-[lwthemetextcolor="dark"] .panel-arrowcontent {
-    background-color: #f5f6f7 !important;   
-}
-
-.panel-subview-body  {
-    background-color: var(--toolbar-bgcolor) !important;
-}
-
-#downloadsPanel-mainView {
-    background-color: var(--toolbar-bgcolor) !important;
-}
-
-#identity-popup-mainView {
-    background-color: var(--toolbar-bgcolor) !important;
-}
-
-#identity-popup-content-blocking-detected {
-    color: var(--toolbar-active-background) !important;
-}
-
-#identity-popup-permission-empty-hint {
-    color: var(--toolbar-active-background) !important;
-}
-
-.identity-popup-warning-yellow {
-    color: black !important;
-}
-
-panel:not([viewId^="PanelUI-webext"]) .panel-arrow {
-    fill: var(--toolbar-bgcolor) !important;
-}
-
-.bookmark-item [class^="scrollbutton"] {
-    background-color: var(--toolbar-bgcolor) !important;
+#placesToolbar #back-button image{
+    background-color:initial !important;
 }
