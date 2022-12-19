@@ -16,7 +16,7 @@ We will keep supporting this project through the upcoming Firefox updates, howev
 
 Most of the credits go to the original ![creator](https://github.com/kamrynsite)
 
-![quietfox](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/logo.png)
+![quietfox](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master//images/logo.png)
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/clean2.PNG)
 
 ## The Goal ℹ️
