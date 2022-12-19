@@ -10,9 +10,9 @@
 
 
 ## Some Notes ℹ️
-We are a group of two people that loved Quietfox. Unluckily Firefox updates have broken it over time, so our goal is to fix it and restore the old look as much as possible, that's why we have this fork. 
+We are a group of two people that loved Quietfox. Unluckily Firefox updates have broken it over time, so our goal is to fix it and improve the look as much as possible, that's why we have this fork. 
 
-We will keep supporting this project through the upcoming Firefox updates, however we can still consider this in beta so expect glitches.
+We will keep supporting this project through the upcoming Firefox updates, however we can still consider this in beta so it's far from being perfect.
 
 Most of the credits go to the original ![creator](https://github.com/kamrynsite)
 
@@ -20,7 +20,7 @@ Most of the credits go to the original ![creator](https://github.com/kamrynsite)
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/clean2.PNG)
 
 ## The Goal ℹ️
-This userChrome mod was created by the original creator to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can pretty much forget that you have a mod installed, it works *quietly* in the background. Here are some of the notable features:
+This userChrome mod was created by the original creator to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can pretty much forget that you have a mod installed, it works *quietly* in the background. Our additional goal is to have a smoother and sleeker experience. Here are some of the notable features:
 
 
 ## Customizable values 
