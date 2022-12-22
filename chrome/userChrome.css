@@ -38,18 +38,6 @@ tab[visuallyselected] .tab-background::after {
     background-color: transparent !important;
     transition: var(--animation-speed) !important;
 }
-tab[visuallyselected] .tab-background::before,
-tab[visuallyselected] .tab-background::after {
-    content: "" !important;
-    display: inline !important;
-    position: absolute !important;
-    width: var(--tab-corner-rounding) !important;
-    height: var(--tab-corner-rounding) !important;
-    bottom: -1px !important;
-    pointer-events: none !important;
-    background-color: transparent !important;
-    transition: var(--animation-speed) !important;
-}
 /*Useless blue border on tabs fix (DO NOT TOUCH UNLESS YOU DON'T WANT THOSE LITTLE PEKSY TABS COLORED OF BLUE ON BORDERS)*/
 #TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon:-moz-lwtheme, .tab-background[selected]:-moz-lwtheme {
     outline:none !important;
@@ -1196,9 +1184,13 @@ menucaption[disabled="true"] {
     width:16px !important;
     height: 16px !important;
 }
-#placesToolbar #back-button:hover{
+#placesToolbar #back-button:not([disabled]):hover{
     background-color: var(--toolbarbutton-hover-background) !important;
 }
 #placesToolbar #back-button image{
     background-color:initial !important;
 }
+#forward-button:not([disabled]):hover,#forward-button image{
+  transform: scale(1.05) !important;
+}
+
