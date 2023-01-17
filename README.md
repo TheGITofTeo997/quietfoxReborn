@@ -72,7 +72,8 @@ However, we might be able to restore that behaviour in the future.
 ## Smooth support for containerized tabs ℹ️
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/container.gif)
 
-
+## Support for latest internal menus ℹ️
+![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/ext.jpg)
 
 ## How to install ℹ️
 1. Download and unzip (from Repo or from [Releases](https://github.com/TheGITofTeo997/quietfoxReborn/releases))
