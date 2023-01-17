@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v108
+Quietfox Reborn v109
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -715,6 +715,17 @@ hbox.urlbar-page-action{
     75% {background: linear-gradient(to left, transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent)}
     100% {background: linear-gradient(to left, var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background))}
 }
+@keyframes crunchOnFade{
+    0% {background: linear-gradient(to left, var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background))}
+    12% {background: linear-gradient(to left, transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent)}
+    25% {background: linear-gradient(to left, transparent,transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent,transparent)}
+    38% {background: linear-gradient(to left, transparent,transparent,transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent,transparent,transparent)}
+    50% {background: linear-gradient(to left, transparent,transparent,transparent,transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent,transparent,transparent,transparent)}
+    66% {background: linear-gradient(to left, transparent,transparent,transparent,transparent,transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent,transparent,transparent,transparent,transparent)}
+    75% {background: linear-gradient(to left, transparent,transparent,transparent,transparent,transparent,transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent,transparent,transparent,transparent,transparent,transparent)}
+    83% {background: linear-gradient(to left, transparent,transparent,transparent,transparent,transparent,transparent,transparent,var(--toolbarbutton-hover-background),transparent,transparent,transparent,transparent,transparent,transparent,transparent)}
+    100% {background: linear-gradient(to left, transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent)}
+}
 
 
 #pocket-button {
@@ -778,6 +789,7 @@ hbox.urlbar-page-action{
 [anonid=urlbar-go-button],
 #urlbar {
     transition: background-color var(--animation-speed) !important;
+    animation: crunchOnFade 0.15s ease-out forwards;
 }
 #tracking-protection-icon,
 #identity-box image {
@@ -1193,4 +1205,22 @@ menucaption[disabled="true"] {
 #forward-button:not([disabled]):hover,#forward-button image{
   transform: scale(1.05) !important;
 }
-
+/*New Extension panel*/
+cui-widget-panel, #widget-overflow, #unified-extensions-panel {
+  height: 400px !important;
+}
+#unified-extensions-panel toolbaritem.unified-extensions-item {
+  max-width: max-content;
+  height: 60px;
+}
+:root[lwt-popup-brighttext] toolbaritem[cui-areatype="panel"] > .webextension-browser-action {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+panelview#unified-extension-view.cui-widget-panelview{
+    height: 486px !important;
+}
+.subviewbutton[disabled="true"] {
+  padding-top: 22px !important;
+  padding-bottom: 23px !important;
+}
