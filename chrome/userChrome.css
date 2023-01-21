@@ -523,6 +523,8 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 #identity-permission-box{
      border-radius:var(--button-corner-rounding) !important;
      transition: var(--animation-speed) !important;
+     position:  relative !important;
+     left: 0px !important;
 }
 #reader-mode-button:hover {
   border-radius: var(--button-corner-rounding) !important;
@@ -562,16 +564,34 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     transition: var(--animation-speed) !important;
     border-radius:var(--button-corner-rounding) !important;
 }
+#identity-icon-box[open] {
+  background-color: hsla(0,0%,70%,.3) !important;
+}
+#identity-icon-box[open]:hover{
+    background-color:rgb(115, 118, 124) !important;
+}
 toolbarbutton#library-button.toolbarbutton-1{
     padding-left:23px !important;
 }
+#downloads-button[open="true"]:hover{
+    background: var(--toolbarbutton-focus-background) !important;
+}
 #library-button[open="true"] {
+ background-color: hsla(0,0%,70%,.3) !important;
+}
+#library-button[open="true"]:hover {
   background: var(--toolbarbutton-focus-background) !important;
 }
 #downloads-button[open="true"] {
-    background: var(--toolbarbutton-focus-background) !important;
+    background-color: hsla(0,0%,70%,.3) !important;
+}
+#downloadsHistory {
+  border-radius: var(--button-corner-rounding) !important;
 }
 #PanelUI-menu-button[open="true"]{
+    background-color: hsla(0,0%,70%,.3) !important;
+}
+#PanelUI-menu-button[open="true"]:hover{
     background: var(--toolbarbutton-focus-background) !important;
 }
 
@@ -751,14 +771,21 @@ hbox.urlbar-page-action{
 }
 
 #identity-permission-box {
- position:  relative !important;
- left: 0px !important;
+ 
 }
 
 #identity-permission-box[open="true"], #identity-permission-box[hasPermissions], #identity-permission-box[hasSharingIcon] {
   display: -webkit-inline-box;
   margin-right: 1px !important;
   margin-left: 1px !important;
+}
+#tracking-protection-icon-container[open="true"]{
+    background:hsla(0,0%,70%,.3) !important;
+    border-radius:var(--button-corner-rounding) !important;
+}
+#tracking-protection-icon-container[open="true"]:hover{
+    background: rgb(115, 118, 124) !important;
+    border-radius:var(--button-corner-rounding) !important;
 }
 
 #notification-popup-box:hover{
@@ -1206,9 +1233,6 @@ menucaption[disabled="true"] {
   transform: scale(1.05) !important;
 }
 /*New Extension panel*/
-cui-widget-panel, #widget-overflow, #unified-extensions-panel {
-  height: 400px !important;
-}
 #unified-extensions-panel toolbaritem.unified-extensions-item {
   max-width: max-content;
   height: 60px;
@@ -1223,4 +1247,7 @@ panelview#unified-extension-view.cui-widget-panelview{
 .subviewbutton[disabled="true"] {
   padding-top: 22px !important;
   padding-bottom: 23px !important;
+}
+#unified-extensions-button[open=true] {
+  background: var(--toolbarbutton-focus-background) !important;
 }
