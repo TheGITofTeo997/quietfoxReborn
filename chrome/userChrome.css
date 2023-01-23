@@ -570,6 +570,19 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 #identity-icon-box[open]:hover{
     background-color:rgb(115, 118, 124) !important;
 }
+#identity-permission-box[open]{
+    background-color: hsla(0,0%,70%,.3) !important;
+}
+#identity-permission-box[open]:hover{
+     background-color:rgb(115, 118, 124) !important;
+}
+#unified-extensions-button[open]{
+  background-color: hsla(0,0%,70%,.3) !important;
+}
+#unified-extensions-button[open]:hover{
+  background-color:rgb(115, 118, 124) !important;
+}
+
 toolbarbutton#library-button.toolbarbutton-1{
     padding-left:23px !important;
 }
@@ -1248,6 +1261,61 @@ panelview#unified-extension-view.cui-widget-panelview{
   padding-top: 22px !important;
   padding-bottom: 23px !important;
 }
-#unified-extensions-button[open=true] {
-  background: var(--toolbarbutton-focus-background) !important;
+/*  Extension menu option button mod */
+#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton{
+    visibility: hidden !important;
+    transition: 300ms !important;
+    -moz-margin-end: -3.6em !important;
+}
+
+#unified-extensions-view:hover 
+.unified-extensions-item-menu-button.subviewbutton{ 
+    visibility: visible !important;
+    transition: 300ms !important;
+    -moz-margin-end: initial !important;
+}
+
+#unified-extensions-view .unified-extensions-item-name, 
+#unified-extensions-view .unified-extensions-item-message {
+    padding-inline-start: 0.5em !important;
+    width: 21em !important;
+}
+/* New Icons to main menu */
+#appMenu-fxa-status2[fxastatus] > toolbarbutton::before,
+#appMenu-protonMainView > .panel-subview-body > toolbarbutton > image{
+  fill: currentColor;
+  -moz-context-properties: fill;
+  margin-inline: 0 8px !important;
+}
+#appMenu-new-tab-button2{ list-style-image: url("chrome://browser/skin/new-tab.svg") }
+#appMenu-new-window-button2{ list-style-image: url("chrome://browser/skin/window.svg") }
+#appMenu-new-private-window-button2{ list-style-image: url("chrome://browser/skin/privateBrowsing.svg") }
+#appMenu-bookmarks-button{ list-style-image: url("chrome://browser/skin/bookmark-star-on-tray.svg") }
+#appMenu-history-button{ list-style-image: url("chrome://browser/skin/history.svg") }
+#appMenu-downloads-button{ list-style-image: url("chrome://browser/skin/downloads/downloads.svg") }
+#appMenu-passwords-button{ list-style-image: url("chrome://browser/skin/login.svg") }
+#appMenu-extensions-themes-button{ list-style-image: url("chrome://mozapps/skin/extensions/extension.svg") }
+#appMenu-print-button2{ list-style-image: url("chrome://global/skin/icons/print.svg") }
+#appMenu-save-file-button2{ list-style-image: url("chrome://browser/skin/save.svg") }
+#appMenu-find-button2{ list-style-image: url("chrome://global/skin/icons/search-glass.svg") }
+#appMenu-settings-button{ list-style-image: url("chrome://global/skin/icons/settings.svg") }
+#appMenu-more-button2{ list-style-image: url("chrome://global/skin/icons/developer.svg") }
+#appMenu-help-button2{ list-style-image: url("chrome://global/skin/icons/info.svg") }
+#appMenu-quit-button2{ list-style-image: url("chrome://devtools/skin/images/search-clear.svg") }
+#appMenu-fxa-status2[fxastatus] > toolbarbutton::before{
+  display: -moz-box;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: var(--avatar-image-url)
+}
+#appMenu-protonMainView > .panel-subview-body::after{
+  content: "";
+  display: -moz-box;
+  border-bottom: 1px solid var(--panel-separator-color);
+  margin: var(--panel-separator-margin);
+}
+
+#appMenu-find-button2 ~ *{
+  -moz-box-ordinal-group: 2;
 }
