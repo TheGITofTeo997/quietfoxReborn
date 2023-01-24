@@ -1319,3 +1319,7 @@ panelview#unified-extension-view.cui-widget-panelview{
 #appMenu-find-button2 ~ *{
   -moz-box-ordinal-group: 2;
 }
+
+.protections-popup-tp-switch{
+    max-height: 14px !important;
+}
