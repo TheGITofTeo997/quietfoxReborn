@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v109
+Quietfox Reborn v111
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -19,6 +19,7 @@ Edit by: Krokko&Teo
     --toolbarbutton-hover-background: rgba(127, 127, 127, 0.5);
     --toolbarbutton-hover-mozilla-button: rgb(115, 118, 124);
     --toolbarbutton-focus-background: rgb(115, 118, 124);
+    --url-color-urlbarView: rgb(184, 200, 255);
 }
 
 
@@ -185,6 +186,10 @@ tab[visuallyselected] .tab-context-line{
 /* -------------------- Style toolbar -------------------- */
 .toolbarbutton-icon, .toolbarbutton-badge-stack {
     background-color: transparent !important;
+}
+
+#tabbrowser-arrowscrollbox-periphery {
+  margin-left: 6px;
 }
 
 toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] {
@@ -653,6 +658,11 @@ toolbarbutton#library-button.toolbarbutton-1{
     border: none !important;
     padding-top: 0px !important;
 }
+span.urlbarView-url {
+  color: var(--url-color-urlbarView) !important;
+  line-height: 1.4;
+  margin-left: 0.5%;
+}
 .urlbarView-body-inner {
     border:none !important;    
     padding-left:15px;
@@ -660,6 +670,24 @@ toolbarbutton#library-button.toolbarbutton-1{
 }
 .urlbarView-body-inner .urlbarView-row{
     padding-right:30px;
+}
+
+#tracking-protection-icon-container[open="true"]{
+    background:rgb(118, 123, 134) !important;
+}
+.urlbarView-row {
+  background-color: transparent !important;
+  color: white !important;
+}
+.urlbarView-row-inner {
+  border-radius: var(--menu-corner-rounding) !important;
+  transition:var(--animation-speed) !important;
+}
+.urlbarView-row-inner[aria-selected] {
+  background: var(--toolbarbutton-focus-background) !important;
+}
+#urlbar .searchbar-engine-one-off-item[selected="true"]{
+    background: var(--toolbarbutton-focus-background) !important;
 }
 
 .search-one-offs {
