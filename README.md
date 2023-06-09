@@ -83,7 +83,7 @@ However, we might be able to restore that behaviour in the future.
 5. Restart Firefox
 
 
-✔️ Tested and working currently on `Firefox 111`, Nord Polar Dark Theme on Windows 10/11 
+✔️ Tested and working currently on `Firefox 114`, Nord Polar Dark Theme on Windows 10/11 
 
 
 ### Older version ℹ️
