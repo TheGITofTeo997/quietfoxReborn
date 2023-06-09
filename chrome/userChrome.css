@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v113
+Quietfox Reborn v114
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -22,6 +22,48 @@ Edit by: Krokko&Teo
     --url-color-urlbarView: rgb(184, 200, 255);
 }
 
+/*Context line colors, you can edit this part if you want to change your container line colors*/
+.identity-color-blue {
+  --identity-tab-color: #37adff !important; 
+  --identity-icon-color: linear-gradient(to right,#375cff,#37adff) !important;
+}
+
+.identity-color-turquoise {
+  --identity-tab-color: #00c79a !important;
+  --identity-icon-color: linear-gradient(to left,#00c79a,#00795e) !important;
+}
+
+.identity-color-green {
+  --identity-tab-color: #51cd00 !important;
+  --identity-icon-color: linear-gradient(to left,#51cd00,#2c7300) !important; 
+}
+
+.identity-color-yellow {
+  --identity-tab-color: #ffcb00 !important;
+  --identity-icon-color: linear-gradient(to left,#ffcb00,#7e6500) !important;
+}
+
+.identity-color-orange {
+  --identity-tab-color: #ff9f00 !important;
+  --identity-icon-color: linear-gradient(to right, #ff4800, #ffa000) !important;
+}
+
+.identity-color-red {
+  --identity-tab-color: #ff613d !important;
+  --identity-icon-color: linear-gradient(to left,#ff613d,#7e2f1d) !important;
+}
+
+.identity-color-pink {
+  --identity-tab-color: #ff4bda !important;
+  --identity-icon-color: linear-gradient(to left,#ff4bda,#651d47) !important;
+}
+
+.identity-color-purple {
+  --identity-tab-color: #af51f5 !important;
+  --identity-icon-color: linear-gradient(to left,#af51f5,#512274) !important; 
+}
+
+/* -------------------- 🎨END Customization 🎨 -------------------- */
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
@@ -50,6 +92,7 @@ tab[visuallyselected] .tab-background::before {
     transform: translateX(calc(-1 * var(--tab-corner-rounding))) !important;
     box-shadow: 4px 4px 0px 4px var(--toolbar-bgcolor) !important;
     transition: var(--animation-speed) !important;
+    border: var(--tab-corner-rounding) !important;
 }
 
 tab[visuallyselected] .tab-background::after {
@@ -962,6 +1005,12 @@ hbox.urlbar-page-action{
 #userContext-indicator[data-identity-icon="circle"] {
   display:none!important;
 }
+/*Linear gradient trick for newbies like me*/
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+  background: var(--identity-icon-color) !important;
+  height: 3.5px !important;
+  border-radius: 2px !important;
+}
 
 /* -------------------- Style context menus -------------------- */
 #context-navigation,
@@ -1060,7 +1109,12 @@ menupopup menuseparator
 #bookmarksMenu menupopup{
     color:black !important;
 }
-
+.menuitem-iconic[data-usercontextid]{
+    fill:var(--identity-tab-color) !important;
+}
+box.panel-viewstack{
+    max-height: 625px !important;
+}
 
 
 
@@ -1122,6 +1176,17 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
 
 #BMB_bookmarksPopup .menu-right {
     height: 23px !important;
+}
+image#picture-in-picture-button-icon{
+    margin-top: -2px !important;
+    margin-left: 1px !important;
+}
+hbox#picture-in-picture-button.urlbar-page-action:hover{
+    width: 35px !important;
+    height: 35px !important;
+}
+hbox.menu-right > image{
+    margin-left: -9px !important;
 }
 
 #sidebar-switcher-bookmarks, #customization-uidensity-menuitem-compact {
