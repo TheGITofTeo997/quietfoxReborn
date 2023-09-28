@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v114
+Quietfox Reborn v118
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -15,7 +15,10 @@ Edit by: Krokko&Teo
     --button-corner-rounding: 7px;
     --menu-item-height: 35px;
     --animation-speed: 0.15s;
-    --menu-corner-rounding: 11px;
+    --hovering-speed:300ms;
+    --menu-corner-rounding: 7px;
+    --icon-border-rounding: 10px;
+    --button-hovered-corner-rounding:11px;
     --toolbarbutton-hover-background: rgba(127, 127, 127, 0.5);
     --toolbarbutton-hover-mozilla-button: rgb(115, 118, 124);
     --toolbarbutton-focus-background: rgb(115, 118, 124);
@@ -117,17 +120,21 @@ panelview:not([extension]),
 /*-------------------------------------------------------------------*/
 
 
-
-
+/*--------------------- Some special icon roundings -------------------- */
+.bookmark-item .toolbarbutton-icon {
+  border-radius:var(--icon-border-rounding) !important;
+}
+/*---------------------------------------------------------------------- */
 
 /* -------------------- Transitions for some things -------------------- */
 toolbarbutton,
 .subviewbutton,
 stack, 
-.toolbarbutton-icon,
 vbox
 {
-    transition: background-color var(--animation-speed) !important;
+    transition: background-color var(--hovering-speed) !important;
+    border-radius: var(--button-corner-rounding) !important;
+    margin-inline-end:     initial !important;
 } 
 
 
@@ -249,9 +256,10 @@ toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] 
 
 toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 .toolbarbutton-1:not(#back-button):not([disabled]):not([open]):hover {
+    border-radius: var(--button-corner-rounding)!important;
     background-color: var(--toolbarbutton-hover-background) !important;
+    transition: all 300ms !important;
 }
-
 .tab-close-button {
     transition: fill-opacity var(--animation-speed) !important;
 }
@@ -264,7 +272,7 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 }
 .titlebar-button{
     border-radius: var(--button-corner-rounding) !important;
-    transition: all 500ms !important;
+    transition: all var(--hovering-speed) !important;
 }
 
 
@@ -283,7 +291,6 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
     box-shadow: none !important;
     height: 36px !important;
 }
-
 
 :root:not([uidensity="compact"]) #back-button:not([disabled]):not([open]):active > .toolbarbutton-icon {
     background-color: var(--toolbarbutton-active-background) !important;
@@ -304,8 +311,11 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 :root:not([uidensity="compact"]) #PersonalToolbar { /* bookmark bar */
     height: 30px !important; 
 }
-
-
+.unified-extensions-list .toolbaritem-combined-buttons.unified-extensions-item {
+  margin: 3px !important;
+  height: 55px !important;
+  width: 342px !important;
+}
 /* normal density buttons */
 
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #nav-bar .toolbarbutton-1:not(#back-button)  {
@@ -553,7 +563,7 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="scrollbutton"]),
 .close-icon
 {
-    border-radius: var(--button-corner-rounding)!important;
+    border-radius: 5px !important; /*var(--button-corner-rounding)!important;*/
 }
 
 .findbar-find-next {
@@ -566,7 +576,7 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 
 #identity-box #identity-permission-box:hover{
     border-radius:var(--button-corner-rounding) !important;
-    animation-delay:var(--animation-speed) !important;
+    transition: all var(--hovering-speed) !important;
 }
 #identity-permission-box{
      border-radius:var(--button-corner-rounding) !important;
@@ -581,9 +591,17 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
   background-color: rgb(115, 118, 124) !important;
   color: var(--urlbar-box-hover-text-color);
 }
+#tracking-protection-icon-container:hover{
+     border-radius:var(--button-corner-rounding) !important;
+     transition:all 300ms !important;
+}
+
 .urlbar-page-action:not([disabled]):hover, #urlbar-go-button:hover, .search-go-button:hover {
   background-color: rgb(115, 118, 124) !important;
   color: var(--urlbar-box-hover-text-color);
+}
+#urlbar-go-button {
+  border-radius: var(--button-corner-rounding) !important;
 }
 .bookmark-item {
     padding-left: 7px !important;
@@ -602,14 +620,15 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
   height: initial !important;
   width: initial !important;
   padding: initial !important;
+  border-radius: 5px !important;
 }
 #star-button-box:hover{
-    transition: var(--animation-speed) !important;
+    transition:  all 500ms !important;
     border-radius:var(--button-corner-rounding) !important; 
     background-color:rgb(115, 118, 124) !important;
 }
 #identity-icon-box:hover{
-    transition: var(--animation-speed) !important;
+    transition:   all 500ms !important;
     border-radius:var(--button-corner-rounding) !important;
 }
 #identity-icon-box[open] {
@@ -850,18 +869,19 @@ hbox.urlbar-page-action{
   padding-right:2px !important;
   height: initial !important;
   left: 0px !important;
-  transition: all 500ms !important;
+  transition: all var(--hovering-speed) !important;
   border-radius:var(--button-corner-rounding) !important;
 }
 
-#identity-permission-box {
- 
+#identity-icon-box {
+  border-radius: 5px !important;
 }
 
 #identity-permission-box[open="true"], #identity-permission-box[hasPermissions], #identity-permission-box[hasSharingIcon] {
   display: -webkit-inline-box;
   margin-right: 1px !important;
   margin-left: 1px !important;
+  border-radius: 5px !important;
 }
 #tracking-protection-icon-container[open="true"]{
     background:hsla(0,0%,70%,.3) !important;
@@ -884,7 +904,6 @@ hbox.urlbar-page-action{
 #identity-box[pageproxystate="valid"].notSecureText > .identity-box-button, #identity-box[pageproxystate="valid"].chromeUI > .identity-box-button, #identity-box[pageproxystate="valid"].extensionPage > .identity-box-button, #urlbar-label-box {
     border-radius:var(--button-corner-rounding) !important;
 }
-
 
 #identity-box:active,
 #tracking-protection-icon-container:active,
@@ -935,6 +954,7 @@ hbox.urlbar-page-action{
 #urlbar:hover #pageAction-urlbar-_testpilot-containers{
     opacity:1;
     -moz-transition: var(--animation-speed) !important;
+    transition: all var(--hovering-speed) !important;
 }
 #pageAction-urlbar-_testpilot-containers{
     opacity:0;
@@ -943,6 +963,7 @@ hbox.urlbar-page-action{
 #pageAction-urlbar-_testpilot-containers:hover{
     opacity:1;
     background-color: rgb(115, 118, 124) !important;
+    border-radius: var(--button-corner-rounding) !important;
 }
 #pageAction-urlbar-_testpilot-containers.urlbar-page-action[focused]{
     opacity:1 !important;
@@ -961,6 +982,7 @@ hbox.urlbar-page-action{
 }
 #urlbar-input-container{
     color:white !important;   
+    padding: 0px !important;
 }
 #urlbar-background{
     border-radius: var(--button-corner-rounding) !important;
@@ -1113,7 +1135,7 @@ menupopup menuseparator
     fill:var(--identity-tab-color) !important;
 }
 box.panel-viewstack{
-    max-height: 625px !important;
+    max-height: 100vh !important;
 }
 
 
@@ -1181,9 +1203,25 @@ image#picture-in-picture-button-icon{
     margin-top: -2px !important;
     margin-left: 1px !important;
 }
+hbox#picture-in-picture-button.urlbar-page-action{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 5px !important;
+}
 hbox#picture-in-picture-button.urlbar-page-action:hover{
     width: 35px !important;
     height: 35px !important;
+    border-radius: var(--button-corner-rounding) !important;
+    transition: all var(--hovering-speed) !important;
+}
+hbox#translations-button.urlbar-page-action{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 5px !important;
+}
+hbox#translations-button.urlbar-page-action:hover{
+    transition: all var(--hovering-speed) !important;
+    border-radius: var(--button-corner-rounding) !important;
 }
 hbox.menu-right > image{
     margin-left: -9px !important;
@@ -1340,8 +1378,9 @@ menucaption[disabled="true"] {
 }
 /*New Extension panel*/
 #unified-extensions-panel toolbaritem.unified-extensions-item {
-  max-width: max-content;
+  width:337px !important;
   height: 60px;
+  margin-block: initial !important;
 }
 :root[lwt-popup-brighttext] toolbaritem[cui-areatype="panel"] > .webextension-browser-action {
   padding-top: 25px !important;
@@ -1357,7 +1396,7 @@ panelview#unified-extension-view.cui-widget-panelview{
 /*  Extension menu option button mod */
 #unified-extensions-view .unified-extensions-item-menu-button.subviewbutton{
     visibility: hidden !important;
-    transition: 300ms !important;
+    transition: all 300ms !important;
     -moz-margin-end: -3.6em !important;
 }
 
@@ -1366,6 +1405,7 @@ panelview#unified-extension-view.cui-widget-panelview{
     visibility: visible !important;
     transition: 300ms !important;
     -moz-margin-end: initial !important;
+    padding:    initial !important;
 }
 
 #unified-extensions-view .unified-extensions-item-name, 
