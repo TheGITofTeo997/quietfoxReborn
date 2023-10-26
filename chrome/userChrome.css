@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v118
+Quietfox Reborn v119
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -23,6 +23,7 @@ Edit by: Krokko&Teo
     --toolbarbutton-hover-mozilla-button: rgb(115, 118, 124);
     --toolbarbutton-focus-background: rgb(115, 118, 124);
     --url-color-urlbarView: rgb(184, 200, 255);
+    --toolbarbutton-dragover:rgb(93, 97, 105);
 }
 
 /*Context line colors, you can edit this part if you want to change your container line colors*/
@@ -254,8 +255,8 @@ toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] 
     fill-opacity: 0.0 !important;
 }
 
-toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
-.toolbarbutton-1:not(#back-button):not([disabled]):not([open]):hover {
+toolbarbutton:not(#back-button):not(#forward-button):not([disabled]):not([open]):hover,
+.toolbarbutton-1:not(#back-button):not(#forward-button):not([disabled]):not([open]):hover {
     border-radius: var(--button-corner-rounding)!important;
     background-color: var(--toolbarbutton-hover-background) !important;
     transition: all 300ms !important;
@@ -274,9 +275,20 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
     border-radius: var(--button-corner-rounding) !important;
     transition: all var(--hovering-speed) !important;
 }
-
-
-/* touch and normal density buttons */
+toolbarbutton.bookmark-item[dragover="true"][open="true"]{
+    background:var(--toolbarbutton-dragover) !important;
+    color:white !important;
+}
+toolbarbutton.bookmark-item{
+    fill:white !important;
+}
+.menu-iconic-icon{
+    border-radius: 11px !important;
+}
+.toolbar-menupopup :is(menu, menuitem), .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1{
+ margin-left:10px !important;
+ margin-right: 10px !important;
+}/* touch and normal density buttons */
 
 :root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
     background-color: transparent !important;
@@ -291,6 +303,13 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
     box-shadow: none !important;
     height: 36px !important;
 }
+:root:not([uidensity="compact"]) #forward-button:not([disabled]):not([open]):hover > .toolbarbutton-icon{
+    background-color: var(--toolbarbutton-hover-background) !important;
+    box-shadow: none !important;
+    height: 32px !important;
+    transform: scale(1.1) !important;
+    border-radius: 6px !important;
+}
 
 :root:not([uidensity="compact"]) #back-button:not([disabled]):not([open]):active > .toolbarbutton-icon {
     background-color: var(--toolbarbutton-active-background) !important;
@@ -301,7 +320,10 @@ toolbarbutton:not(#back-button):not([disabled]):not([open]):hover,
 .toolbarbutton-1:not(#back-button):not([disabled]):not([open]):active {
     background-color: var(--toolbarbutton-active-background) !important;
 }
-
+:root:not([uidensity="touch"]):not([uidensity="compact"]) #forward-button-button{
+    margin-top: -1px !important;
+  margin-bottom: -1px !important;
+}
 
 
 :root:not([uidensity="compact"]) #back-button[open] > .toolbarbutton-icon {
@@ -1166,6 +1188,7 @@ menucaption {
     height: var(--menu-item-height) !important;
     margin-left:15px !important;
     margin-right:12px !important;
+    border-radius: var(--menu-corner-rounding) !important;
 }
 
 
@@ -1372,9 +1395,6 @@ menucaption[disabled="true"] {
 }
 #placesToolbar #back-button image{
     background-color:initial !important;
-}
-#forward-button:not([disabled]):hover,#forward-button image{
-  transform: scale(1.05) !important;
 }
 /*New Extension panel*/
 #unified-extensions-panel toolbaritem.unified-extensions-item {
