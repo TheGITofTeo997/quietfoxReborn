@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v119
+Quietfox Reborn v120
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -107,9 +107,42 @@ tab[visuallyselected] .tab-background::after {
     transition: var(--animation-speed) !important;
 }
 /* --------------------------------------------------------------------------------------- */
+/*Menu items for extensions*/
+vbox#unified-extensions-area {
+  margin-left: -5px;
+}
+vbox#unified-extensions-area > toolbaritem > .unified-extensions-item-action-button{
+    height: 50px !important;
+}
+vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
+    margin-left: -5px!important;
+}
+#unified-extensions-view:hover 
+.unified-extensions-item-menu-button.subviewbutton{ 
+    visibility: visible !important;
+    transition: 300ms !important;
+    -moz-margin-end: initial !important;
+    -moz-margin-start: -7px !important;
+}
+#unified-extensions-panel toolbaritem.unified-extensions-item {
+  width:342px !important;
+  height: 60px;
+  margin-block: initial !important;
+}
+
+/*  Extension menu option button mod */
+#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton{
+    visibility: hidden !important;
+    transition: all 300ms !important;
+    -moz-margin-end: -3.2em !important;
+}
 
 
-
+#unified-extensions-view .unified-extensions-item-name, 
+#unified-extensions-view .unified-extensions-item-message {
+    padding-inline-start: 0.5em !important;
+    width: 21em !important;
+}
 
 /* This makes certain menus adapt to your toolbar text color. Can make menu text illegible in 
 some transparent themes, remove if needed. */
@@ -1397,11 +1430,7 @@ menucaption[disabled="true"] {
     background-color:initial !important;
 }
 /*New Extension panel*/
-#unified-extensions-panel toolbaritem.unified-extensions-item {
-  width:337px !important;
-  height: 60px;
-  margin-block: initial !important;
-}
+
 :root[lwt-popup-brighttext] toolbaritem[cui-areatype="panel"] > .webextension-browser-action {
   padding-top: 25px !important;
   padding-bottom: 25px !important;
@@ -1413,26 +1442,7 @@ panelview#unified-extension-view.cui-widget-panelview{
   padding-top: 22px !important;
   padding-bottom: 23px !important;
 }
-/*  Extension menu option button mod */
-#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton{
-    visibility: hidden !important;
-    transition: all 300ms !important;
-    -moz-margin-end: -3.6em !important;
-}
 
-#unified-extensions-view:hover 
-.unified-extensions-item-menu-button.subviewbutton{ 
-    visibility: visible !important;
-    transition: 300ms !important;
-    -moz-margin-end: initial !important;
-    padding:    initial !important;
-}
-
-#unified-extensions-view .unified-extensions-item-name, 
-#unified-extensions-view .unified-extensions-item-message {
-    padding-inline-start: 0.5em !important;
-    width: 21em !important;
-}
 /* New Icons to main menu */
 #appMenu-fxa-status2[fxastatus] > toolbarbutton::before,
 #appMenu-protonMainView > .panel-subview-body > toolbarbutton > image{
