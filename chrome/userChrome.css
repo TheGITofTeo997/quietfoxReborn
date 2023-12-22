@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v120
+Quietfox Reborn v121
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -103,7 +103,7 @@ tab[visuallyselected] .tab-background::after {
     border-bottom-left-radius: var(--tab-corner-rounding) !important;
     right: 0px !important;
     transform: translateX(calc(var(--tab-corner-rounding) + 1px)) !important;
-    box-shadow: -4px 4px 0px 4px var(--toolbar-bgcolor) !important;
+    box-shadow: 0px 4px 0px 0px var(--toolbar-bgcolor) !important;
     transition: var(--animation-speed) !important;
 }
 /* --------------------------------------------------------------------------------------- */
@@ -129,7 +129,15 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
   height: 60px;
   margin-block: initial !important;
 }
-
+.unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon{
+    margin-inline-start: initial !important;
+}
+.unified-extensions-item-menu-button.subviewbutton{
+ width: 35px !important;   
+}
+.unified-extensions-item-menu-button.subviewbutton .toolbarbutton-icon{
+    margin-left: -7px !important;
+}
 /*  Extension menu option button mod */
 #unified-extensions-view .unified-extensions-item-menu-button.subviewbutton{
     visibility: hidden !important;
@@ -143,7 +151,12 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
     padding-inline-start: 0.5em !important;
     width: 21em !important;
 }
-
+.unified-extensions-item-menu-button.subviewbutton{
+    padding-inline-end: revert !important;
+}
+.toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton):not([disabled]):hover{
+    width: 35px !important;
+}
 /* This makes certain menus adapt to your toolbar text color. Can make menu text illegible in 
 some transparent themes, remove if needed. */
 panelview:not([extension]),
@@ -618,7 +631,7 @@ toolbarbutton.bookmark-item{
 toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="scrollbutton"]),
 .close-icon
 {
-    border-radius: 5px !important; /*var(--button-corner-rounding)!important;*/
+    border-radius: var(--button-corner-rounding) !important; /*var(--button-corner-rounding)!important;*/
 }
 
 .findbar-find-next {
