@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v121
+Quietfox Reborn v124
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -298,7 +298,7 @@ toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] 
 }
 
 .close-icon:not(.tab-close-button):hover {
-    fill-opacity: 0.0 !important;
+    /*fill-opacity: 0.0 !important;*/
 }
 
 toolbarbutton:not(#back-button):not(#forward-button):not([disabled]):not([open]):hover,
