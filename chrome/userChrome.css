@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v124
+Quietfox Reborn v125
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -690,6 +690,18 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
   padding: initial !important;
   border-radius: 5px !important;
 }
+#pageAction-urlbar-canvasblocker_kkapsner_de {
+  width: initial !important;
+  height: initial !important;
+  padding: initial !important;
+  border-radius:var(--button-corner-rounding)  !important;
+  opacity: 0;
+}
+#urlbar:hover #pageAction-urlbar-canvasblocker_kkapsner_de{
+    transition: all var(--hovering-speed) !important;
+    opacity: 1;
+}
+
 #star-button-box:hover{
     transition:  all 500ms !important;
     border-radius:var(--button-corner-rounding) !important; 
@@ -1206,7 +1218,10 @@ box.panel-viewstack{
     max-height: 100vh !important;
 }
 
-
+/*For translate button on menu burger*/
+#appMenu-translate-button {
+  list-style-image: url(chrome://browser/skin/translations.svg);
+}
 
 .panel-arrowcontent {
     padding-top: 0px !important;
