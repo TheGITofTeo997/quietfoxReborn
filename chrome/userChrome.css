@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v125
+Quietfox Reborn v126
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -24,6 +24,7 @@ Edit by: Krokko&Teo
     --toolbarbutton-focus-background: rgb(115, 118, 124);
     --url-color-urlbarView: rgb(184, 200, 255);
     --toolbarbutton-dragover:rgb(93, 97, 105);
+    --container-context-line-speed-animation:0.6s;
 }
 
 /*Context line colors, you can edit this part if you want to change your container line colors*/
@@ -112,11 +113,19 @@ vbox#unified-extensions-area {
   margin-left: -5px;
 }
 vbox#unified-extensions-area > toolbaritem > .unified-extensions-item-action-button{
-    height: 50px !important;
+    height: 63px !important;
+}
+vbox#unified-extensions-area .unified-extensions-item-action-button > .toolbarbutton-badge-stack > image{
+   position: relative;
+   right: 10% !important;
 }
 vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
-    margin-left: -5px!important;
+    margin-left: -5px !important;
 }
+#unified-extensions-view{
+    width: 355px !important;
+}
+
 #unified-extensions-view:hover 
 .unified-extensions-item-menu-button.subviewbutton{ 
     visibility: visible !important;
@@ -126,8 +135,12 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
 }
 #unified-extensions-panel toolbaritem.unified-extensions-item {
   width:342px !important;
-  height: 60px;
+  height: 75px;
   margin-block: initial !important;
+}
+#unified-extensions-panel toolbarbutton.unified-extensions-item-action-button > image{
+    position: relative;
+    right: 1% !important;
 }
 .unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon{
     margin-inline-start: initial !important;
@@ -266,7 +279,7 @@ tab[visuallyselected] .tab-background {
 }
 .tab-context-line {
     transform:scaleX(0.9);
-    -moz-transition: 0.7s !important;
+    transition:var(--container-context-line-speed-animation) !important;
     margin: 1.2px var(--inline-tab-padding) 0 !important;
 }
 tab:not([selected]):hover .tab-context-line{
@@ -278,6 +291,9 @@ tab:not([selected]):hover .tab-context-line{
 tab[visuallyselected] .tab-context-line{
     transform:scaleX(1.08);
     margin: 1.2px var(--inline-tab-padding) 0 !important;
+}
+#TabsToolbar{
+   --lwt-tab-line-color: transparent !important;
 }
 
 /* -------------------- Style toolbar -------------------- */
@@ -303,7 +319,7 @@ toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] 
 
 toolbarbutton:not(#back-button):not(#forward-button):not([disabled]):not([open]):hover,
 .toolbarbutton-1:not(#back-button):not(#forward-button):not([disabled]):not([open]):hover {
-    border-radius: var(--button-corner-rounding)!important;
+    border-radius: var(--button-corner-rounding) !important;
     background-color: var(--toolbarbutton-hover-background) !important;
     transition: all 300ms !important;
 }
@@ -381,7 +397,7 @@ toolbarbutton.bookmark-item{
 }
 .unified-extensions-list .toolbaritem-combined-buttons.unified-extensions-item {
   margin: 3px !important;
-  height: 55px !important;
+  height: 63px !important;
   width: 342px !important;
 }
 /* normal density buttons */
@@ -641,7 +657,6 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
 .findbar-textbox {
     border-radius: var(--button-corner-rounding) var(--button-corner-rounding) var(--button-corner-rounding) var(--button-corner-rounding) !important;
 }
-
 #identity-box #identity-permission-box:hover{
     border-radius:var(--button-corner-rounding) !important;
     transition: all var(--hovering-speed) !important;
@@ -698,8 +713,11 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
   opacity: 0;
 }
 #urlbar:hover #pageAction-urlbar-canvasblocker_kkapsner_de{
-    transition: all var(--hovering-speed) !important;
+    transition: all var(--animation-speed) !important;
     opacity: 1;
+}
+#urlbar[focused] #pageAction-urlbar-canvasblocker_kkapsner_de{
+    opacity:1;
 }
 
 #star-button-box:hover{
@@ -775,7 +793,7 @@ toolbarbutton#library-button.toolbarbutton-1{
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
-    height: var(--urlbar-toolbar-height) !important;
+    /*height: var(--urlbar-toolbar-height) !important;*/
     padding-block: 0px !important;
     padding-inline: 0px !important;
     padding-bottom: 6px !important;
