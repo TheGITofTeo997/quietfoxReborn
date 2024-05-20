@@ -73,7 +73,7 @@ However, we might be able to restore that behaviour in the future.
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/container.gif)
 
 ## Support for latest internal menus ℹ️
-![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/ext.jpg)
+![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/ext.gif)
 
 ## How to install ℹ️
 1. Download and unzip (from Repo or from [Releases](https://github.com/TheGITofTeo997/quietfoxReborn/releases))
