@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v126
+Quietfox Reborn v127
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -25,6 +25,7 @@ Edit by: Krokko&Teo
     --url-color-urlbarView: rgb(184, 200, 255);
     --toolbarbutton-dragover:rgb(93, 97, 105);
     --container-context-line-speed-animation:0.6s;
+    --icons-burger-menu-fill-color:white;
 }
 
 /*Context line colors, you can edit this part if you want to change your container line colors*/
@@ -1488,7 +1489,9 @@ panelview#unified-extension-view.cui-widget-panelview{
   padding-top: 22px !important;
   padding-bottom: 23px !important;
 }
-
+#appMenu-popup panelview{
+    width: 25em !important;
+}
 /* New Icons to main menu */
 #appMenu-fxa-status2[fxastatus] > toolbarbutton::before,
 #appMenu-protonMainView > .panel-subview-body > toolbarbutton > image{
@@ -1496,21 +1499,134 @@ panelview#unified-extension-view.cui-widget-panelview{
   -moz-context-properties: fill;
   margin-inline: 0 8px !important;
 }
-#appMenu-new-tab-button2{ list-style-image: url("chrome://browser/skin/new-tab.svg") }
-#appMenu-new-window-button2{ list-style-image: url("chrome://browser/skin/window.svg") }
-#appMenu-new-private-window-button2{ list-style-image: url("chrome://browser/skin/privateBrowsing.svg") }
-#appMenu-bookmarks-button{ list-style-image: url("chrome://browser/skin/bookmark-star-on-tray.svg") }
-#appMenu-history-button{ list-style-image: url("chrome://browser/skin/history.svg") }
-#appMenu-downloads-button{ list-style-image: url("chrome://browser/skin/downloads/downloads.svg") }
-#appMenu-passwords-button{ list-style-image: url("chrome://browser/skin/login.svg") }
-#appMenu-extensions-themes-button{ list-style-image: url("chrome://mozapps/skin/extensions/extension.svg") }
-#appMenu-print-button2{ list-style-image: url("chrome://global/skin/icons/print.svg") }
-#appMenu-save-file-button2{ list-style-image: url("chrome://browser/skin/save.svg") }
-#appMenu-find-button2{ list-style-image: url("chrome://global/skin/icons/search-glass.svg") }
-#appMenu-settings-button{ list-style-image: url("chrome://global/skin/icons/settings.svg") }
-#appMenu-more-button2{ list-style-image: url("chrome://global/skin/icons/developer.svg") }
-#appMenu-help-button2{ list-style-image: url("chrome://global/skin/icons/info.svg") }
-#appMenu-quit-button2{ list-style-image: url("chrome://devtools/skin/images/search-clear.svg") }
+#appMenu-new-tab-button2{ 
+    list-style-image: url("chrome://browser/skin/new-tab.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-new-tab-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-new-window-button2{ 
+    list-style-image: url("chrome://browser/skin/window.svg"); 
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-new-window-button2 > .toolbarbutton-text{
+     margin-left: 8px !important;
+}
+#appMenu-new-private-window-button2{ 
+    list-style-image: url("chrome://browser/skin/privateBrowsing.svg"); 
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-new-private-window-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-bookmarks-button{ 
+    list-style-image: url("chrome://browser/skin/bookmark-star-on-tray.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-bookmarks-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-history-button{ 
+    list-style-image: url("chrome://browser/skin/history.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-history-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-downloads-button{ 
+    list-style-image: url("chrome://browser/skin/downloads/downloads.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color); 
+}
+#appMenu-downloads-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+
+#appMenu-passwords-button{ 
+    list-style-image: url("chrome://browser/skin/login.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-passwords-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-extensions-themes-button{ 
+    list-style-image: url("chrome://mozapps/skin/extensions/extension.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color); 
+}
+#appMenu-extensions-themes-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-print-button2{ 
+    list-style-image: url("chrome://global/skin/icons/print.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-print-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-save-file-button2{ 
+    list-style-image: url("chrome://browser/skin/save.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-save-file-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-find-button2{ 
+    list-style-image: url("chrome://global/skin/icons/search-glass.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-find-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-settings-button{ 
+    list-style-image: url("chrome://global/skin/icons/settings.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color); 
+}
+#appMenu-settings-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-more-button2{ 
+    list-style-image: url("chrome://global/skin/icons/developer.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-more-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-help-button2{ 
+    list-style-image: url("chrome://global/skin/icons/info.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-help-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-quit-button2{ 
+    list-style-image: url("chrome://devtools/skin/images/search-clear.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-quit-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-translate-button{
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-translate-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
 #appMenu-fxa-status2[fxastatus] > toolbarbutton::before{
   display: -moz-box;
   content: "";
