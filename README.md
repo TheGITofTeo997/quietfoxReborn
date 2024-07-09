@@ -14,7 +14,7 @@ We are a group of two people that loved Quietfox. Unluckily Firefox updates have
 
 We will keep supporting this project through the upcoming Firefox updates, however we can still consider this in beta so it's far from being perfect.
 
-Most of the credits go to the original ![creator](https://github.com/kamrynsite)
+Most of the credits go to the original ![creator](https://github.com/k-amryn)
 
 ![quietfox](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/logo.png)
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/main.gif)
