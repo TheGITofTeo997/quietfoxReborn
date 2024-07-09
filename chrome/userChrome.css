@@ -977,9 +977,9 @@ hbox.urlbar-page-action{
 }
 #urlbar[breakout][breakout-extend] {
   & > .urlbar-input-container {
-    height: 36px !important;
-    padding-block: calc((var(--urlbar-container-height) - var(--urlbar-height)) / 2 + var(--urlbar-container-padding));
-    padding-inline: calc(var(--urlbar-margin-inline) + var(--urlbar-container-padding));
+    height: var(--urlbar-container-height) !important;
+    padding-block: initial;
+    padding-inline: initial;
   }
 }
 #urlbar-label-switchtab{
@@ -987,6 +987,15 @@ hbox.urlbar-page-action{
 }
 #urlbar-search-mode-indicator{
     color:white !important;
+}
+#downloadsHistory{
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+toolbarbutton.bookmark-item{
+    margin-right: 500px !important;
 }
 /**/
 #pocket-button {
