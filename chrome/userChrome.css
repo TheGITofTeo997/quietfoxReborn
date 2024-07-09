@@ -1,6 +1,6 @@
 /*
 
-Quietfox Reborn v127
+Quietfox Reborn v128
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -933,7 +933,7 @@ hbox.urlbar-page-action{
 .urlbar-input-box input{
     padding-left: 5px !important;
 }
-#urlbar:not(.hidden-focus)[focused="true"]{
+#urlbar:not(.hidden-focus)[focused=""]{
     animation: crunch 0.15s ease-out forwards !important;
 }
 @keyframes crunch{
@@ -967,6 +967,26 @@ hbox.urlbar-page-action{
 }
 #identity-box{
     color:initial !important;
+}
+.urlbar-input-container{
+    padding: initial !important;
+}
+.urlbar-go-button:hover{
+    background: var(--toolbarbutton-hover-background) !important;
+    transition: var(--animation-speed) !important;
+}
+#urlbar[breakout][breakout-extend] {
+  & > .urlbar-input-container {
+    height: 36px !important;
+    padding-block: calc((var(--urlbar-container-height) - var(--urlbar-height)) / 2 + var(--urlbar-container-padding));
+    padding-inline: calc(var(--urlbar-margin-inline) + var(--urlbar-container-padding));
+  }
+}
+#urlbar-label-switchtab{
+    color:white !important;
+}
+#urlbar-search-mode-indicator{
+    color:white !important;
 }
 /**/
 #pocket-button {
