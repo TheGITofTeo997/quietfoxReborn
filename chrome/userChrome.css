@@ -860,7 +860,7 @@ span.urlbarView-url {
 .search-one-offs button:hover{
    transition:var(--animation-speed) !important;
    border-radius:var(--button-corner-rounding) !important;
-    color:white !important;
+   color:white !important;
 }
 
 hbox.urlbar-page-action{
@@ -928,7 +928,7 @@ hbox.urlbar-page-action{
     padding-left: 5px !important;
 }
 #urlbar:not(.hidden-focus)[focused="true"]{
-    animation: crunch 0.15s ease-out forwards;
+    animation: crunch 0.15s ease-out forwards !important;
 }
 @keyframes crunch{
     0% {background: linear-gradient(to left, transparent,transparent,transparent,transparent,var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),var(--toolbarbutton-hover-background),transparent,transparent,transparent,transparent)}
@@ -948,8 +948,21 @@ hbox.urlbar-page-action{
     83% {background: linear-gradient(to left, transparent,transparent,transparent,transparent,transparent,transparent,transparent,var(--toolbarbutton-hover-background),transparent,transparent,transparent,transparent,transparent,transparent,transparent)}
     100% {background: linear-gradient(to left, transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent)}
 }
-
-
+/*FIXES FOR v128*/
+.urlbar-input{
+    color:initial !important;
+    text-align: initial !important;
+}
+.urlbar-input-box{
+    direction: initial !important;
+}
+#tracking-protection-icon-box{
+    color:initial !important;
+}
+#identity-box{
+    color:initial !important;
+}
+/**/
 #pocket-button {
     padding-bottom: 4px !important;
 }
@@ -975,6 +988,7 @@ hbox.urlbar-page-action{
 #identity-icon-box {
   border-radius: 5px !important;
 }
+
 
 #identity-permission-box[open="true"], #identity-permission-box[hasPermissions], #identity-permission-box[hasSharingIcon] {
   display: -webkit-inline-box;
@@ -1018,7 +1032,7 @@ hbox.urlbar-page-action{
 [anonid=urlbar-go-button],
 #urlbar {
     transition: background-color var(--animation-speed) !important;
-    animation: crunchOnFade 0.15s ease-out forwards;
+    animation: crunchOnFade 0.15s ease-out forwards !important;
 }
 #tracking-protection-icon,
 #identity-box image {
