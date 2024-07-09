@@ -91,6 +91,12 @@ tab[visuallyselected] .tab-background::after {
 #TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon:-moz-lwtheme, .tab-background[selected]:-moz-lwtheme {
     outline:none !important;
 }
+:root {
+  &[lwtheme] {
+    --tab-selected-outline-color: none !important;
+  }
+}
+/**/
 
 
 tab[visuallyselected] .tab-background::before {
