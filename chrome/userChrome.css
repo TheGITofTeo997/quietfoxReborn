@@ -977,7 +977,7 @@ hbox.urlbar-page-action{
 }
 #urlbar[breakout][breakout-extend] {
   & > .urlbar-input-container {
-    height: var(--urlbar-container-height) !important;
+    height: 36px !important;
     padding-block: initial;
     padding-inline: initial;
   }
@@ -995,7 +995,10 @@ hbox.urlbar-page-action{
     margin-right: 0px !important;
 }
 toolbarbutton.bookmark-item{
-    margin-right: 500px !important;
+    margin-right: 10px !important;
+}
+#PlacesToolbarItems > toolbarbutton{
+    margin-right: 0px !important;
 }
 /**/
 #pocket-button {
