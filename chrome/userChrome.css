@@ -26,6 +26,7 @@ Edit by: Krokko&Teo
     --toolbarbutton-dragover:rgb(93, 97, 105);
     --container-context-line-speed-animation:0.6s;
     --icons-burger-menu-fill-color:white;
+	--transparent-color:transparent;
 }
 
 /*Context line colors, you can edit this part if you want to change your container line colors*/
@@ -84,7 +85,7 @@ tab[visuallyselected] .tab-background::after {
     height: var(--tab-corner-rounding) !important;
     bottom: -1px !important;
     pointer-events: none !important;
-    background-color: transparent !important;
+    background-color: var(--transparent-color) !important;
     transition: var(--animation-speed) !important;
 }
 /*Useless blue border on tabs fix (DO NOT TOUCH UNLESS YOU DON'T WANT THOSE LITTLE PEKSY TABS COLORED OF BLUE ON BORDERS)*/
@@ -97,8 +98,22 @@ tab[visuallyselected] .tab-background::after {
   }
 }
 /**/
-
-
+/*
+Some further fixes for buttons for v128
+*/
+#forward-button[open='true']{
+    background: var(--toolbarbutton-hover-mozilla-button) !important;
+}
+#back-button[open] > .toolbarbutton-icon{
+  height: 36px !important;
+}
+.unified-extensions-item-action-button[open]{
+    background: var(--toolbarbutton-hover-mozilla-button) !important;
+}
+.toolbarbutton-1[open='true']{
+    background: var(--toolbarbutton-focus-background) !important;
+}
+/**/
 tab[visuallyselected] .tab-background::before {
     border-bottom-right-radius: var(--tab-corner-rounding) !important;
     transform: translateX(calc(-1 * var(--tab-corner-rounding))) !important;
@@ -270,12 +285,12 @@ tab:not([beforeselected-visible])::after {
 }
 tab[beforehovered]::after,
 tab:hover::after {
-    border-color: transparent !important;
+    border-color: var(--transparent-color) !important;
     margin-top: 20px !important;
 }
 
 #navigator-toolbox {
-    --tabs-border-color: transparent !important;
+    --tabs-border-color: var(--transparent-color) !important;
 }
 
 tab[visuallyselected] .tab-background {
@@ -300,12 +315,12 @@ tab[visuallyselected] .tab-context-line{
     margin: 1.2px var(--inline-tab-padding) 0 !important;
 }
 #TabsToolbar{
-   --lwt-tab-line-color: transparent !important;
+   --lwt-tab-line-color: var(--transparent-color) !important;
 }
 
 /* -------------------- Style toolbar -------------------- */
 .toolbarbutton-icon, .toolbarbutton-badge-stack {
-    background-color: transparent !important;
+    background-color: var(--transparent-color) !important;
 }
 
 #tabbrowser-arrowscrollbox-periphery {
@@ -313,7 +328,7 @@ tab[visuallyselected] .tab-context-line{
 }
 
 toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] {
-    background-color: var(--toolbarbutton-active-background);
+    background-color: var(--toolbarbutton-focus-background);
 }
 
 
@@ -361,7 +376,7 @@ toolbarbutton.bookmark-item{
 }/* touch and normal density buttons */
 
 :root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
-    background-color: transparent !important;
+    background-color: var(--transparent-color) !important;
     border-color: var(--toolbarbutton-hover-background) !important;
     border-radius: var(--button-corner-rounding) !important;
     width:38px !important;
@@ -382,13 +397,13 @@ toolbarbutton.bookmark-item{
 }
 
 :root:not([uidensity="compact"]) #back-button:not([disabled]):not([open]):active > .toolbarbutton-icon {
-    background-color: var(--toolbarbutton-active-background) !important;
+    background-color: var(--toolbarbutton-focus-background) !important;
     box-shadow: none !important;
 }
 
 :root:not([uidensity="compact"]) toolbarbutton:not(#back-button):not([disabled]):not([open]):active,
 .toolbarbutton-1:not(#back-button):not([disabled]):not([open]):active {
-    background-color: var(--toolbarbutton-active-background) !important;
+    background-color: var(--toolbarbutton-focus-background) !important;
 }
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #forward-button-button{
     margin-top: -1px !important;
@@ -397,7 +412,7 @@ toolbarbutton.bookmark-item{
 
 
 :root:not([uidensity="compact"]) #back-button[open] > .toolbarbutton-icon {
-    background-color: var(--toolbarbutton-active-background) !important;
+    background-color: var(--toolbarbutton-focus-background) !important;
 }
 
 :root:not([uidensity="compact"]) #PersonalToolbar { /* bookmark bar */
@@ -417,6 +432,14 @@ toolbarbutton.bookmark-item{
     margin-right: 0px !important;
     padding-left: 3px !important;
     padding-right: 3px !important;
+}
+:root:not([uidensity="touch"]):not([uidensity="compact"]) #nav-bar .toolbarbutton-1:is(#back-button){
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    margin-left: 4px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #nav-bar .toolbarbutton-1:not(#back-button) image  {
@@ -504,7 +527,7 @@ toolbarbutton.bookmark-item{
 }
 
 :root[uidensity="compact"] #back-button[open] {
-    background-color: var(--toolbarbutton-active-background) !important; 
+    background-color: var(--toolbarbutton-focus-background) !important; 
 }
 
 
@@ -512,7 +535,7 @@ toolbarbutton.bookmark-item{
     background-color: var(--toolbarbutton-hover-background) !important;
 }
 :root[uidensity="compact"] #back-button:not([disabled]):not([open]):active {
-    background-color: var(--toolbarbutton-active-background) !important;
+    background-color: var(--toolbarbutton-focus-background) !important;
 }
 
 :root[uidensity="compact"] #identity-box,
@@ -773,9 +796,11 @@ toolbarbutton.bookmark-item{
 }
 #identity-icon-box[open] {
   background-color: hsla(0,0%,70%,.3) !important;
+  border-radius: var(--button-corner-rounding) !important;
 }
 #identity-icon-box[open]:hover{
     background-color:var(--toolbarbutton-hover-mozilla-button) !important;
+    border-radius: var(--button-corner-rounding) !important;
 }
 #identity-permission-box[open]{
     background-color: hsla(0,0%,70%,.3) !important;
@@ -817,7 +842,7 @@ toolbarbutton#library-button.toolbarbutton-1{
 
 /* style address bar */
 #urlbar-background {
-    background-color: transparent !important;
+    background-color: var(--transparent-color) !important;
     border: none !important;
     box-shadow: none !important;
 }
@@ -878,7 +903,7 @@ span.urlbarView-url {
     background:rgb(118, 123, 134) !important;
 }
 .urlbarView-row {
-  background-color: transparent !important;
+  background-color: var(--transparent-color) !important;
   color: white !important;
 }
 .urlbarView-row-inner {
@@ -918,8 +943,8 @@ hbox.urlbar-page-action{
 
 .urlbar-icon, #userContext-indicator, #userContext-label {
     fill: transparent !important;
-    background-color: transparent !important;
-    color: transparent !important;
+    background-color: var(--transparent-color) !important;
+    color: var(--transparent-color) !important;
     transition: var(--animation-speed) !important;
 }
 
@@ -931,17 +956,20 @@ hbox.urlbar-page-action{
 }
 
 .urlbar-page-action[open] {
-    background-color: var(--toolbarbutton-active-background) !important;
+    background-color: var(--toolbarbutton-focus-background) !important;
     fill: var(--toolbar-color) !important;
+    opacity: 1 !important;
 }
 
 .urlbar-page-action[open]:hover {
-    background-color: var(--toolbarbutton-active-background) !important;
+    background-color: var(--toolbarbutton-focus-background) !important;
     fill: var(--toolbar-color) !important;
+    opacity: 1 !important;
 }
 
 .urlbar-page-action[open] .urlbar-icon {
     fill: var(--toolbar-color) !important;
+     opacity: 1 !important;
 }
 
 .urlbar-scheme {
@@ -958,7 +986,7 @@ hbox.urlbar-page-action{
 }
 
 #urlbar {
-    background-color: transparent !important;
+    background-color: var(--transparent-color) !important;
     color: var(--lwt-toolbar-field-color, black) !important;
 }
 #urlbar-go-button:hover{
@@ -1003,11 +1031,11 @@ hbox.urlbar-page-action{
 }
 
 .urlbar-icon-wrapper > .urlbar-icon:hover {
-    background-color: transparent !important;
+    background-color: var(--transparent-color) !important;
 }
 
 .urlbar-icon-wrapper {
-    background-color: transparent !important;
+    background-color: var(--transparent-color) !important;
     transition: background-color var(--animation-speed) !important;
 }
 #notification-popup-box {
@@ -1029,7 +1057,7 @@ hbox.urlbar-page-action{
   display: -webkit-inline-box;
   margin-right: 1px !important;
   margin-left: 1px !important;
-  border-radius: 5px !important;
+  border-radius:var(--button-corner-rounding) !important;
 }
 #tracking-protection-icon-container[open="true"]{
     background:hsla(0,0%,70%,.3) !important;
@@ -1058,7 +1086,7 @@ hbox.urlbar-page-action{
 .urlbar-icon:active,
 .urlbar-icon-wrapper:active,
 [anonid=urlbar-go-button]:active {
-    /*background-color: var(--toolbarbutton-active-background) !important;*/
+    /*background-color: var(--toolbarbutton-focus-background) !important;*/
 }
 
 .urlbar-input-box, 
@@ -1257,7 +1285,7 @@ menupopup menuseparator {
 }
 menupopup:not(#BMB_bookmarksPopup) {
     border:0 !important;
-    background-color: transparent !important;
+    background-color: var(--transparent-color) !important;
 }
 
 menu[open] menupopup:not(#BMB_bookmarksPopup) {
@@ -1368,9 +1396,9 @@ menu:not(.subviewbutton) > .menu-right image {
     margin-right: -5px !important;
     margin-top: -2px !important;
     border: 8px solid var(--toolbar-color) !important;
-    border-top-color: transparent !important;
-    border-right-color: transparent !important;
-    border-bottom-color: transparent !important;
+    border-top-color: var(--transparent-color) !important;
+    border-right-color: var(--transparent-color) !important;
+    border-bottom-color: var(--transparent-color) !important;
 }
 panelview toolbarbutton:not(#fxa-manage-account-button) {
     height: var(--menu-item-height) !important;
@@ -1386,7 +1414,7 @@ image#picture-in-picture-button-icon{
 hbox#picture-in-picture-button.urlbar-page-action{
     width: 35px !important;
     height: 35px !important;
-    border-radius: 5px !important;
+    border-radius: var(--button-corner-rounding) !important;
 }
 hbox#picture-in-picture-button.urlbar-page-action:hover{
     width: 35px !important;
@@ -1397,9 +1425,18 @@ hbox#picture-in-picture-button.urlbar-page-action:hover{
 hbox#translations-button.urlbar-page-action{
     width: 35px !important;
     height: 35px !important;
-    border-radius: 5px !important;
+    border-radius: var(--button-corner-rounding) !important;
 }
 hbox#translations-button.urlbar-page-action:hover{
+    transition: all var(--hovering-speed) !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+hbox#pageAction-urlbar-_testpilot-containers.urlbar-page-action{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+hbox#pageAction-urlbar-_testpilot-containers.urlbar-page-action:hover{
     transition: all var(--hovering-speed) !important;
     border-radius: var(--button-corner-rounding) !important;
 }
@@ -1456,9 +1493,9 @@ hbox.menu-right > image{
     .bookmark-item .scrollbutton-up > .toolbarbutton-icon {
         margin-top: -2px !important;
         border: 6px solid MenuText !important;
-        border-top-color: transparent !important;
-        border-right-color: transparent !important;
-        border-left-color: transparent !important;
+        border-top-color: var(--transparent-color) !important;
+        border-right-color: var(--transparent-color) !important;
+        border-left-color: var(--transparent-color) !important;
     }
 
     .bookmark-item .scrollbutton-down {
@@ -1468,9 +1505,9 @@ hbox.menu-right > image{
     .bookmark-item .scrollbutton-down > .toolbarbutton-icon {
         margin-bottom: -2px !important;
         border: 6px solid MenuText !important;
-        border-bottom-color: transparent !important;
-        border-right-color: transparent !important;
-        border-left-color: transparent !important;
+        border-bottom-color: var(--transparent-color) !important;
+        border-right-color: var(--transparent-color) !important;
+        border-left-color: var(--transparent-color) !important;
     }
     
     menu,
