@@ -1129,11 +1129,17 @@ hbox.urlbar-page-action{
 #urlbar:not(focused) #tracking-protection-icon-container{
     opacity: 0 !important;
 }
+#urlbar:not(focused) #tracking-protection-icon-container[open]{
+    opacity: 1 !important;
+}
 #urlbar[focused] #tracking-protection-icon-container{
     opacity: 1 !important;
 }
 #urlbar:not(focused) #identity-box{
     opacity: 0 !important;
+}
+#urlbar:not(focused) #identity-box:has(.identity-box-button[open]){
+    opacity: 1 !important;
 }
 #urlbar[focused] #identity-box{
     opacity: 1 !important;
@@ -1155,6 +1161,16 @@ hbox.urlbar-page-action{
     -moz-transition: var(--animation-speed) !important;
     transition: all var(--hovering-speed) !important;
 }
+#urlbar:hover #tracking-protection-icon-container{
+    opacity: 1 !important;
+    -moz-transition: var(--animation-speed) !important;
+    transition: all var(--hovering-speed) !important;
+}
+#urlbar:hover #identity-box{
+    opacity: 1 !important;
+    -moz-transition: var(--animation-speed) !important;
+    transition: all var(--hovering-speed) !important;
+}
 #pageAction-urlbar-_testpilot-containers{
     opacity:0;
     -moz-transition: var(--animation-speed) !important;
@@ -1167,6 +1183,7 @@ hbox.urlbar-page-action{
 #pageAction-urlbar-_testpilot-containers.urlbar-page-action[focused]{
     opacity:1 !important;
 }
+
 
 #userContext-icons:hover{
   opacity:1;
