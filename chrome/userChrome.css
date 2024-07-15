@@ -141,6 +141,16 @@ vbox#unified-extensions-area .unified-extensions-item-action-button > .toolbarbu
    position: relative;
    right: 10% !important;
 }
+vbox#overflowed-extensions-list {
+  margin-left: -5px;
+}
+vbox#overflowed-extensions-list > toolbaritem > .unified-extensions-item-action-button{
+    height: 63px !important;
+}
+vbox#overflowed-extensions-list .unified-extensions-item-action-button > .toolbarbutton-badge-stack > image{
+   position: relative;
+   right: 10% !important;
+}
 vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
     margin-left: -5px !important;
 }
@@ -795,7 +805,7 @@ toolbarbutton.bookmark-item{
     border-radius:var(--button-corner-rounding) !important;
 }
 #identity-icon-box[open] {
-  background-color: hsla(0,0%,70%,.3) !important;
+  background-color: var(--toolbarbutton-focus-background) !important;
   border-radius: var(--button-corner-rounding) !important;
 }
 #identity-icon-box[open]:hover{
@@ -803,13 +813,13 @@ toolbarbutton.bookmark-item{
     border-radius: var(--button-corner-rounding) !important;
 }
 #identity-permission-box[open]{
-    background-color: hsla(0,0%,70%,.3) !important;
+    background-color: var(--toolbarbutton-focus-background) !important;
 }
 #identity-permission-box[open]:hover{
      background-color:var(--toolbarbutton-hover-mozilla-button) !important;
 }
 #unified-extensions-button[open]{
-  background-color: hsla(0,0%,70%,.3) !important;
+  background-color: var(--toolbarbutton-focus-background) !important;
 }
 #unified-extensions-button[open]:hover{
   background-color:var(--toolbarbutton-hover-mozilla-button) !important;
@@ -822,19 +832,19 @@ toolbarbutton#library-button.toolbarbutton-1{
     background: var(--toolbarbutton-focus-background) !important;
 }
 #library-button[open="true"] {
- background-color: hsla(0,0%,70%,.3) !important;
+ background-color:var(--toolbarbutton-focus-background) !important;
 }
 #library-button[open="true"]:hover {
   background: var(--toolbarbutton-focus-background) !important;
 }
 #downloads-button[open="true"] {
-    background-color: hsla(0,0%,70%,.3) !important;
+    background-color:var(--toolbarbutton-focus-background) !important;
 }
 #downloadsHistory {
   border-radius: var(--button-corner-rounding) !important;
 }
 #PanelUI-menu-button[open="true"]{
-    background-color: hsla(0,0%,70%,.3) !important;
+    background-color: var(--toolbarbutton-focus-background) !important;
 }
 #PanelUI-menu-button[open="true"]:hover{
     background: var(--toolbarbutton-focus-background) !important;
@@ -1060,7 +1070,7 @@ hbox.urlbar-page-action{
   border-radius:var(--button-corner-rounding) !important;
 }
 #tracking-protection-icon-container[open="true"]{
-    background:hsla(0,0%,70%,.3) !important;
+    background:var(--toolbarbutton-focus-background) !important;
     border-radius:var(--button-corner-rounding) !important;
 }
 #tracking-protection-icon-container[open="true"]:hover{
