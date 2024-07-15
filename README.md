@@ -33,29 +33,30 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 
 💡 Please note this is still in Beta and we had to "force" some values to prevent breakage, so you might *not* be able to tweak all.
 
-### Toolbar Customizations ℹ️
+### Customizations ℹ️
 
 ```CSS
 /* -------------------- 🎨 Customization 🎨 -------------------- */
     --tab-corner-rounding: 7px;
-    --button-corner-rounding: 20px;
-    /* --menu-item-height: 35px;     */
-    --animation-speed: 0.4s
-    /* --menu-corner-rounding: 11px; */
+    --button-corner-rounding: 7px;
+    --menu-item-height: 35px;
+    --animation-speed: 0.15s;
+    --hovering-speed:300ms;
+    --menu-corner-rounding: 7px;
+    --icon-border-rounding: 10px;
+    --button-hovered-corner-rounding:11px;
+    --toolbarbutton-hover-background: rgba(127, 127, 127, 0.5);
+    --toolbarbutton-hover-mozilla-button: rgb(115, 118, 124);
+    --toolbarbutton-focus-background: rgb(115, 118, 124);
+    --url-color-urlbarView: rgb(184, 200, 255);
+    --toolbarbutton-dragover:rgb(93, 97, 105);
+    --container-context-line-speed-animation:0.6s;
+    --icons-burger-menu-fill-color:white;
+	--transparent-color:transparent;
 ```
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/bar.gif)
 
 <br>
-
-### Menu Customizations ℹ️
-```CSS
-/* -------------------- 🎨 Customization 🎨 -------------------- */
-    /* --tab-corner-rounding: 7px;     */
-    /* --button-corner-rounding: 20px; */
-    --menu-item-height: 30px;
-    /* --animation-speed: 0.4s;        */
-    --menu-corner-rounding: 10px;
-```
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/TheGITofTeo997/quietfoxReborn/master/images/context.jpg">
