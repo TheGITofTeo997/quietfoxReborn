@@ -1126,6 +1126,18 @@ hbox.urlbar-page-action{
 #urlbar[focused] #userContext-icons{
     opacity:1 !important;
 }
+#urlbar:not(focused) #tracking-protection-icon-container{
+    opacity: 0 !important;
+}
+#urlbar[focused] #tracking-protection-icon-container{
+    opacity: 1 !important;
+}
+#urlbar:not(focused) #identity-box{
+    opacity: 0 !important;
+}
+#urlbar[focused] #identity-box{
+    opacity: 1 !important;
+}
 
 #userContext-icons{
   opacity:0;
