@@ -52,7 +52,7 @@ Simply open userChrome.css in a text editor and change the values at the top of 
     --toolbarbutton-dragover:rgb(93, 97, 105);
     --container-context-line-speed-animation:0.6s;
     --icons-burger-menu-fill-color:white;
-	--transparent-color:transparent;
+    --transparent-color:transparent;
 ```
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/bar.gif)
 
