@@ -1,0 +1,170 @@
+:root[lwt-popup-brighttext] toolbaritem[cui-areatype="panel"] > .webextension-browser-action {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+panelview#unified-extension-view.cui-widget-panelview{
+    height: 486px !important;
+}
+.subviewbutton[disabled="true"] {
+  padding-top: 22px !important;
+  padding-bottom: 23px !important;
+}
+#appMenu-popup panelview{
+    width: 25em !important;
+}
+/* New Icons to main menu */
+#appMenu-fxa-status2[fxastatus] > toolbarbutton::before,
+#appMenu-protonMainView > .panel-subview-body > toolbarbutton > image{
+  fill: currentColor;
+  -moz-context-properties: fill;
+  margin-inline: 0 8px !important;
+}
+#appMenu-new-tab-button2{ 
+    list-style-image: url("chrome://browser/skin/new-tab.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-new-tab-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-new-window-button2{ 
+    list-style-image: url("chrome://browser/skin/window.svg"); 
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-new-window-button2 > .toolbarbutton-text{
+     margin-left: 8px !important;
+}
+#appMenu-new-private-window-button2{ 
+    list-style-image: url("chrome://browser/skin/privateBrowsing.svg"); 
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-new-private-window-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-bookmarks-button{ 
+    list-style-image: url("chrome://browser/skin/bookmark-star-on-tray.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-bookmarks-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-history-button{ 
+    list-style-image: url("chrome://browser/skin/history.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-history-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-downloads-button{ 
+    list-style-image: url("chrome://browser/skin/downloads/downloads.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color); 
+}
+#appMenu-downloads-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+
+#appMenu-passwords-button{ 
+    list-style-image: url("chrome://browser/skin/login.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-passwords-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-extensions-themes-button{ 
+    list-style-image: url("chrome://mozapps/skin/extensions/extension.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color); 
+}
+#appMenu-extensions-themes-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-print-button2{ 
+    list-style-image: url("chrome://global/skin/icons/print.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-print-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-save-file-button2{ 
+    list-style-image: url("chrome://browser/skin/save.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-save-file-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-find-button2{ 
+    list-style-image: url("chrome://global/skin/icons/search-glass.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-find-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-settings-button{ 
+    list-style-image: url("chrome://global/skin/icons/settings.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color); 
+}
+#appMenu-settings-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-more-button2{ 
+    list-style-image: url("chrome://global/skin/icons/developer.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-more-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-help-button2{ 
+    list-style-image: url("chrome://global/skin/icons/info.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-help-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-quit-button2{ 
+    list-style-image: url("chrome://devtools/skin/images/search-clear.svg");
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-quit-button2 > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-translate-button{
+    -moz-context-properties: fill;
+    fill:var(--icons-burger-menu-fill-color);
+}
+#appMenu-translate-button > .toolbarbutton-text{
+    margin-left: 8px !important;
+}
+#appMenu-fxa-status2[fxastatus] > toolbarbutton::before{
+  display: -moz-box;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: var(--avatar-image-url)
+}
+#appMenu-protonMainView > .panel-subview-body::after{
+  content: "";
+  display: -moz-box;
+  border-bottom: 1px solid var(--panel-separator-color);
+  margin: var(--panel-separator-margin);
+}
+
+#appMenu-find-button2 ~ *{
+  -moz-box-ordinal-group: 2;
+}
+
+.protections-popup-tp-switch{
+    max-height: 14px !important;
+}
