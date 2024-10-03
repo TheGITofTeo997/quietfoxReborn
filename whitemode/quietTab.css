@@ -1,0 +1,160 @@
+tab[visuallyselected] .tab-background::before,
+tab[visuallyselected] .tab-background::after {
+    content: "" !important;
+    display: inline !important;
+    position: absolute !important;
+    width: var(--tab-corner-rounding) !important;
+    height: var(--tab-corner-rounding) !important;
+    bottom: -1px !important;
+    pointer-events: none !important;
+    background-color: var(--transparent-color) !important;
+    transition: var(--animation-speed) !important;
+}
+#TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon:-moz-lwtheme, .tab-background[selected]:-moz-lwtheme {
+    outline:none !important;
+}
+:root {
+  &[lwtheme] {
+    --tab-selected-outline-color: none !important;
+  }
+}
+#tabbrowser-arrowscrollbox-periphery {
+  margin-left: 6px;
+}
+tab[visuallyselected] .tab-background::before {
+    border-bottom-right-radius: var(--tab-corner-rounding) !important;
+    transform: translateX(calc(-1 * var(--tab-corner-rounding))) !important;
+    box-shadow: 0.5px 1px 0.5px 0.5px var(--toolbar-bgcolor) !important;
+    transition: var(--animation-speed) !important;
+    border: var(--tab-corner-rounding) !important;
+}
+
+tab[visuallyselected] .tab-background::after {
+    border-bottom-left-radius: var(--tab-corner-rounding) !important;
+    right: 0px !important;
+    transform: translateX(calc(var(--tab-corner-rounding) + 1px)) !important;
+    box-shadow: 0px 4px 0px 0px var(--toolbar-bgcolor) !important;
+    transition: var(--animation-speed) !important;
+}
+.titlebar-spacer[type="pre-tabs"] {
+    border-inline-end: 0px !important;
+    width: 0px !important;
+}
+
+scrollbox[part="scrollbox"][flex="1"][orient="horizontal"] {
+    padding-left: 12px !important;
+}
+
+
+[sizemode="maximized"] [first-visible-tab] {
+    margin-left: -12px !important;
+}
+
+[sizemode="maximized"] [first-visible-tab] stack {
+    margin-left: 12px !important;
+}
+
+.tab-background, .tab-loading-burst  {
+    border-radius: var(--tab-corner-rounding) var(--tab-corner-rounding) 0px 0px !important;
+    margin: -1px !important;
+}
+
+tab:not(:active) .tab-background {
+    transition: background-color var(--animation-speed) !important;
+}
+
+
+:root[uidensity="compact"] {
+    --tab-min-height: 31px !important;
+}
+
+tab:not([selected]):hover .tab-background {
+    background-color: var(--toolbarbutton-hover-background) !important;
+}
+
+tab {
+    min-width: 1px !important;
+    clip-width: 1px !important;
+    padding-bottom: 1px !important!
+}
+tab[beforehovered],
+tab:not([selected]):hover{
+    border: none !important;
+}
+
+tab[beforeselected-visible]{
+    border:none !important;
+}
+
+.tab-line {
+    display: none !important;
+}
+
+tab:not([beforeselected-visible])::after {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    transition: border-color var(--animation-speed), margin-top var(--animation-speed) !important;
+    color: ;
+}
+tab[beforehovered]::after,
+tab:hover::after {
+    border-color: var(--transparent-color) !important;
+    margin-top: 20px !important;
+}
+
+#navigator-toolbox {
+    --tabs-border-color: var(--transparent-color) !important;
+}
+
+tab[visuallyselected] .tab-background {
+        box-shadow: 0px 3px 12px -5px black !important;
+}
+[last-visible-tab] {
+    margin-right: calc(var(--tab-corner-rounding)) !important; /* fix unexpected tab overflow */
+}
+.tab-context-line {
+    transform:scaleX(0.9);
+    transition:var(--container-context-line-speed-animation) !important;
+    margin: 1.2px var(--inline-tab-padding) 0 !important;
+}
+.tabbrowser-tab:is([visuallyselected], [multiselected]){
+    color:transparent !important;
+}
+.tab-content {
+    color: black !important;
+}
+tab:not([selected]):hover .tab-context-line{
+    transform:scaleX(1.08);
+    -moz-transition: 0.7s !important;
+    overflow-x:: hidden !important;
+    margin: 1.2px var(--inline-tab-padding) 0 !important;
+}
+tab[visuallyselected] .tab-context-line{
+    transform:scaleX(1.08);
+    margin: 1.2px var(--inline-tab-padding) 0 !important;
+    color: red !important;
+}
+#TabsToolbar{
+   --lwt-tab-line-color: var(--transparent-color) !important;
+}
+.tab-close-button {
+    transition: fill-opacity var(--animation-speed) !important;
+}
+:root[uidensity="touch"] tab {
+    height: 40px !important;
+}
+:root[uidensity="touch"] #tabs-newtab-button {
+    margin-left: -5px !important;
+    margin-bottom: 2px !important;
+    padding-right: 3px !important;
+    padding-left: 3px !important;
+    padding-bottom: 1px !important;
+}
+.tab-background:is([selected], [multiselected]):-moz-lwtheme {
+  border: hidden !important;
+}
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line {
+  background: var(--identity-icon-color) !important;
+  height: 3.5px !important;
+  border-radius: 2px !important;
+}
