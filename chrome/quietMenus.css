@@ -25,7 +25,8 @@ menupopup menuseparator:hover{
 menupopup,
 menuitem
 menucaption{
-    border-radius:19px!important;
+    border-radius:var(--menu-corner-rounding)!important;
+    --panel-shadow-margin: 0px !important;
 }
 menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 	color: #838584 !important;
@@ -33,7 +34,6 @@ menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 menuitem > .menu-text{
     color:white !important;
 }
-
 
 
 menupopup,
@@ -44,7 +44,8 @@ menupopup menuseparator {
 }
 menupopup:not(#BMB_bookmarksPopup) {
     border:0 !important;
-    background-color: var(--transparent-color) !important;
+    background: var(--toolbar-field-focus-background-color) !important;
+    /*background-color: var(--transparent-color) !important;*/
 }
 
 menu[open] menupopup:not(#BMB_bookmarksPopup) {
@@ -55,6 +56,12 @@ menu[open] menupopup:not(#BMB_bookmarksPopup) {
 #BMB_bookmarksPopup menu[open] menupopup {
     transform: translateY(4px) !important;
 }
+
+#contentAreaContextMenu{
+     border-radius:var(--menu-corner-rounding) !important;
+    --panel-shadow-margin: 0px !important;
+}
+
 menupopup#contentAreaContextMenu menu:hover,
 menupopup#contentAreaContextMenu menuitem:hover{
     border-radius:var(--menu-corner-rounding) !important;
@@ -397,6 +404,12 @@ menu[open] menupopup:not(#BMB_bookmarksPopup) {
 #BMB_bookmarksPopup menu[open] menupopup {
     transform: translateY(4px) !important;
 }
+    
+#contentAreaContextMenu{
+     border-radius:var(--menu-corner-rounding) !important;
+    --panel-shadow-margin: 0px !important;
+}
+
 menupopup#contentAreaContextMenu menu:hover,
 menupopup#contentAreaContextMenu menuitem:hover{
     border-radius:var(--menu-corner-rounding) !important;
