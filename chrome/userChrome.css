@@ -31,6 +31,7 @@ Edit by: Krokko&Teo
     --toolbarbutton-dragover:rgb(93, 97, 105);
     --container-context-line-speed-animation:0.6s;
     --icons-burger-menu-fill-color:white;
+	--icons-burger-menu-fill-color-light:black;
 	--transparent-color:transparent;
 }
 
@@ -38,41 +39,49 @@ Edit by: Krokko&Teo
 .identity-color-blue {
   --identity-tab-color: #37adff !important; 
   --identity-icon-color: linear-gradient(to right,#375cff,#37adff) !important;
+  --identity-vertical-tab-color: linear-gradient(to bottom,#375cff,#37adff) !important;
 }
 
 .identity-color-turquoise {
   --identity-tab-color: #00c79a !important;
   --identity-icon-color: linear-gradient(to left,#00c79a,#00795e) !important;
+  --identity-vertical-tab-color: linear-gradient(to bottom,#00c79a,#00795e) !important
 }
 
 .identity-color-green {
   --identity-tab-color: #51cd00 !important;
-  --identity-icon-color: linear-gradient(to left,#51cd00,#2c7300) !important; 
+  --identity-icon-color: linear-gradient(to left,#51cd00,#2c7300) !important;
+  --identity-vertical-tab-color: linear-gradient(to bottom,#51cd00,#2c7300) !important;
 }
 
 .identity-color-yellow {
   --identity-tab-color: #ffcb00 !important;
   --identity-icon-color: linear-gradient(to left,#ffcb00,#7e6500) !important;
+  --identity-vertical-tab-color: linear-gradient(to bottom,#ffcb00,#7e6500) !important;
 }
 
 .identity-color-orange {
   --identity-tab-color: #ff9f00 !important;
   --identity-icon-color: linear-gradient(to right, #ff4800, #ffa000) !important;
+  --identity-vertical-tab-color: linear-gradient(to bottom, #ff4800, #ffa000) !important;
 }
 
 .identity-color-red {
   --identity-tab-color: #ff613d !important;
   --identity-icon-color: linear-gradient(to left,#ff613d,#7e2f1d) !important;
+  --identity-vertical-tab-color: linear-gradient(to bottom, #ff613d,#7e2f1d) !important;
 }
 
 .identity-color-pink {
   --identity-tab-color: #ff4bda !important;
   --identity-icon-color: linear-gradient(to left,#ff4bda,#651d47) !important;
+  --identity-vertical-tab-color: linear-gradient(to bottom,#ff4bda,#651d47) !important;
 }
 
 .identity-color-purple {
   --identity-tab-color: #af51f5 !important;
   --identity-icon-color: linear-gradient(to left,#af51f5,#512274) !important; 
+  --identity-vertical-tab-color: linear-gradient(to bottom,#af51f5,#512274) !important; 
 }
 
 /* -------------------- 🎨END Customization 🎨 -------------------- */
