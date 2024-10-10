@@ -1,0 +1,341 @@
+#context-navigation,
+#context-sep-navigation,
+#context-
+link,
+#context-viewinfo,
+#context-viewpartialsource-selection,
+#inspect-separator,
+#context-savelink,
+#context-sendimage,
+#context-setDesktopBackground,
+#context_reloadTab,
+#context_moveTabOptions,
+#context_bookmarkTab,
+.bookmarks-actions-menuseparator,
+.openintabs-menuitem {
+    display: none !important;
+}
+menupopup,
+menupopup menuitem,
+menupopup menu,
+menupopup menuseparator:hover{
+    border-radius:var(--menu-corner-rounding);
+    transition: var(--animation-speed) !important;
+}
+menupopup,
+menuitem
+menucaption{
+    border-radius:19px!important;
+}
+menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
+	color: #838584 !important;
+}
+menuitem > .menu-text{
+    color: black !important;
+}
+
+
+
+menupopup,
+menupopup menuitem,
+menupopup menu,
+menupopup menuseparator {
+	-moz-appearance: none !important;
+}
+menupopup:not(#BMB_bookmarksPopup) {
+    border:0 !important;
+    background-color: var(--transparent-color) !important;
+}
+
+menu[open] menupopup:not(#BMB_bookmarksPopup) {
+	margin: -7px -0px !important;
+}
+
+
+#BMB_bookmarksPopup menu[open] menupopup {
+    transform: translateY(4px) !important;
+}
+menupopup#contentAreaContextMenu menu:hover,
+menupopup#contentAreaContextMenu menuitem:hover{
+    border-radius:var(--menu-corner-rounding) !important;
+    margin-left:5px;
+    margin-right:-30px;
+}
+menupopup menuseparator
+{
+	margin-top: 5px !important;
+    margin-bottom: 5px !important;
+	padding: 0px !important;
+    border-bottom: none !important;
+	opacity: 0.5 !important;
+}
+.menupopup-arrowscrollbox {
+    background: Menu !important; /* fall back if adaptable colors are removed */  
+}
+
+.menupopup-arrowscrollbox:not(.in-bookmarks-menu) {
+	padding: 6px 0 !important;
+}
+#history-panel menupopup{
+  color: black !important;
+}
+#history-panel menupopup menuitem{
+    color: white !important;
+}
+#history-panel #sidebar-search-container {
+  height: 45px !important;
+}
+#bookmarksPanel menupopup menuitem{
+    color: white !important;
+}
+#bookmarksPanel search-textbox{
+    height: 30px !important;
+}
+#bookmarksMenu menupopup{
+    color:black !important;
+}
+.menuitem-iconic[data-usercontextid]{
+    fill:var(--identity-tab-color) !important;
+}
+box.panel-viewstack{
+    max-height: 100vh !important;
+}
+
+/*For translate button on menu burger*/
+#appMenu-translate-button {
+  list-style-image: url(chrome://browser/skin/translations.svg);
+}
+
+.panel-arrowcontent {
+    padding-top: 0px !important;
+    border: none !important;
+}
+.menupopup-arrowscrollbox:not(.in-bookmarks-menu) {
+    border-radius:var(--menu-corner-rounding) !important;
+    box-shadow: 0px 2px -3px -4px black !important;
+}
+
+
+.panel-arrowcontainer .panel-arrowcontent, .menupopup-arrowscrollbox, hbox[flex="1"][part="innerbox"] {
+    border-radius: var(--menu-corner-rounding) !important;
+}
+
+.in-bookmarks-menu {
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+
+menu,
+menuitem, 
+menucaption {
+    -moz-appearance: none !important;
+    height: var(--menu-item-height) !important;
+    margin-left:15px !important;
+    margin-right:12px !important;
+    border-radius: var(--menu-corner-rounding) !important;
+}
+
+
+menu,
+menuitem, 
+menucaption {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+menu:not(.subviewbutton) > .menu-right  {
+    margin-top: 2px !important;
+    margin-right: 0px !important;
+    width: 0px !important;
+}
+menuitem.menuitem-iconic.bookmark-item.menuitem-iconic.menuitem-with-favicon:hover{
+    border-radius: var(--menu-corner-rounding) !important;
+}
+
+menu:not(.subviewbutton) > .menu-right image {
+    margin-right: -5px !important;
+    margin-top: -2px !important;
+    border: 8px solid var(--toolbar-color) !important;
+    border-top-color: var(--transparent-color) !important;
+    border-right-color: var(--transparent-color) !important;
+    border-bottom-color: var(--transparent-color) !important;
+}
+panelview toolbarbutton:not(#fxa-manage-account-button) {
+    height: var(--menu-item-height) !important;
+}
+
+#BMB_bookmarksPopup .menu-right {
+    height: 23px !important;
+}
+image#picture-in-picture-button-icon{
+    margin-top: -2px !important;
+    margin-left: 1px !important;
+}
+hbox#picture-in-picture-button.urlbar-page-action{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+hbox#picture-in-picture-button.urlbar-page-action:hover{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: var(--button-corner-rounding) !important;
+    transition: all var(--hovering-speed) !important;
+}
+hbox#translations-button.urlbar-page-action{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+hbox#translations-button.urlbar-page-action:hover{
+    transition: all var(--hovering-speed) !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+hbox#pageAction-urlbar-_testpilot-containers.urlbar-page-action{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+hbox#pageAction-urlbar-_testpilot-containers.urlbar-page-action:hover{
+    transition: all var(--hovering-speed) !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+hbox.menu-right > image{
+    margin-left: -9px !important;
+}
+
+#sidebar-switcher-bookmarks, #customization-uidensity-menuitem-compact {
+    margin-top: 5px !important;
+}
+
+#customization-lwtheme-menu-header {
+    margin-top: 0px !important;
+}
+@-moz-document url("chrome://global/content/alerts/alert.xhtml") {
+  #alertBox{
+    border-radius: var(--menu-corner-rounding) !important;
+    background-color: rgb(58,67,82) !important;
+    color: white !important;
+  }
+  #alertSourceLabel{
+    color: white !important;
+  }
+  #alertBox, image{
+        border-radius: var(--button-corner-rounding) !important;
+  }
+  #alertSettings{
+        color:white !important;
+  }
+    menupopup{
+       color:rgb(58,67,82) !important;
+    }
+    menupopup,
+    menuitem#openSettingsMenuItem{
+        color: white !important;
+    }
+    menupopup,
+    menuitem#disableForOriginMenuItem{
+       color: white !important;
+    }
+    menupopup,
+    menuitem#doNotDisturbMenuItem{
+        color: white !important;
+    }
+}
+#ContentSelectDropdown > menupopup > :not([_moz-menuactive="true"]) {
+    background:transparent !important;
+}
+@media (-moz-os-version: windows-win7), (-moz-os-version: windows-win8), (-moz-os-version: windows-win10) {
+    .bookmark-item .scrollbutton-up {
+        margin-top: -3px !important;
+    }
+
+    .bookmark-item .scrollbutton-up > .toolbarbutton-icon {
+        margin-top: -2px !important;
+        border: 6px solid MenuText !important;
+        border-top-color: var(--transparent-color) !important;
+        border-right-color: var(--transparent-color) !important;
+        border-left-color: var(--transparent-color) !important;
+    }
+
+    .bookmark-item .scrollbutton-down {
+        margin-bottom: -3px !important;
+    }
+
+    .bookmark-item .scrollbutton-down > .toolbarbutton-icon {
+        margin-bottom: -2px !important;
+        border: 6px solid MenuText !important;
+        border-bottom-color: var(--transparent-color) !important;
+        border-right-color: var(--transparent-color) !important;
+        border-left-color: var(--transparent-color) !important;
+    }
+    
+    menu,
+    menuitem, 
+    menucaption {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    
+    menu:not(.subviewbutton) > .menu-right  {
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    
+    .in-bookmarks-menu {
+        padding-bottom: 5px !important;
+        padding-top: 1px !important;
+    }
+    
+    #BMB_bookmarksPopup menu menupopup {
+        transform: translateY(-1px) !important;
+    }
+}
+@media not (-moz-os-version: windows-win10)  {
+    @media not (-moz-os-version: windows-win8) {
+       @media not (-moz-os-version: windows-win7)  {
+            hbox[flex="1"][part="innerbox"] {
+                box-shadow: 0px 2px 12px -6px black !important;
+            }
+
+            .menu-iconic-left {
+                margin: 0px 6px !important;
+            }
+           
+           #BMB_bookmarksPopup menu[open] menupopup {
+                transform: translateY(1px) !important;
+            }
+        }
+    }
+}
+
+menu,
+menuitem,
+menucaption {
+    color: var(--toolbar-color) !important;
+}
+
+.menupopup-arrowscrollbox {
+    background-color: var(--toolbar-bgcolor, Menu) !important;
+}
+
+menu[_moz-menuactive="true"]:not([disabled="true"]), 
+menuitem[_moz-menuactive="true"]:not([disabled="true"]), 
+menucaption[_moz-menuactive="true"]:not([disabled="true"]) {
+    background-color: var(--toolbarbutton-hover-background, rgba(127,127,127,0.5)) !important;
+}
+@media (-moz-windows-non-native-menus) {
+  menupopup {
+    --panel-color: white !important;
+    --panel-border-radius: 4px;
+    --panel-padding: 4px 0;
+    --panel-border-color: var(--menu-border-color);
+    --panel-background: black !important;
+    --nested-margin: -6px;
+  }
+}
+
+menu[disabled="true"], 
+menuitem[disabled="true"], 
+menucaption[disabled="true"] {
+    color: var(--toolbarbutton-hover-background, rgba(127,127,127,0.5)) !important;
+}
