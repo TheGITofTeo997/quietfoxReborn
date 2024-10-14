@@ -45,14 +45,7 @@ Simply open userChrome.css in a text editor and change the values at the top of 
     --menu-corner-rounding: 7px;
     --icon-border-rounding: 10px;
     --button-hovered-corner-rounding:11px;
-    --toolbarbutton-hover-background: rgba(127, 127, 127, 0.5);
-    --toolbarbutton-hover-mozilla-button: rgb(115, 118, 124);
-    --toolbarbutton-focus-background: rgb(115, 118, 124);
-    --url-color-urlbarView: rgb(184, 200, 255);
-    --toolbarbutton-dragover:rgb(93, 97, 105);
     --container-context-line-speed-animation:0.6s;
-    --icons-burger-menu-fill-color:white;
-    --transparent-color:transparent;
 ```
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/bar.gif)
 
