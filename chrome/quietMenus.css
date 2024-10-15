@@ -13,7 +13,7 @@ link,
 #context_bookmarkTab,
 .bookmarks-actions-menuseparator,
 .openintabs-menuitem {
-    display: none !important;
+    display: flex !important;
 }
 menupopup,
 menupopup menuitem,
@@ -22,11 +22,11 @@ menupopup menuseparator:hover{
     border-radius:var(--menu-corner-rounding);
     transition: var(--animation-speed) !important;
 }
+
 menupopup,
 menuitem
 menucaption{
     border-radius:var(--menu-corner-rounding)!important;
-    --panel-shadow-margin: 0px !important;
 }
 menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 	color: #838584 !important;
@@ -44,8 +44,8 @@ menupopup menuseparator {
 }
 menupopup:not(#BMB_bookmarksPopup) {
     border:0 !important;
-    background: var(--toolbar-field-focus-background-color) !important;
-    /*background-color: var(--transparent-color) !important;*/
+    background: transparent !important;
+    --panel-shadow-margin:8px !important;
 }
 
 menu[open] menupopup:not(#BMB_bookmarksPopup) {
@@ -118,7 +118,7 @@ box.panel-viewstack{
 }
 .menupopup-arrowscrollbox:not(.in-bookmarks-menu) {
     border-radius:var(--menu-corner-rounding) !important;
-    box-shadow: 0px 2px -3px -4px black !important;
+    box-shadow: 0px 2px 9px -3px black !important;
 }
 
 
@@ -321,7 +321,7 @@ menucaption {
 }
 
 .menupopup-arrowscrollbox {
-    background-color: var(--toolbar-bgcolor, Menu) !important;
+    background-color: var(--arrowpanel-background, Menu) !important;
 }
 
 menu[_moz-menuactive="true"]:not([disabled="true"]), 
@@ -345,6 +345,13 @@ menuitem[disabled="true"],
 menucaption[disabled="true"] {
     color: var(--toolbarbutton-hover-background, rgba(127,127,127,0.5)) !important;
 }
+#context-sep-setbackground{
+    display: none !important;
+}
+#context-sep-screenshots{
+    display: none !important;
+}
+
 @media (prefers-color-scheme:light){
 	menuitem > .menu-text{
         color: black !important;

@@ -39,7 +39,6 @@ tab[visuallyselected] .tab-background::after {
     border-inline-end: 0px !important;
     width: 0px !important;
 }
-
 scrollbox[part="scrollbox"][flex="1"][orient="horizontal"] {
     padding-left: 12px !important;
 }
@@ -161,7 +160,6 @@ tab[visuallyselected] .tab-context-line{
   height: 3.5px !important;
   border-radius: 2px !important;
 }
-
 @media (prefers-color-scheme: light){
     .tab-content {
         color: black !important;

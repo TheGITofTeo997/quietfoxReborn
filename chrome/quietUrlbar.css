@@ -1,3 +1,14 @@
+*{ 
+--toolbarbutton-hover-background: rgba(127, 127, 127, 0.5);
+--toolbarbutton-hover-mozilla-button: rgb(115, 118, 124);
+--toolbarbutton-hover-mozilla-button-light: rgba(115, 118, 124, 0.5);
+--toolbarbutton-focus-background: rgb(115, 118, 124);
+--toolbarbutton-focus-background-light: rgba(115, 118, 124, 0.5);
+--url-color-urlbarView: rgb(184, 200, 255);
+--url-color-urlbarView-light-mode: rgb(39, 74, 189);
+--toolbarbutton-dragover:rgb(93, 97, 105);
+}
+
 .toolbarbutton-icon, .toolbarbutton-badge-stack {
     background-color: var(--transparent-color) !important;
 }
@@ -479,8 +490,17 @@ toolbarbutton.bookmark-item{
     background-color:var(--toolbarbutton-hover-mozilla-button) !important;
 }
 #identity-icon-box:hover{
-    transition:   all var(--hovering-speed) !important;
+    transition: all var(--hovering-speed) !important;
     border-radius:var(--button-corner-rounding) !important;
+}
+#pageActionButton{
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: var(--button-corner-rounding) !important;
+}
+#pageActionButton:hover{
+  transition: all var(--hovering-speed) !important;
+  border-radius:var(--button-corner-rounding) !important;
 }
 #identity-icon-box[open] {
   background-color: var(--toolbarbutton-focus-background) !important;
@@ -762,6 +782,8 @@ hbox.urlbar-page-action{
     border-radius:var(--button-corner-rounding) !important;
 }
 
+
+
 #identity-box:active,
 #tracking-protection-icon-container:active,
 .urlbar-icon:active,
@@ -976,4 +998,97 @@ hbox.urlbar-page-action{
         line-height: 1.4;
         margin-left: 0.5%;
     }
+    .chromeUI > #identity-icon-box{
+        background-color:#bcbcbd !important;
+    }
+    .toolbarbutton-1[open='true']{
+        background: var(--toolbarbutton-focus-background-light) !important;
+    }
+    toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] {
+        background-color: var(--toolbarbutton-focus-background-light);
+    }
+    :root:not([uidensity="compact"]) #back-button:not([disabled]):not([open]):active > .toolbarbutton-icon {
+        background-color: var(--toolbarbutton-focus-background-light) !important;
+    }
+    
+    :root:not([uidensity="compact"]) toolbarbutton:not(#back-button):not([disabled]):not([open]):active,
+    .toolbarbutton-1:not(#back-button):not([disabled]):not([open]):active {
+        background-color: var(--toolbarbutton-focus-background-light) !important;
+    }
+    :root:not([uidensity="compact"]) #back-button[open] > .toolbarbutton-icon {
+        background-color: var(--toolbarbutton-focus-background-light) !important;
+    }
+    :root[uidensity="compact"] #back-button[open] {
+        background-color: var(--toolbarbutton-focus-background-light) !important; 
+    }
+    :root[uidensity="compact"] #back-button:not([disabled]):not([open]):active {
+        background-color: var(--toolbarbutton-focus-background-light) !important;
+    }
+    #identity-icon-box[open] {
+        background-color: var(--toolbarbutton-focus-background-light) !important;
+      }
+      #identity-permission-box[open]{
+          background-color: var(--toolbarbutton-focus-background-light) !important;
+      }
+      #downloads-button[open="true"]:hover{
+        background: var(--toolbarbutton-focus-background-light) !important;
+    }
+    #library-button[open="true"] {
+     background-color:var(--toolbarbutton-focus-background-light) !important;
+    }
+    #library-button[open="true"]:hover {
+      background: var(--toolbarbutton-focus-background-light) !important;
+    }
+    #downloads-button[open="true"] {
+        background-color:var(--toolbarbutton-focus-background-light) !important;
+    }
+    #PanelUI-menu-button[open="true"]{
+        background-color: var(--toolbarbutton-focus-background-light) !important;
+    }
+    #PanelUI-menu-button[open="true"]:hover{
+        background: var(--toolbarbutton-focus-background-light) !important;
+    }
+    .urlbarView-row-inner[aria-selected] {
+        background: var(--toolbarbutton-focus-background-light) !important;
+      }
+      #urlbar .searchbar-engine-one-off-item[selected="true"]{
+          background: var(--toolbarbutton-focus-background-light) !important;
+      }
+      #tracking-protection-icon-container[open="true"]{
+        background:var(--toolbarbutton-focus-background-light) !important;
+    }
+    #forward-button[open='true']{
+        background: var(--toolbarbutton-hover-mozilla-button-light) !important;
+    }
+    .identity-box-button:hover:not([open="true"]), #tracking-protection-icon-container:hover:not([open="true"]) {
+        background-color: var(--toolbarbutton-hover-mozilla-button-light) !important;
+      }
+      
+      .urlbar-page-action:not([disabled]):hover, #urlbar-go-button:hover, .search-go-button:hover {
+        background-color: var(--toolbarbutton-hover-mozilla-button-light) !important;
+      }
+      #star-button-box:hover{
+        background-color:var(--toolbarbutton-hover-mozilla-button-light) !important;
+    }
+    #identity-icon-box[open]:hover{
+        background-color:var(--toolbarbutton-hover-mozilla-button-light) !important;
+    }
+    #identity-permission-box[open]:hover{
+         background-color:var(--toolbarbutton-hover-mozilla-button-light) !important;
+    }
+    #notification-popup-box:hover{
+        border-radius:var(--button-corner-rounding) !important;
+        background-color: var(--toolbarbutton-hover-mozilla-button-light) !important; 
+    }
+    .identity-box-button:hover:active, .identity-box-button[open="true"], #tracking-protection-icon-container:hover:active, #tracking-protection-icon-container[open="true"] {
+        background-color: var(--toolbarbutton-hover-mozilla-button-light);
+    }
+    #pageAction-urlbar-_testpilot-containers:hover{
+        background-color: var(--toolbarbutton-hover-mozilla-button-light) !important;
+    }
+    @media not (prefers-contrast) {
+        .titlebar-close:hover {
+          stroke: black !important;
+        }
+      }
 }

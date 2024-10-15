@@ -1,3 +1,8 @@
+*{ 
+--icons-burger-menu-fill-color:white;
+--icons-burger-menu-fill-color-light:black;
+--transparent-color:transparent;
+}
 :root[lwt-popup-brighttext] toolbaritem[cui-areatype="panel"] > .webextension-browser-action {
   padding-top: 25px !important;
   padding-bottom: 25px !important;
