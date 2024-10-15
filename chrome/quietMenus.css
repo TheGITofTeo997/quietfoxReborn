@@ -351,6 +351,9 @@ menucaption[disabled="true"] {
 #context-sep-screenshots{
     display: none !important;
 }
+#frame-sep{
+    display: none !important;
+}
 
 @media (prefers-color-scheme:light){
 	menuitem > .menu-text{
