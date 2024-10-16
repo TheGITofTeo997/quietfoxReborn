@@ -354,6 +354,9 @@ menucaption[disabled="true"] {
 #frame-sep{
     display: none !important;
 }
+#context-sep-selectall{
+    display: none !important;
+}
 
 @media (prefers-color-scheme:light){
 	menuitem > .menu-text{
