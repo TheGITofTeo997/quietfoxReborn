@@ -56,9 +56,7 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 </p>
 
 ## Theme-adapted menus ℹ️
-💡 Please note that we can consider this feature *disabled* (or broken/deprecated) for now. This theme has just been tested and will *JUST* be used with the [Nord Polar Dark](https://addons.mozilla.org/it/firefox/addon/nord-polar-night-theme/) theme. Other Firefox themes *MIGHT* work, but things have been set up on to work best with it, so expect glitches and bugs if you are not going to use that theme.
-
-However, we might be able to restore that behaviour in the future.
+Quietfox will automatically pick the main color of your theme and will use it for popup menus! We've just been able to restore this functionality, so theme adapted menus are finally back. Please note not all kind of themes might be good to work (or easily readable), so pick your theme carefully and experiment what is better for you. We now also support the [Adaptive Tab Color extension](https://addons.mozilla.org/en-US/firefox/addon/adaptive-tab-bar-colour/) to bring in even more customization.
 
 ## Address bar buttons appear when needed ℹ️
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/buttons.gif)
@@ -77,7 +75,7 @@ However, we might be able to restore that behaviour in the future.
 5. Restart Firefox
 
 
-✔️ Tested and working currently on `Firefox 131`, Nord Polar Dark Theme on Windows 10/11 
+✔️ Tested and working currently on `Firefox 132`, Nord Polar Dark Theme on Windows 10/11 and MacOS
 
 
 ### Older version ℹ️
