@@ -1,5 +1,5 @@
 *{ 
---toolbarbutton-hover-background: rgba(127, 127, 127, 0.5);
+/*--toolbarbutton-hover-background: rgba(127, 127, 127, 0.5);*/
 --toolbarbutton-hover-mozilla-button: rgb(115, 118, 124);
 --toolbarbutton-hover-mozilla-button-light: rgba(115, 118, 124, 0.5);
 --toolbarbutton-focus-background: rgb(115, 118, 124);
