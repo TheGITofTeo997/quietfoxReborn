@@ -136,18 +136,13 @@ menuitem,
 menucaption {
     -moz-appearance: none !important;
     height: var(--menu-item-height) !important;
-    margin-left:15px !important;
-    margin-right:12px !important;
+    margin-left:5px !important;
+    margin-right:5px !important;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
     border-radius: var(--menu-corner-rounding) !important;
 }
 
-
-menu,
-menuitem, 
-menucaption {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-}
 menu:not(.subviewbutton) > .menu-right  {
     margin-top: 2px !important;
     margin-right: 0px !important;
