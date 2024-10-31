@@ -140,6 +140,7 @@ panelview#unified-extension-view.cui-widget-panelview{
 #appMenu-quit-button2{ 
     list-style-image: url("chrome://devtools/skin/images/search-clear.svg");
     -moz-context-properties: fill;
+    margin-top:5px !important;
     fill:var(--icons-burger-menu-fill-color);
 }
 #appMenu-quit-button2 > .toolbarbutton-text{
@@ -248,7 +249,7 @@ panelview#unified-extension-view.cui-widget-panelview{
     #appMenu-quit-button2{ 
         list-style-image: url("chrome://devtools/skin/images/search-clear.svg");
         -moz-context-properties: fill;
-        fill:var(--icons-burger-menu-fill-color-light);
+       margin-top:5px !important;
     }
     #appMenu-translate-button{
         -moz-context-properties: fill;

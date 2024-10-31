@@ -22,7 +22,7 @@
     background: var(--toolbarbutton-focus-background) !important;
 }
 .bookmark-item .toolbarbutton-icon {
-  border-radius:var(--icon-border-rounding) !important;
+    border-radius:var(--icon-border-rounding) !important;
 }
 .toolbarbutton-icon, .toolbarbutton-badge-stack {
     background-color: var(--transparent-color) !important;
@@ -75,7 +75,7 @@ toolbarbutton.bookmark-item{
     fill:white !important;
 }
 .menu-iconic-icon{
-    border-radius: 11px !important;
+    border-radius: 0px !important;
 }
 .toolbar-menupopup :is(menu, menuitem), .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1{
  margin-left:10px !important;
