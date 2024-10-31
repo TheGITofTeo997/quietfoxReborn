@@ -126,15 +126,32 @@ tab[visuallyselected] .tab-background {
     color: white !important;
 }
 tab:not([selected]):hover .tab-context-line{
-    transform:scaleX(1.08);
+    transform:scaleX(0.99);
     -moz-transition: 0.7s !important;
     overflow-x: hidden !important;
     margin: 1.2px var(--inline-tab-padding) 0 !important;
 }
 tab[visuallyselected] .tab-context-line{
-    transform:scaleX(1.08);
+    transform:scaleX(0.99);
     margin: 1.2px var(--inline-tab-padding) 0 !important;
     color: red !important;
+}
+.tab-icon-overlay {
+  &:not([crashed]) {
+      &:is([soundplaying], [muted], [activemedia-blocked]){
+          border:none !important;
+          background-color: var(--toolbar-bgcolor) !important;
+      }
+    }
+}
+.tab-icon-overlay {
+  &:not([crashed]) {
+      &:is([soundplaying], [muted], [activemedia-blocked]):hover{
+          border:none !important;
+          background-color: var(--toolbarbutton-hover-background) !important;
+          transition: 300ms !important;
+      }
+    }
 }
 #TabsToolbar{
    --lwt-tab-line-color: var(--transparent-color) !important;
@@ -160,7 +177,7 @@ tab[visuallyselected] .tab-context-line{
   height: 3.5px !important;
   border-radius: 2px !important;
 }
-@media (prefers-color-scheme: light){
+@media(prefers-color-scheme:light){
     .tab-content {
         color: black !important;
     }
