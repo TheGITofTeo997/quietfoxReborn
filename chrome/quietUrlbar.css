@@ -472,6 +472,11 @@ toolbarbutton.bookmark-item{
     border-radius:var(--button-corner-rounding) !important; 
     background-color:var(--toolbarbutton-hover-background) !important;
 }
+#star-button-box[open="true"]:hover{
+    transition:  all var(--hovering-speed) !important;
+    border-radius:var(--button-corner-rounding) !important; 
+    background-color:var(--toolbarbutton-active-background) !important;
+}
 #identity-icon-box:hover{
     transition: all var(--hovering-speed) !important;
     border-radius:var(--button-corner-rounding) !important;
@@ -708,6 +713,12 @@ hbox.urlbar-page-action{
     margin-left: 0px !important;
     margin-right: 0px !important;
 }
+.chromeUI{
+    background:var(--toolbarbutton-hover-background) !important;
+}
+.extensionPage{
+     background:var(--toolbarbutton-hover-background) !important;
+}
 
 /**/
 #pocket-button {
@@ -824,7 +835,7 @@ hbox.urlbar-page-action{
 #userContext-icons{
   opacity:0;
   margin:auto 3px!important;
-  border-radius:2px!important;
+  border-radius:var(--button-corner-rounding) !important;
   padding:0 2px 0 5px!important;
   transition: var(--hovering-speed) all !important;
 }
@@ -853,7 +864,7 @@ hbox.urlbar-page-action{
 }
 #pageAction-urlbar-_testpilot-containers:hover{
     opacity:1;
-    background-color: var(--toolbarbutton-hover-background) !important;
+    background-color: var(--toolbarbutton-active-background) !important;
     border-radius: var(--button-corner-rounding) !important;
 }
 #pageAction-urlbar-_testpilot-containers.urlbar-page-action[focused]{
