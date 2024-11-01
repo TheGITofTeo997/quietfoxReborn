@@ -987,6 +987,10 @@ hbox.urlbar-page-action{
     toolbarbutton.bookmark-item{
         fill:black !important;
     }
+    .urlbarView-row-inner:hover{
+    background:var(--toolbarbutton-hover-background) !important;
+    color:black !important;
+    }
     span.urlbarView-url {
         color: var(--url-color-urlbarView-light-mode) !important;
         line-height: 1.4;
@@ -1073,6 +1077,9 @@ hbox.urlbar-page-action{
     #notification-popup-box:hover{
         border-radius:var(--button-corner-rounding) !important;
         background-color: var(--toolbarbutton-active-background) !important; 
+    }
+    .searchbar-engine-one-off-item:hover{
+        background:#e0e0e0 !important;
     }
     .identity-box-button:hover:active, .identity-box-button[open="true"], #tracking-protection-icon-container:hover:active, #tracking-protection-icon-container[open="true"] {
         background-color: var(--toolbarbutton-active-background);
