@@ -74,9 +74,9 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
 #unified-extensions-button[open]{
   background-color: var(--toolbarbutton-active-background) !important;
 }
-#unified-extensions-button[open]:hover{
+/*#unified-extensions-button[open]:hover{
   background-color:var(--toolbarbutton-hover-background) !important;
-}
+}*/
 .unified-extensions-item-action-button[open]{
     background: var(--toolbarbutton-hover-background) !important;
 }

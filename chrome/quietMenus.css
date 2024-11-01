@@ -22,7 +22,6 @@ menupopup menuseparator:hover{
     border-radius:var(--menu-corner-rounding);
     transition: var(--animation-speed) !important;
 }
-
 menupopup,
 menuitem
 menucaption{
@@ -34,8 +33,11 @@ menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 menuitem > .menu-text{
     color:white !important;
 }
-
-
+menupopup, panel {
+    &::part(content) {
+        background: var(--arrowpanel-background) !important;        
+    }
+}
 menupopup,
 menupopup menuitem,
 menupopup menu,
