@@ -142,6 +142,16 @@ menucaption {
     padding-right: 7px !important;
     border-radius: var(--menu-corner-rounding) !important;
 }
+#appMenu-popup panelview{
+    width: 25em !important;
+}
+.toolbar-menupopup :is(menu, menuitem), .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1{
+ margin-left:5px !important;
+ margin-right: 5px !important;
+}
+.bookmark-item menupopup menuitem {
+    margin-right: 5px !important;
+}
 
 menu:not(.subviewbutton) > .menu-right  {
     margin-top: 2px !important;

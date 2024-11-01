@@ -14,9 +14,6 @@ panelview#unified-extension-view.cui-widget-panelview{
   padding-top: 22px !important;
   padding-bottom: 23px !important;
 }
-#appMenu-popup panelview{
-    width: 25em !important;
-}
 /* New Icons to main menu */
 #appMenu-fxa-status2[fxastatus] > toolbarbutton::before,
 #appMenu-protonMainView > .panel-subview-body > toolbarbutton > image{

@@ -72,13 +72,13 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
   width: 342px !important;
 }
 #unified-extensions-button[open]{
-  background-color: var(--toolbarbutton-focus-background) !important;
+  background-color: var(--toolbarbutton-active-background) !important;
 }
 #unified-extensions-button[open]:hover{
-  background-color:var(--toolbarbutton-hover-mozilla-button) !important;
+  background-color:var(--toolbarbutton-hover-background) !important;
 }
 .unified-extensions-item-action-button[open]{
-    background: var(--toolbarbutton-hover-mozilla-button) !important;
+    background: var(--toolbarbutton-hover-background) !important;
 }
 .panel-subview-body > .identity-color-turquoise > .toolbarbutton-icon{
     fill:var(--identity-tab-color) !important;
