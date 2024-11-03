@@ -1,3 +1,9 @@
+:root {
+    --firefoxcss-tab-speaker-icon-color: hsl(0, 0%, 100%);
+    --firefoxcss-tab-speaker-hover-bg-color: hsla(0, 0%, 80%);
+    --firefoxcss-tab-speaker-icon-hover-color: hsl(0, 0%, 10%);
+}
+
 tab[visuallyselected] .tab-background::before,
 tab[visuallyselected] .tab-background::after {
     content: "" !important;
@@ -136,23 +142,71 @@ tab[visuallyselected] .tab-context-line{
     margin: 1.2px var(--inline-tab-padding) 0 !important;
     color: red !important;
 }
-.tab-icon-overlay {
-  &:not([crashed]) {
-      &:is([soundplaying], [muted], [activemedia-blocked]){
-          border:none !important;
-          background-color: var(--toolbar-bgcolor) !important;
-      }
+
+#tabbrowser-tabs:not([orient="vertical"]) .tabbrowser-tab:not([pinned]) .tab-icon-overlay:not([crashed]) {
+  &:is([soundplaying], [muted], [activemedia-blocked]) {
+    fill: white !important;
+    background-color: transparent !important;
+    border: none !important;
+    transform: scale(1.4);
+    transition: transform 200ms ease-in-out, fill 100ms ease-in-out,
+      background-color 100ms ease-in-out !important;
+    filter: drop-shadow(-1px 1px 1px light-dark(#0000002e, #00000052));
+    &:hover {
+      background-color: var(--toolbarbutton-hover-background) !important;
+      color: var(--lwt-toolbar-field-color, black) !important;
+      fill: white !important;
+      border: none !important;
+      transform: scale(1.1);
+      transition: transform 200ms ease-in-out, fill 100ms ease-in-out,
+        background-color 100ms ease-in-out, filter 100ms ease-in-out !important;
     }
+  }
 }
-.tab-icon-overlay {
-  &:not([crashed]) {
-      &:is([soundplaying], [muted], [activemedia-blocked]):hover{
-          border:none !important;
-          background-color: var(--toolbarbutton-hover-background) !important;
-          transition: 300ms !important;
-      }
+
+#tabbrowser-tabs:not([orient="vertical"]) .tabbrowser-tab[pinned] .tab-icon-overlay:not([crashed]) {
+  &:is([soundplaying], [muted], [activemedia-blocked]) {
+    background-color: #0000002e !important;
+    backdrop-filter: blur(6px);
+    fill: var(--firefoxcss-tab-speaker-icon-color) !important;
+    border: 1px solid #ffffff29 !important;
+    transition: transform 100ms ease-in-out, fill 100ms ease-in-out,
+      background-color 100ms ease-in-out;
+
+    &:hover {
+      fill: var(--firefoxcss-tab-speaker-icon-color) !important;
+      background-color: transparent !important;
+      border: 1px solid #ffffff29 !important;
+      transition: transform 100ms ease-in-out, fill 100ms ease-in-out,
+        background-color 100ms ease-in-out !important;
+      transform: scale(1.3) translate(-8%, 14%);
+      transform-origin: center !important;
     }
+  }
 }
+
+#tabbrowser-tabs[orient="vertical"] .tabbrowser-tab .tab-icon-overlay:not([crashed]) {
+  &:is([soundplaying], [muted], [activemedia-blocked]) {
+    background-color: #0000002e !important;
+    backdrop-filter: blur(6px);
+    fill: var(--firefoxcss-tab-speaker-icon-color) !important;
+    border: 1px solid #ffffff29 !important;
+    transition: transform 100ms ease-in-out, fill 100ms ease-in-out,
+      background-color 100ms ease-in-out;
+
+    &:hover {
+      fill: var(--firefoxcss-tab-speaker-icon-color) !important;
+      background-color: transparent !important;
+      border: 1px solid #ffffff29 !important;
+      transition: transform 100ms ease-in-out, fill 100ms ease-in-out,
+        background-color 100ms ease-in-out !important;
+      transform: scale(1.3) translate(-8%, 14%);
+      transform-origin: center !important;
+    }
+  }
+}
+
+
 #TabsToolbar{
    --lwt-tab-line-color: var(--transparent-color) !important;
 }
@@ -178,6 +232,11 @@ tab[visuallyselected] .tab-context-line{
   border-radius: 2px !important;
 }
 @media(prefers-color-scheme:light){
+    :root {
+        --firefoxcss-tab-speaker-icon-color: hsl(0, 0%, 10%);
+        --firefoxcss-tab-speaker-hover-bg-color: hsla(0, 0%, 20%);
+        --firefoxcss-tab-speaker-icon-hover-color: hsl(0, 0%, 100%);
+    }
     .tab-content {
         color: black !important;
     }
