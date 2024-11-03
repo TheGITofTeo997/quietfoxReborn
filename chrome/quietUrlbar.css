@@ -13,9 +13,6 @@
 .bookmark-item .toolbarbutton-icon {
     border-radius:var(--icon-border-rounding) !important;
 }
-.toolbarbutton-icon, .toolbarbutton-badge-stack {
-    background-color: var(--transparent-color) !important;
-}
 
 #tabbrowser-arrowscrollbox-periphery {
   margin-left: 6px;
@@ -24,18 +21,9 @@
 toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] {
     background-color: var(--toolbarbutton-active-background) !important;
 }
-
-.tabbrowser-tab:is([visuallyselected], [multiselected]){
-    
-}
 #nav-bar .toolbarbutton-1 {
     margin-right: 2px !important;
 }
-
-.close-icon:not(.tab-close-button):hover {
-    /*fill-opacity: 0.0 !important;*/
-}
-
 toolbarbutton:not(#back-button):not(#forward-button):not([disabled]):not([open]):hover,
 .toolbarbutton-1:not(#back-button):not(#forward-button):not([disabled]):not([open]):hover {
     border-radius: var(--button-corner-rounding) !important;
@@ -420,9 +408,16 @@ toolbarbutton.bookmark-item{
 #identity-box{
     color:initial !important;
 }
-.identity-box-button:hover:not([open="true"]), #tracking-protection-icon-container:hover:not([open="true"]) {
+#tracking-protection-icon-container:hover:not([open="true"]) {
   background-color: var(--toolbarbutton-hover-background) !important;
   color: var(--urlbar-box-hover-text-color);
+}
+#identity-box{
+    color: var(--lwt-toolbar-field-color, black) !important;
+    fill:white !important;
+}
+.identity-box-button:hover:not([open="true"]){
+    background-color: var(--toolbarbutton-hover-background) !important;
 }
 #tracking-protection-icon-container:hover{
      border-radius:var(--button-corner-rounding) !important;
@@ -864,13 +859,15 @@ hbox.urlbar-page-action{
 }
 #pageAction-urlbar-_testpilot-containers:hover{
     opacity:1;
-    background-color: var(--toolbarbutton-active-background) !important;
+    background-color: var(--toolbarbutton-hover-background) !important;
     border-radius: var(--button-corner-rounding) !important;
 }
 #pageAction-urlbar-_testpilot-containers.urlbar-page-action[focused]{
     opacity:1 !important;
 }
-
+#identity-icon-label{
+    color:white !important;
+}
 
 #userContext-icons:hover{
   opacity:1;
