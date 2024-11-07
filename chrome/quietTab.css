@@ -238,6 +238,6 @@ tab[visuallyselected] .tab-context-line{
         --firefoxcss-tab-speaker-icon-hover-color: hsl(0, 0%, 100%);
     }
     .tab-content {
-        color: black !important;
+        color: var(--toolbar-color) !important;
     }
 }

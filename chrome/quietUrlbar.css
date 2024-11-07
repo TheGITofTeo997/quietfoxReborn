@@ -49,7 +49,7 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"]{
     color:white !important;
 }
 toolbarbutton.bookmark-item{
-    fill:white !important;
+    fill:var(--toolbar-color) !important;
 }
 .menu-iconic-icon{
     border-radius: 0px !important;
@@ -414,7 +414,7 @@ toolbarbutton.bookmark-item{
 }
 #identity-box{
     color: var(--lwt-toolbar-field-color, black) !important;
-    fill:white !important;
+    fill:var(--toolbar-color) !important;
 }
 .identity-box-button:hover:not([open="true"]){
     background-color: var(--toolbarbutton-hover-background) !important;
@@ -636,7 +636,7 @@ hbox.urlbar-page-action{
 #urlbar:hover .urlbar-icon,
 #urlbar:active .urlbar-icon, 
 #urlbar[focused] .urlbar-icon {
-    fill: var(--toolbar-color) !important;
+    fill:  var(--toolbar-color) !important;
 }
 
 .urlbar-page-action[open] {
@@ -881,7 +881,7 @@ hbox.urlbar-page-action{
     -moz-transition:var(--animation-speed) !important;
 }
 .urlbar-input{
-    color:initial !important;
+    color:var(--toolbar-color) !important;
     text-align: initial !important;
 }
 .urlbar-input-box{
@@ -964,29 +964,29 @@ hbox.urlbar-page-action{
 @media (prefers-color-scheme:light){
     .urlbarView-row {
         background-color: var(--transparent-color) !important;
-        color: black !important;
-      }
-      #urlbar-zoom-button .toolbarbutton-text{
-        color: black;
-      }
+        color:var(--toolbar-color)  !important;
+    }
+    #urlbar-zoom-button .toolbarbutton-text{
+       color:var(--toolbar-color) !important;
+    }
     #urlbar-one-offs-header-label{
-        color:black !important;
+        color:var(--toolbar-color)  !important;
     }
     #urlbar-engine-one-off-item-tabs{
-        color:black !important;
+        color:var(--toolbar-color)  !important;
     }
     #urlbar-engine-one-off-item-history{
-        color: black !important;
+       color:var(--toolbar-color)  !important;
     }
     #urlbar-anon-search-settings{
-        color:black !important;
+        color:var(--toolbar-color)  !important;
     }
     toolbarbutton.bookmark-item{
-        fill:black !important;
+        fill:var(--toolbarbutton-icon-fill) !important;
     }
     .urlbarView-row-inner:hover{
     background:var(--toolbarbutton-hover-background) !important;
-    color:black !important;
+    color:var(--toolbar-color) !important;
     }
     span.urlbarView-url {
         color: var(--url-color-urlbarView-light-mode) !important;
@@ -998,6 +998,15 @@ hbox.urlbar-page-action{
     }
     .toolbarbutton-1[open='true']{
         background: var(--toolbarbutton-active-background) !important;
+    }
+    #identity-icon-box{
+         fill:var(--toolbar-color) !important;
+    }
+    #identity-permission-box{
+         fill:var(--toolbar-color) !important;
+    }
+    #tracking-protection-icon-container{
+        fill:var(--toolbar-color) !important;
     }
     toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] {
         background-color: var(--toolbarbutton-active-background);
@@ -1021,10 +1030,10 @@ hbox.urlbar-page-action{
     }
     #identity-icon-box[open] {
         background-color: var(--toolbarbutton-active-background) !important;
-      }
-      #identity-permission-box[open]{
+    }
+    #identity-permission-box[open]{
           background-color: var(--toolbarbutton-active-background) !important;
-      }
+    }
       #downloads-button[open="true"]:hover{
         background: var(--toolbarbutton-active-background) !important;
     }

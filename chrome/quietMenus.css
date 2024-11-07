@@ -364,9 +364,35 @@ menucaption[disabled="true"] {
 #context-sep-selectall{
     display: none !important;
 }
+menu,menuitem{
+    &:where([_moz-menuactive="true"][disabled="true"]){
+        background: var(--toolbarbutton-hover-background, rgba(127,127,127,0.5)) !important;
+    }
+}
 
 @media (prefers-color-scheme:light){
 	menuitem > .menu-text{
-        color: black !important;
+        color: var(--sidebar-text-color) !important;
+    }
+    menu,
+    menuitem,
+    menucaption {
+        color: var(--sidebar-text-color) !important;
+    }
+    menupopup#contentAreaContextMenu menuitem:not([disabled="true"]):hover{
+        background: var(--tab-hover-background-color) !important;
+    }
+    menupopup#contentAreaContextMenu menuitem[disabled="true"]:hover{
+        background:var(--tab-hover-background-color) !important;
+    }
+    menu[disabled="true"], 
+    menuitem[disabled="true"], 
+    menucaption[disabled="true"] {
+        color: var(--tab-hover-background-colo, rgba(127,127,127,0.5)) !important;
+    }
+    menu[_moz-menuactive="true"]:not([disabled="true"]), 
+    menuitem[_moz-menuactive="true"]:not([disabled="true"]), 
+    menucaption[_moz-menuactive="true"]:not([disabled="true"]) {
+        background-color: var(--tab-hover-background-color, rgba(127,127,127,0.5)) !important;
     }
 }

@@ -33,7 +33,7 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
     -moz-margin-start: -7px !important;
 }
 #unified-extensions-panel toolbaritem.unified-extensions-item {
-  width:342px !important;
+  width:345px !important;
   height: 75px;
   margin-block: initial !important;
 }
@@ -69,7 +69,7 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
 .unified-extensions-list .toolbaritem-combined-buttons.unified-extensions-item {
   margin: 3px !important;
   height: 63px !important;
-  width: 342px !important;
+  width: 345px !important;
 }
 #unified-extensions-button[open]{
   background-color: var(--toolbarbutton-active-background) !important;
@@ -112,6 +112,6 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
 }
 @media (prefers-color-scheme: light){
     #userContext-label{
-        color:#454545 !important;
+        color:var(--toolbar-color) !important;
     }
 }
