@@ -866,7 +866,7 @@ hbox.urlbar-page-action{
     opacity:1 !important;
 }
 #identity-icon-label{
-    color:white !important;
+    color:var(--toolbar-color) !important;
 }
 
 #userContext-icons:hover{
@@ -902,13 +902,13 @@ hbox.urlbar-page-action{
   }
 }
 #urlbar-label-switchtab{
-    color:white !important;
+    color:var(--toolbar-color) !important;
 }
 #urlbar-search-mode-indicator{
-    color:white !important;
+    color:var(--toolbar-color) !important;
 }
 #urlbar-input-container{
-    color:white !important;   
+    color:var(--toolbar-color) !important;   
     padding: 0px !important;
 }
 #urlbar-background{
@@ -916,16 +916,16 @@ hbox.urlbar-page-action{
     display: none !important;
 }
 .urlbarView-row-inner{
-    font:white !important;
+    font:var(--toolbar-color) !important;
 }
 .urlbarView-row-inner:hover{
     background:var(--toolbarbutton-hover-background) !important;
-    color:white !important;
+    color:var(--toolbar-color) !important;
 }
 
 
 .urlbarView-results{
-    color:white;
+    color:var(--toolbar-color);
 }
 
 #reader-mode-button-icon.urlbar-icon:hover{

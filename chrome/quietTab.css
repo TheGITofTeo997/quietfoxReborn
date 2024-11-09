@@ -231,6 +231,38 @@ tab[visuallyselected] .tab-context-line{
   height: 3.5px !important;
   border-radius: 2px !important;
 }
+.tab-throbber {
+    @media (prefers-reduced-motion: no-preference) {
+    :root[sessionrestored] & {
+      &[progress]::before {
+        fill: var(--toolbar-color) !important;
+        opacity: 1;
+      }
+     }
+    }
+}
+.tab-throbber {
+  @media (prefers-reduced-motion: no-preference) {
+    :root[sessionrestored] & {
+      &[busy] {
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url("chrome://browser/skin/tabbrowser/loading.svg");
+          background-position: left center;
+          background-repeat: no-repeat;
+          width: 480px;
+          height: 100%;
+          animation: tab-throbber-animation 1.05s steps(30) infinite;
+          -moz-context-properties: fill;
+          fill: var(--toolbar-color) !important;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
 @media(prefers-color-scheme:light){
     :root {
         --firefoxcss-tab-speaker-icon-color: hsl(0, 0%, 10%);
