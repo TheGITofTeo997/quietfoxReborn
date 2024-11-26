@@ -542,6 +542,9 @@ toolbarbutton#library-button.toolbarbutton-1{
     /*width:99.5% !important;*/
     transition:background-color 0.25s ease !important;
 }
+#urlbar:not([usertyping]) > .urlbar-input-container > .urlbar-go-button{
+    display: block !important;
+}
 
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
     /*height: var(--urlbar-toolbar-height) !important;*/
