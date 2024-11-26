@@ -533,6 +533,7 @@ toolbarbutton#library-button.toolbarbutton-1{
 #urlbar[breakout-extend] {
     /*top: 4px !important;
     left: 0px !important;*/
+    top:48.45px !important;
     padding: 0px 0px 0px 0px !important;
     height: auto !important;
     /*width: 100% !important;*/
@@ -550,6 +551,18 @@ toolbarbutton#library-button.toolbarbutton-1{
     margin-bottom: -5px !important;
     margin-top: -1px !important;
 }
+#urlbar[breakout][breakout-extend] {
+  & > .urlbar-input-container {
+    height: var(--urlbar-toolbar-height) !important;
+    padding-block: initial;
+    padding-inline: initial;
+  }
+}
+#urlbar[breakout][breakout-extend]{
+    margin-left: initial !important;
+    width: var(--urlbar-width) !important;
+}
+
 #urlbar {
     border-radius: calc(1px + var(--button-corner-rounding)) !important;
     border: none !important;
@@ -893,13 +906,6 @@ hbox.urlbar-page-action{
 .urlbar-go-button:hover{
     background: var(--toolbarbutton-hover-background) !important;
     transition: var(--animation-speed) !important;
-}
-#urlbar[breakout][breakout-extend] {
-  & > .urlbar-input-container {
-    height: 36px !important;
-    padding-block: initial;
-    padding-inline: initial;
-  }
 }
 #urlbar-label-switchtab{
     color:var(--toolbar-color) !important;
