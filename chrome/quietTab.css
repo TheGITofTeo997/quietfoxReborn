@@ -2,6 +2,7 @@
     --firefoxcss-tab-speaker-icon-color: hsl(0, 0%, 100%);
     --firefoxcss-tab-speaker-hover-bg-color: hsla(0, 0%, 80%);
     --firefoxcss-tab-speaker-icon-hover-color: hsl(0, 0%, 10%);
+    --tabstrip-min-height: 26px !important;
 }
 
 tab[visuallyselected] .tab-background::before,
@@ -26,7 +27,6 @@ tab[visuallyselected] .tab-background::after {
   &[orient="horizontal"] {
     --tab-overflow-pinned-tabs-width: 0px;
     padding-inline: var(--tab-overflow-pinned-tabs-width) 0;
-    min-height: var(--tab-min-height) !important;
     --tab-min-width: 76px;
   }
 }
