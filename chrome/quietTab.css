@@ -19,6 +19,17 @@ tab[visuallyselected] .tab-background::after {
 #TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon:-moz-lwtheme, .tab-background[selected]:-moz-lwtheme {
     outline:none !important;
 }
+#TabsToolbar {
+  --toolbarbutton-inner-padding: calc((var(--tab-min-height) - 16px) / 2) !important;
+}
+#tabbrowser-tabs {
+  &[orient="horizontal"] {
+    --tab-overflow-pinned-tabs-width: 0px;
+    padding-inline: var(--tab-overflow-pinned-tabs-width) 0;
+    min-height: var(--tab-min-height) !important;
+    --tab-min-width: 76px;
+  }
+}
 :root {
   &[lwtheme] {
     --tab-selected-outline-color: none !important;
