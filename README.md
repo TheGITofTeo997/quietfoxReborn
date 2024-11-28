@@ -57,7 +57,10 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 ## Theme-adapted menus ℹ️
 Quietfox will automatically pick the main color of your theme and will use it for popup menus! We've just been able to restore this functionality, so theme adapted menus are finally back. Please note not all kind of themes might be good to work (or easily readable), so pick your theme carefully and experiment what is better for you. We now also support the [Adaptive Tab Color extension](https://addons.mozilla.org/en-US/firefox/addon/adaptive-tab-bar-colour/) to bring in even more customization.
 
-💡We still have to improve this a lot, so support for now might be very limited.
+![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/ta-menus.png)
+
+
+💡Although a lot of effort is being put into this feature, we can't expect to support **all** the themes ever created, so some themes will simply **not** work. This feature is being actively worked on since we are trying to find the options that could fit most of the themes.
 
 ## Address bar buttons appear when needed ℹ️
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/buttons.gif)
