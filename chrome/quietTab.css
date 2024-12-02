@@ -2,7 +2,7 @@
     --firefoxcss-tab-speaker-icon-color: hsl(0, 0%, 100%);
     --firefoxcss-tab-speaker-hover-bg-color: hsla(0, 0%, 80%);
     --firefoxcss-tab-speaker-icon-hover-color: hsl(0, 0%, 10%);
-    --tabstrip-min-height: 26px !important;
+    --tabstrip-min-height: 40px !important;
 }
 
 tab[visuallyselected] .tab-background::before,
