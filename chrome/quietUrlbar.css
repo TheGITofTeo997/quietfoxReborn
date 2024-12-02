@@ -536,7 +536,7 @@ toolbarbutton#library-button.toolbarbutton-1{
 }
 #urlbar {
     margin: 0 !important;
-    width: var(--urlbar-width) !important;
+    width: calc(var(--urlbar-width) - 2px) !important;
     inset: initial !important;
 }
 .urlbar-input-container {
@@ -545,6 +545,9 @@ toolbarbutton#library-button.toolbarbutton-1{
 }
 #urlbar-background {
     animation: none !important;
+}
+#nav-bar{
+    padding-block: 2px !important
 }
 .urlbarView {
     margin: 0 !important;
