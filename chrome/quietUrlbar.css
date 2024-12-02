@@ -530,44 +530,31 @@ toolbarbutton#library-button.toolbarbutton-1{
     box-shadow: none !important;
 }
 
-#urlbar[breakout-extend] {
-    /*top: 4px !important;
-    left: 0px !important;*/
-    padding: 0px 0px 0px 0px !important;
-    height: auto !important;
-    top:42px !important;
-    /*width: 100% !important;*/
+#search-container, #urlbar-container {
+    padding: 0 !important;
+    margin: 0 !important;
 }
-#urlbar[breakout]{
-    /*width:99.5% !important;*/
-    transition:background-color 0.25s ease !important;
+#urlbar {
+    margin: 0 !important;
+    width: var(--urlbar-width) !important;
+    inset: initial !important;
+}
+.urlbar-input-container {
+    height: var(--urlbar-height) !important;
+    padding: 0 !important;
+}
+#urlbar-background {
+    animation: none !important;
+}
+.urlbarView {
+    margin: 0 !important;
+    width: 100% !important;
+}
+.urlbarView-results {
+    padding: 0 !important;
 }
 #urlbar:not([usertyping]) > .urlbar-input-container > .urlbar-go-button{
     display: block !important;
-}
-#urlbar[breakout-extend] #urlbar-go-button{
-    position: relative !important;
-    top:1px !important;
-}
-
-#urlbar[breakout][breakout-extend] > #urlbar-input-container {
-    /*height: var(--urlbar-toolbar-height) !important;*/
-    padding-block: 0px !important;
-    padding-inline: 0px !important;
-    padding-bottom: 6px !important;
-    margin-bottom: -5px !important;
-    margin-top: -1px !important;
-}
-#urlbar[breakout][breakout-extend] {
-  & > .urlbar-input-container {
-    height: var(--urlbar-toolbar-height) !important;
-    padding-block: initial;
-    padding-inline: initial;
-  }
-}
-#urlbar[breakout][breakout-extend]{
-    margin-left: 0px !important;
-    width: var(--urlbar-width) !important;
 }
 
 #urlbar {
