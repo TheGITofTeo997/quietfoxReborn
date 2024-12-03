@@ -29,6 +29,10 @@ tab[visuallyselected] .tab-background::after {
     padding-inline: var(--tab-overflow-pinned-tabs-width) 0;
     --tab-min-width: 76px;
   }
+    &[movingtab] {
+      padding-bottom: 0px !important;
+      margin-bottom: 0px !important;
+    }
 }
 :root {
   &[lwtheme] {
