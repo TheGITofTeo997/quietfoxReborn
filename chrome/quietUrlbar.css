@@ -67,7 +67,7 @@ toolbarbutton.bookmark-item{
 :root:not([uidensity="compact"]) #back-button:not([disabled]):not([open]):hover > .toolbarbutton-icon {
     background-color: var(--toolbarbutton-hover-background) !important;
     box-shadow: none !important;
-    height: 36px !important;
+    height: 34px !important;
 }
 :root:not([uidensity="compact"]) #forward-button:not([disabled]):not([open]):hover > .toolbarbutton-icon{
     background-color: var(--toolbarbutton-hover-background) !important;
