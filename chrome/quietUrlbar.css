@@ -5,7 +5,7 @@
     background: var(--toolbarbutton-active-background) !important;
 }
 #back-button[open] > .toolbarbutton-icon{
-  height: 36px !important;
+  height: 34px !important;
 }
 .toolbarbutton-1[open='true']{
     background: var(--toolbarbutton-active-background) !important;
@@ -570,6 +570,9 @@ toolbarbutton#library-button.toolbarbutton-1{
     background: var(--toolbarbutton-hover-background) !important;
     transition: var(--animation-speed) !important;
 }
+toolbar .toolbaritem-combined-buttons{
+    margin-inline: 0px !important;
+}
 .urlbarView {
     width: 100% !important;
     margin-inline: 0px !important;
@@ -962,9 +965,6 @@ hbox.urlbar-page-action{
   background: var(--identity-icon-color) !important;
   height: 3.5px !important;
   border-radius: 2px !important;
-}
-#eme-notification-icon{
-    fill: var(--toolbar-color) !important;
 }
 
 @media (prefers-color-scheme:light){
