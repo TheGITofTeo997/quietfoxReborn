@@ -220,7 +220,12 @@ tab[visuallyselected] .tab-context-line{
     }
   }
 }
-
+.tab-background {
+  &[multiselected] {
+    outline-color: transparent !important;
+    background: background: rgba(0,0,0,0.5); !important;
+  }
+}
 
 #TabsToolbar{
    --lwt-tab-line-color: var(--transparent-color) !important;
