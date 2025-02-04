@@ -79,7 +79,7 @@ Quietfox will automatically pick the main color of your theme and will use it fo
 5. Restart Firefox
 
 
-✔️ Tested and working currently on `Firefox 134`, [Nord Polar Dark Theme](https://addons.mozilla.org/en-US/firefox/addon/nord-polar-night-theme/) on Windows 10/11 and MacOS
+✔️ Tested and working currently on `Firefox 135`, [Nord Polar Dark Theme](https://addons.mozilla.org/en-US/firefox/addon/nord-polar-night-theme/) on Windows 10/11 and MacOS
 
 
 ### Older version ℹ️
