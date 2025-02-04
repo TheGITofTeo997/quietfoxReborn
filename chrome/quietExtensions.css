@@ -32,6 +32,12 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
     -moz-margin-end: initial !important;
     -moz-margin-start: -7px !important;
 }
+#unified-extensions-area > toolbaritem > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button{
+    height: 60px !important;
+}
+#unified-extensions-area > toolbaritem > .unified-extensions-item-row-wrapper > .unified-extensions-item-menu-button {
+    margin-top: 10px !important;
+}
 #unified-extensions-panel toolbaritem.unified-extensions-item {
   width:345px !important;
   height: 75px;

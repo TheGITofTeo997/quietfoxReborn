@@ -149,7 +149,7 @@ menucaption {
 }
 .toolbar-menupopup :is(menu, menuitem), .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1{
  margin-left:5px !important;
- margin-right: 5px !important;
+ margin-right: 10px !important;
 }
 .bookmark-item menupopup menuitem {
     margin-right: 5px !important;
