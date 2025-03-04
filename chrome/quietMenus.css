@@ -175,6 +175,15 @@ menu:not(.subviewbutton) > .menu-right image {
 panelview toolbarbutton:not(#fxa-manage-account-button) {
     height: var(--menu-item-height) !important;
 }
+#unified-extensions-context-menu[hasbeenopened]{
+   
+}
+.toolbar-menupopup :is(menu, menuitem), .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1{
+    margin: var(--arrowpanel-menuitem-margin) !important;
+}
+#unified-extensions-manage-extensions{
+    margin-bottom: 6px !important;
+}
 
 #BMB_bookmarksPopup .menu-right {
     height: 23px !important;

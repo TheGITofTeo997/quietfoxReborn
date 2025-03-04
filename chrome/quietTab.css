@@ -220,6 +220,44 @@ tab[visuallyselected] .tab-context-line{
     }
   }
 }
+
+.button-background {
+  &[type~="icon"]:not(.labelled), &:not(.labelled):has(img) {
+    &[size="small"] {
+    width: var(--button-size-icon-small);
+    height: var(--button-size-icon-small);
+    background-size: 10px !important;
+    /*position: relative !important;
+    right: 20px !important;*/
+    border-radius: 9999px !important;
+    background-color: #0000002e !important;
+    backdrop-filter: blur(6px);
+    fill: var(--firefoxcss-tab-speaker-icon-color) !important;
+    border: 1px solid #ffffff29 !important;
+    transition: transform 100ms ease-in-out, fill 100ms ease-in-out,
+      background-color 100ms ease-in-out;
+
+    &:hover {
+      fill: var(--firefoxcss-tab-speaker-icon-color) !important;
+      background-color: transparent !important;
+      border: 1px solid #ffffff29 !important;
+      transition: transform 100ms ease-in-out, fill 100ms ease-in-out,
+        background-color 100ms ease-in-out !important;
+      transform: scale(1.3) translate(0%, 0%);
+      transform-origin: center !important;
+    }
+    }
+  }
+}
+.tab-icon-stack[soundplaying]{
+    display: none !important;
+}
+.tab-icon-stack[muted]{
+    display: none !important;
+}
+.tab-label-container{
+    margin-left: 3px !important;
+}
 .tab-background {
   &[multiselected] {
     outline-color: transparent !important;
