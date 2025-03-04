@@ -255,6 +255,9 @@ tab[visuallyselected] .tab-context-line{
 .tab-icon-stack[muted]{
     display: none !important;
 }
+.tab-icon-stack[activemedia-blocked]{
+    display: none !important;
+}
 .tab-label-container{
     margin-left: 3px !important;
 }

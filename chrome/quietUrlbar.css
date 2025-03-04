@@ -5,7 +5,7 @@
     background: var(--toolbarbutton-active-background) !important;
 }
 #back-button[open] > .toolbarbutton-icon{
-  height: 34px !important;
+  height: 36px !important;
 }
 .toolbarbutton-1[open='true']{
     background: var(--toolbarbutton-active-background) !important;
@@ -280,6 +280,9 @@ toolbarbutton.bookmark-item{
 }
 #placesToolbar #back-button image{
     background-color:initial !important;
+}
+#sidebar-button[checked]{
+    background-color: var(--toolbarbutton-active-background) !important;
 }
 
 :root[uidensity="touch"] #stop-reload-button[animate] .toolbarbutton-animatable-image {
@@ -569,9 +572,6 @@ toolbarbutton#library-button.toolbarbutton-1{
     border-radius: var(--button-corner-rounding) !important;
     background: var(--toolbarbutton-hover-background) !important;
     transition: var(--animation-speed) !important;
-}
-toolbar .toolbaritem-combined-buttons{
-    margin-inline: 0px !important;
 }
 .urlbarView {
     width: 100% !important;
@@ -965,6 +965,9 @@ hbox.urlbar-page-action{
   background: var(--identity-icon-color) !important;
   height: 3.5px !important;
   border-radius: 2px !important;
+}
+#eme-notification-icon{
+    fill: var(--toolbar-color) !important;
 }
 
 @media (prefers-color-scheme:light){
