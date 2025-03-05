@@ -5,7 +5,7 @@
     background: var(--toolbarbutton-active-background) !important;
 }
 #back-button[open] > .toolbarbutton-icon{
-  height: 36px !important;
+  height: 34px !important;
 }
 .toolbarbutton-1[open='true']{
     background: var(--toolbarbutton-active-background) !important;
