@@ -102,6 +102,9 @@ menupopup menuseparator
 #bookmarksMenu menupopup{
     color:black !important;
 }
+#profiles-appmenu-back-button{
+    fill:var(--button-text-color) !important;
+}
 .menuitem-iconic[data-usercontextid]{
     fill:var(--identity-tab-color) !important;
 }
