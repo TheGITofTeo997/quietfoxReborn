@@ -358,6 +358,11 @@ menucaption[_moz-menuactive="true"]:not([disabled="true"]) {
     --nested-margin: -6px;
   }
 }
+.bookmark-item {
+    &[container] {
+      margin-right: 5px !important;         
+    }
+}
 
 menu[disabled="true"], 
 menuitem[disabled="true"], 
