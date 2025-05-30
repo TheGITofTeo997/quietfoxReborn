@@ -3,6 +3,7 @@
     --firefoxcss-tab-speaker-hover-bg-color: hsla(0, 0%, 80%);
     --firefoxcss-tab-speaker-icon-hover-color: hsl(0, 0%, 10%);
     --tabstrip-min-height: 40px !important;
+    --tab-corner-rounding-vertical: 8px !important;
 }
 
 tab[visuallyselected] .tab-background::before,
@@ -323,6 +324,33 @@ tab[visuallyselected] .tab-context-line{
     }
   }
 }
+
+/*Vertical tab section*/
+
+#tabbrowser-tabs[orient="vertical"] {
+  & .tab-background {
+    flex-direction: row-reverse;
+    border-radius: var(--border-radius-medium);
+    margin-inline: var(--tab-inner-inline-margin);
+    margin-block: var(--tab-block-margin);
+    min-height: var(--tab-min-height);
+    outline: var(--tab-outline);
+    outline-offset: var(--tab-outline-offset);
+    border-radius: var(--tab-corner-rounding-vertical) var(--tab-corner-rounding-vertical) !important;
+    margin: -1px !important;
+  }
+}
+#tabbrowser-tabs[orient="vertical"] {
+  & .tabbrowser-tab {
+    display: flex !important;
+    height: 3vh !important;
+    padding-inline: 0;
+    padding-block: 3px 2px;
+  }
+}
+
+/**/
+
 
 @media(prefers-color-scheme:light){
     :root {

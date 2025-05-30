@@ -19,7 +19,7 @@ vbox#overflowed-extensions-list .unified-extensions-item-action-button > .toolba
    right: 10% !important;
 }
 vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
-    margin-left: -5px !important;
+    margin-left: 0px !important;
 }
 #unified-extensions-view{
     width: 355px !important;
@@ -40,7 +40,7 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
 }
 #unified-extensions-panel toolbaritem.unified-extensions-item {
   width:345px !important;
-  height: 75px;
+  height: initial !important;
   margin-block: initial !important;
 }
 #unified-extensions-panel toolbarbutton.unified-extensions-item-action-button > image{
@@ -73,8 +73,10 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
     padding-inline-end: revert !important;
 }
 .unified-extensions-list .toolbaritem-combined-buttons.unified-extensions-item {
-  margin: 3px !important;
-  height: 63px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  margin-left: 3px !important;
+  height: initial !important;
   width: 345px !important;
 }
 #unified-extensions-button[open]{

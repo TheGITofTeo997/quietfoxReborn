@@ -363,6 +363,11 @@ menucaption[_moz-menuactive="true"]:not([disabled="true"]) {
       margin-right: 5px !important;         
     }
 }
+.bookmark-item {
+  &[container] > menuseparator {
+    display: hidden !important;
+  }
+}
 
 menu[disabled="true"], 
 menuitem[disabled="true"], 
@@ -379,6 +384,9 @@ menucaption[disabled="true"] {
     display: none !important;
 }
 #context-sep-selectall{
+    display: none !important;
+}
+#spell-separator{
     display: none !important;
 }
 menu,menuitem{

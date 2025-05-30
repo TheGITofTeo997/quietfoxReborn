@@ -969,7 +969,15 @@ hbox.urlbar-page-action{
 #eme-notification-icon{
     fill: var(--toolbar-color) !important;
 }
-
+#PanelUI-fxa-cta-menu, #PanelUI-fxa-menu-services {
+  & .fxa-cta-button {
+    height: initial !important;
+  }
+}
+.PanelUI-fxa-menu-section-title{
+    display: flex !important;
+    justify-content: center !important;
+}
 @media (prefers-color-scheme:light){
     .urlbarView-row {
         background-color: var(--transparent-color) !important;
