@@ -201,27 +201,6 @@ tab[visuallyselected] .tab-context-line{
   }
 }
 
-#tabbrowser-tabs[orient="vertical"] .tabbrowser-tab .tab-icon-overlay:not([crashed]) {
-  &:is([soundplaying], [muted], [activemedia-blocked]) {
-    background-color: #0000002e !important;
-    backdrop-filter: blur(6px);
-    fill: var(--firefoxcss-tab-speaker-icon-color) !important;
-    border: 1px solid #ffffff29 !important;
-    transition: transform 100ms ease-in-out, fill 100ms ease-in-out,
-      background-color 100ms ease-in-out;
-
-    &:hover {
-      fill: var(--firefoxcss-tab-speaker-icon-color) !important;
-      background-color: transparent !important;
-      border: 1px solid #ffffff29 !important;
-      transition: transform 100ms ease-in-out, fill 100ms ease-in-out,
-        background-color 100ms ease-in-out !important;
-      transform: scale(1.3) translate(-8%, 14%);
-      transform-origin: center !important;
-    }
-  }
-}
-
 .button-background {
   &[type~="icon"]:not(.labelled), &:not(.labelled):has(img) {
     &[size="small"] {
@@ -250,6 +229,27 @@ tab[visuallyselected] .tab-context-line{
     }
   }
 }
+#tabbrowser-tabs[orient="vertical"] .tabbrowser-tab .tab-icon-overlay:not([crashed]) {
+  &:is([soundplaying], [muted], [activemedia-blocked]) {
+    background-color: #0000002e !important;
+    backdrop-filter: blur(6px);
+    fill: var(--firefoxcss-tab-speaker-icon-color) !important;
+    border: 1px solid #ffffff29 !important;
+    transition: transform 100ms ease-in-out, fill 100ms ease-in-out,
+      background-color 100ms ease-in-out;
+
+    &:hover {
+      fill: var(--firefoxcss-tab-speaker-icon-color) !important;
+      background-color: transparent !important;
+      border: 1px solid #ffffff29 !important;
+      transition: transform 100ms ease-in-out, fill 100ms ease-in-out,
+        background-color 100ms ease-in-out !important;
+      transform: scale(1.3) translate(-8%, 14%);
+      transform-origin: center !important;
+    }
+  }
+}
+
 .tab-icon-stack[soundplaying]{
     display: none !important;
 }
@@ -340,13 +340,107 @@ tab[visuallyselected] .tab-context-line{
     margin: -1px !important;
   }
 }
+
+#tabbrowser-tabs[orient="vertical"]{
+    & tab[visuallyselected]{
+      box-shadow: none !important;
+      background-color: var(--toolbarbutton-hover-background) !important;
+      opacity: 0.5 !important;
+    }
+}
+
+
 #tabbrowser-tabs[orient="vertical"] {
   & .tabbrowser-tab {
     display: flex !important;
     height: 3vh !important;
     padding-inline: 0;
     padding-block: 3px 2px;
+    margin-top: 5px !important;
   }
+}
+#tabbrowser-arrowscrollbox[orient="vertical"] > #tabbrowser-arrowscrollbox-periphery > #tabs-newtab-button{
+    height: 3vh !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 0 !important;
+}
+#tabbrowser-tabs[orient="vertical"]:not([expanded]) {
+  & .tabbrowser-tab {
+    display: flex !important;
+    height: 3vh !important;
+    padding-inline: 0;
+    padding-block: 3px 2px;
+    margin-top: 5px !important;
+  }
+}
+#tabbrowser-tabs[orient="vertical"]:not([expanded]) {
+  & .tab-stack {
+      justify-content: center !important;
+  }
+}
+#tabbrowser-tabs[orient="vertical"] {
+  &:not([expanded]) {
+    & .tab-background {
+      width: initial !important;
+    }
+  }
+}
+#tabbrowser-tabs[orient="vertical"] {
+  &:not([expanded]) {
+    & #tabs-newtab-button {
+      width: 100% !important;
+      margin-left: 0 !important;
+    }
+  }
+}
+#tabbrowser-tabs[orient="vertical"] {
+  &:not([expanded]) {
+      & #tabbrowser-arrowscrollbox-periphery{
+         margin-left:0px !important;       
+      }
+    }
+}
+
+#tabbrowser-arrowscrollbox-periphery {
+  margin-left: 6px;
+}
+#tabbrowser-tabs[orient="vertical"] {
+      & #tabbrowser-arrowscrollbox-periphery{
+         margin-left:0px !important;
+         margin-top: 5px !important;
+      }
+}
+#tabbrowser-tabs[orient="vertical"] {
+      & .toolbarbutton-text{
+        display: none !important;      
+      }
+}
+#tabbrowser-tabs[orient="vertical"]:not([expanded]){
+  & .tab-content[selected]{
+    padding-left:17px !important;
+  }
+}
+#tabbrowser-tabs[orient="vertical"][expanded]{
+  & .tab-content[selected]{
+    padding-left:14px !important;
+  }
+}
+#tabbrowser-tabs[orient=vertical]:not([expanded]){
+  & .tab-icon-stack[soundplaying]{
+      display: revert !important;
+    }
+}
+#tabbrowser-tabs[orient=vertical]{
+ & .tab-icon-stack[soundplaying]{
+  
+  }
+  & .tab-icon-stack[muted]{
+    display: revert  !important;
+  }
+  & .tab-icon-stack[activemedia-blocked]{
+    display: revert !important;
+  } 
 }
 
 /**/

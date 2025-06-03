@@ -14,10 +14,6 @@
     border-radius:var(--icon-border-rounding) !important;
 }
 
-#tabbrowser-arrowscrollbox-periphery {
-  margin-left: 6px;
-}
-
 toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] {
     background-color: var(--toolbarbutton-active-background) !important;
 }
