@@ -974,6 +974,21 @@ hbox.urlbar-page-action{
     display: flex !important;
     justify-content: center !important;
 }
+#searchmode-switcher-icon{
+    fill:var(--toolbar-color) !important; 
+}
+#searchmode-switcher-title{
+    color:var(--toolbar-color) !important;
+    margin-left: 10px !important;
+}
+#searchmode-switcher-chicklet{
+    margin-inline-end: initial !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+#searchmode-switcher-close{
+    fill:var(--toolbar-color) !important;
+    margin:10px !important;
+}
 @media (prefers-color-scheme:light){
     .urlbarView-row {
         background-color: var(--transparent-color) !important;
