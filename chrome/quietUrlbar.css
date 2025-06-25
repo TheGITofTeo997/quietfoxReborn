@@ -921,7 +921,6 @@ hbox.urlbar-page-action{
     font:var(--toolbar-color) !important;
 }
 .urlbarView-row-inner:hover{
-    background:var(--toolbarbutton-hover-background) !important;
     color:var(--toolbar-color) !important;
 }
 
