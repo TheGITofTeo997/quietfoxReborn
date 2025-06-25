@@ -574,7 +574,7 @@ toolbarbutton#library-button.toolbarbutton-1{
     margin-inline: 0px !important;
     box-shadow: 0px 5px 15px -7px black !important;
     background: var(--toolbar-field-focus-background-color) !important;
-    border-radius: 0px 0px var(--menu-corner-rounding) var(--menu-corner-rounding) !important;
+    border-radius: var(--menu-corner-rounding) !important;
     border: none !important;
     padding-top: 0px !important;
 }
@@ -988,6 +988,22 @@ hbox.urlbar-page-action{
 #searchmode-switcher-close{
     fill:var(--toolbar-color) !important;
     margin:10px !important;
+}
+.search-one-offs{
+    display: flex !important;
+}
+#urlbar .search-panel-header{
+    display: none !important;
+}
+#searchmode-switcher-dropmarker{
+    fill:var(--toolbar-color) !important;
+}
+#urlbar-searchmode-switcher{
+    background-color: initial !important;
+}
+.urlbarView-body-inner{
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
 }
 @media (prefers-color-scheme:light){
     .urlbarView-row {
