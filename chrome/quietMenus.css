@@ -394,6 +394,13 @@ menu,menuitem{
         background: var(--toolbarbutton-hover-background, rgba(127,127,127,0.5)) !important;
     }
 }
+menupopup[needsgutter] {
+  @media (-moz-platform: linux) or (-moz-platform: windows) {
+    & > :is(menu, menuitem) > .menu-icon {
+      display: none !important;
+    }
+  }
+}
 
 @media (prefers-color-scheme:light){
 	menuitem > .menu-text{
