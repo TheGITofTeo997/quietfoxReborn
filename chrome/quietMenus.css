@@ -401,6 +401,14 @@ menupopup[needsgutter] {
     }
   }
 }
+#PanelUI-historyMore{
+    margin: 5px !important;
+    margin-top: 1px !important;
+}
+#panelMenu_showAllBookmarks{
+      margin: 5px !important;
+    margin-top: 1px !important;
+}
 
 @media (prefers-color-scheme:light){
 	menuitem > .menu-text{
