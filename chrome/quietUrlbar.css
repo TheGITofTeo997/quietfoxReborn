@@ -1017,6 +1017,18 @@ hbox.urlbar-page-action{
 .urlbar-background{
     display: none !important;
 }
+hbox#taskbar-tabs-button.urlbar-page-action{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+hbox#taskbar-tabs-button.urlbar-page-action:hover {
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: var(--button-corner-rounding) !important;
+  transition: all var(--hovering-speed) !important;
+}
+
 @media (prefers-color-scheme:light){
     .urlbarView-row {
         background-color: var(--transparent-color) !important;
