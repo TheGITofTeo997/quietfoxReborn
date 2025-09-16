@@ -680,7 +680,7 @@ hbox.urlbar-page-action{
 
 #urlbar {
     background-color: var(--transparent-color) !important;
-    color: var(--lwt-toolbar-field-color, black) !important;
+    color: var(--lwt-text-color, black) !important;
 }
 #urlbar-go-button:hover{
     background-color: var(--toolbarbutton-hover-background) !important;
@@ -1013,6 +1013,9 @@ hbox.urlbar-page-action{
 }
 .urlbarView-action-btn{
     background: none !important;
+}
+.urlbar-background{
+    display: none !important;
 }
 @media (prefers-color-scheme:light){
     .urlbarView-row {
