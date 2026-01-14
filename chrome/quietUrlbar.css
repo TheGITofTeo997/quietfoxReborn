@@ -126,6 +126,7 @@ toolbarbutton.bookmark-item{
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #tracking-protection-icon-box {
     margin-left: 2px !important;
     margin-right: 2px !important;
+    transition: all var(--hovering-speed) !important;
 }
 
 :root:not([uidensity="touch"]):not([uidensity="compact"]) #urlbar {
@@ -412,11 +413,11 @@ toolbarbutton.bookmark-item{
   color: var(--urlbar-box-hover-text-color);
 }
 #identity-box{
-    color: var(--lwt-toolbar-field-color, black) !important;
+    color: var(--toolbar-color, black) !important;
     fill:var(--toolbar-color) !important;
 }
 .identity-box-button:hover:not([open="true"]){
-    background-color: var(--toolbarbutton-hover-background) !important;
+    background-color:  var(--toolbarbutton-hover-background) !important;
 }
 #tracking-protection-icon-container:hover{
      border-radius:var(--button-corner-rounding) !important;
@@ -1028,6 +1029,7 @@ hbox#taskbar-tabs-button.urlbar-page-action:hover {
   border-radius: var(--button-corner-rounding) !important;
   transition: all var(--hovering-speed) !important;
 }
+
 
 @media (prefers-color-scheme:light){
     .urlbarView-row {
