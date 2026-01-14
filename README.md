@@ -79,7 +79,7 @@ Quietfox will automatically pick the main color of your theme and will use it fo
 5. Restart Firefox
 
 
-✔️ Tested and working currently on `Firefox 145`, [Nord Polar Dark Theme](https://addons.mozilla.org/en-US/firefox/addon/nord-polar-night-theme/) on Windows 10/11 and MacOS
+✔️ Tested and working currently on `Firefox 147`, [Nord Polar Dark Theme](https://addons.mozilla.org/en-US/firefox/addon/nord-polar-night-theme/) on Windows 10/11 and MacOS
 
 
 ### Older version ℹ️
@@ -101,5 +101,6 @@ This mod is the product of many late nights of zen laser focus. If it enhances y
 <img align="top" width="25px" src="https://coekuss.com/quietfox/bitcoin.png"> Bitcoin: 1Lc5r26FTwWSLNH46fE5WH3mvFjNUcHGzi
 
 <img align="top" width="20px" src="https://coekuss.com/quietfox/paypal.png"> PayPal: [paypal.me/coekuss](https://paypal.me/coekuss)
+
 
 
