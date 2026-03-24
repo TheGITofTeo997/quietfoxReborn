@@ -962,6 +962,21 @@ hbox.urlbar-page-action{
   height: 3.5px !important;
   border-radius: 2px !important;
 }
+#trust-icon-container{
+    height: initial !important;
+    opacity: 0 !important;
+    border-radius: var(--button-corner-rounding) !important;
+    transition: all var(--hovering-speed) !important;
+}
+#urlbar:hover #trust-icon-container{
+    opacity: 1 !important;
+}
+#trust-icon-container:hover{
+    opacity: 1 !important;
+}
+#trust-icon-container[open="true"]{
+    background-color: var(--toolbarbutton-active-background) !important;
+}
 #eme-notification-icon{
     fill: var(--toolbar-color) !important;
 }
