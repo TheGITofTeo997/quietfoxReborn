@@ -125,6 +125,9 @@ box.panel-viewstack{
     border-radius:var(--menu-corner-rounding) !important;
     box-shadow: 0px 2px 9px -3px black !important;
 }
+#identity-popup-more-info-footer{
+  padding-bottom: 3px !important;
+}
 
 
 .panel-arrowcontainer .panel-arrowcontent, .menupopup-arrowscrollbox, hbox[flex="1"][part="innerbox"] {
@@ -176,7 +179,10 @@ menu:not(.subviewbutton) > .menu-right image {
     border-bottom-color: var(--transparent-color) !important;
 }
 panelview toolbarbutton:not(#fxa-manage-account-button) {
-    height: var(--menu-item-height) !important;
+    height:     var(--menu-item-height) !important;
+}
+#PanelUI-profiles{
+    margin-bottom: 4px !important;
 }
 #unified-extensions-context-menu[hasbeenopened]{
    

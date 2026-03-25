@@ -441,6 +441,20 @@ toolbarbutton.bookmark-item{
   width: initial !important;
   padding: initial !important;
 }
+hbox#split-view-button.urlbar-page-action{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+hbox#split-view-button.urlbar-page-action:hover{
+    transition: all var(--hovering-speed) !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+#split-view-button[open="true"]{
+    transition:  all var(--hovering-speed) !important;
+    border-radius:var(--button-corner-rounding) !important; 
+    background-color:var(--toolbarbutton-active-background) !important;
+}
 #pageAction-urlbar-_testpilot-containers {
   height: initial !important;
   width: initial !important;
@@ -971,12 +985,27 @@ hbox.urlbar-page-action{
 #urlbar:hover #trust-icon-container{
     opacity: 1 !important;
 }
+#urlbar[focused] #trust-icon-container{
+  opacity: 1 !important;
+}
 #trust-icon-container:hover{
     opacity: 1 !important;
 }
 #trust-icon-container[open="true"]{
     background-color: var(--toolbarbutton-active-background) !important;
 }
+#trust-icon-container[open="true"], #trust-icon {
+    opacity: 1 !important;
+}
+#trustpanel-header-row{
+    height: 40px !important;
+}
+.unified-extensions-list > .unified-extensions-item > .unified-extensions-item-row-wrapper > .subviewbutton{
+    /*min-height: 45px !important;*/
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+}
+
 #eme-notification-icon{
     fill: var(--toolbar-color) !important;
 }
