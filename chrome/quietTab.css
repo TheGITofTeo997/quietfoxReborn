@@ -445,6 +445,22 @@ tab[visuallyselected] .tab-context-line{
 
 /**/
 
+tab-split-view-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+}
+tab-split-view-wrapper > tab{
+  height:40px !important;
+}
+#tabbrowser-tabs tab-split-view-wrapper {
+  &[hasactivetab] {
+    background-color:  transparent !important;
+  }
+}
+
+/**/
+
 
 @media(prefers-color-scheme:light){
     :root {
