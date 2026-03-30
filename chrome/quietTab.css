@@ -356,7 +356,7 @@ tab[visuallyselected] .tab-context-line{
     height: 3vh !important;
     padding-inline: 0;
     padding-block: 3px 2px;
-    margin-top: 5px !important;
+    margin-top: 0px !important;
   }
 }
 #tabbrowser-arrowscrollbox[orient="vertical"] > #tabbrowser-arrowscrollbox-periphery > #tabs-newtab-button{
@@ -445,20 +445,64 @@ tab[visuallyselected] .tab-context-line{
 
 /**/
 
-tab-split-view-wrapper {
+#tabbrowser-tabs:not([orient="vertical"]) tab-split-view-wrapper {
     margin: 0 !important;
     padding: 0 !important;
     display: flex !important;
 }
+#tabbrowser-tabs[orient="vertical"] tab-split-view-wrapper {
+    margin: initial !important;
+    padding: initial !important;
+    padding-top: 2px !important;
+}
 tab-split-view-wrapper > tab{
   height:40px !important;
 }
-#tabbrowser-tabs tab-split-view-wrapper {
+#tabbrowser-tabs:not([orient="vertical"]) tab-split-view-wrapper {
   &[hasactivetab] {
     background-color:  transparent !important;
   }
 }
+#tabbrowser-tabs:not([orient="vertical"]) tab-split-view-wrapper {
+  &:not([hasactivetab]) {
+    border-radius: var(--tab-corner-rounding) var(--tab-corner-rounding) 0px 0px !important;
+  }
+}
+/*#tabbrowser-tabs:not([orient="vertical"]) tab-split-view-wrapper {
+  &:not([hasactivetab]) {
+    & .tabbrowser-tab {
+      &:last-child {
+        border-inline-start: 1px solid var(--toolbarbutton-icon-fill) !important;
+      }
+    }
+  }
+}*/
+@keyframes splitPulse {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 1; }
+}
 
+#tabbrowser-tabs tab-split-view-wrapper {
+  &:not([hasactivetab]) {
+    & .tabbrowser-tab {
+      &:last-child {
+        border-inline-start: none !important;
+        position: relative !important;
+
+        &::before {
+          content: "" !important;
+          position: absolute !important;
+          inset-inline-start: 0 !important;
+          width: 1px !important; 
+          top: 4px !important;
+          height: 80% !important;
+          background: var(--toolbarbutton-icon-fill) !important;
+          animation: splitPulse 2s ease-in-out infinite !important;
+        }
+      }
+    }
+  }
+}
 /**/
 
 
