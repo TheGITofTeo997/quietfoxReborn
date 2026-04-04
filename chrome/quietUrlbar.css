@@ -1002,8 +1002,8 @@ hbox.urlbar-page-action{
 }
 .unified-extensions-list > .unified-extensions-item > .unified-extensions-item-row-wrapper > .subviewbutton{
     /*min-height: 45px !important;*/
-    padding-top: 28px !important;
-    padding-bottom: 28px !important;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
 }
 
 #eme-notification-icon{
