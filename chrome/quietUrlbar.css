@@ -139,9 +139,9 @@ toolbarbutton.bookmark-item{
 
 
 :root:not([uidensity="touch"]):not([uidensity="compact"]) .urlbar-icon:not(#pocket-button) {
-    width: 34px !important;
-    height: 36px !important;
-    padding: 8px !important;
+    width:   34px !important;
+    padding:  8px !important;
+    height:  initial !important;
 }
 
 
@@ -1072,6 +1072,21 @@ hbox#taskbar-tabs-button.urlbar-page-action:hover {
   height: 35px !important;
   border-radius: var(--button-corner-rounding) !important;
   transition: all var(--hovering-speed) !important;
+}
+#translations-button-locale{
+  margin-left: -10.6rem !important;
+  opacity: 0 !important;
+}
+#translations-button-circle-arrows{
+  margin-left: -12rem !important;
+  opacity: 0 !important;
+}
+
+#urlbar:hover #translations-button-locale,
+#urlbar:hover #translations-button-circle-arrows,
+#urlbar[focused] #translations-button-locale,
+#urlbar[focused] #translations-button-circle-arrows{
+    opacity: 1 !important;
 }
 
 
