@@ -1088,7 +1088,9 @@ hbox#taskbar-tabs-button.urlbar-page-action:hover {
 #urlbar[focused] #translations-button-circle-arrows{
     opacity: 1 !important;
 }
-
+.urlbar-icon.urlbar-go-button {
+  margin-right: -7px;
+}
 
 @media (prefers-color-scheme:light){
     .urlbarView-row {
