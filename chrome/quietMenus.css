@@ -189,13 +189,26 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
 #unified-extensions-context-menu[hasbeenopened]{
    
 }
-.toolbar-menupopup :is(menu, menuitem), .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1{
-    margin: var(--arrowpanel-menuitem-margin) !important;
+#trustpanel-popup-connection{
+    margin-right: 11px !important;
+}
+#trustpanel-clear-cookies-button{
+    margin-right: 8px !important;
+    margin-left: 8px !important;
+}
+#trustpanel-clear-cookie-clear{
+    margin-top: 13px !important;
+}
+#trustpanel-clear-cookie-cancel{
+    margin-top: 13px !important;
 }
 #unified-extensions-manage-extensions{
     margin-bottom: 6px !important;
 }
-
+.PanelUI-subView {
+  margin-left: 0px !important;
+  margin-right: -4px !important;
+}
 #BMB_bookmarksPopup .menu-right {
     height: 23px !important;
 }
