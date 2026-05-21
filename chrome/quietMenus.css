@@ -42,12 +42,15 @@ menupopup,
 menupopup menuitem,
 menupopup menu,
 menupopup menuseparator {
-	-moz-appearance: none !important;
+	-moz-appearance:    none !important;
 }
 menupopup:not(#BMB_bookmarksPopup) {
     border:0 !important;
-    background: transparent !important;
-    --panel-shadow-margin:8px !important;
+    background: var(--panel-background) !important;
+    --panel-shadow-margin:0px !important;
+}
+#ContentSelectDropdownPopup{
+    color-scheme: dark !important;
 }
 
 menu[open] menupopup:not(#BMB_bookmarksPopup) {
@@ -156,11 +159,23 @@ menucaption {
     padding-right: 5px !important;
 }
 .toolbar-menupopup :is(menu, menuitem), .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1{
- margin-left:5px !important;
- margin-right: 10px !important;
+ /*margin-left:0px !important;
+ margin-right: 0px !important;*/
+}
+#appMenu-mainView > .panel-subview-body > .subviewbutton{
+    margin-right: 5px !important;
+    margin-left: 1px !important;
+}
+.PanelUI-subView > .panel-subview-body > .subviewbutton {
+    margin-right: 10px !important;
+    margin-left: 7px !important;
+}
+.menuitem-iconic.bookmark-item{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
 }
 .bookmark-item menupopup menuitem {
-    margin-right: 8px !important;
+    margin-right:  8px !important;
 }
 
 menu:not(.subviewbutton) > .menu-right  {
@@ -171,7 +186,10 @@ menu:not(.subviewbutton) > .menu-right  {
 menuitem.menuitem-iconic.bookmark-item.menuitem-iconic.menuitem-with-favicon:hover{
     border-radius: var(--menu-corner-rounding) !important;
 }
-
+#panelMenu_showAllBookmarks {
+  padding-right: 6px !important;
+  margin-right: 11px !important;
+}
 menu:not(.subviewbutton) > .menu-right image {
     margin-right: -5px !important;
     margin-top: -2px !important;
@@ -426,15 +444,16 @@ menupopup[needsgutter] {
     margin: 5px !important;
     margin-top: 1px !important;
 }
-#panelMenu_showAllBookmarks{
-      margin: 5px !important;
-    margin-top: 1px !important;
-}
+
 
 @media (prefers-color-scheme:light){
 	menuitem > .menu-text{
         color: var(--sidebar-text-color) !important;
     }
+    #ContentSelectDropdownPopup{
+        color-scheme: light !important;
+    }
+
     menu,
     menuitem,
     menucaption {

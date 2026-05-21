@@ -23,6 +23,8 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
 }
 #unified-extensions-view{
     width: 355px !important;
+    /*margin-left:  5px !important;
+    margin-right: 5px !important;*/
 }
 
 #unified-extensions-view:hover 
