@@ -5,7 +5,7 @@
 @import url("quietContexts.css");
 /*
 
-Quietfox Reborn v151
+Quietfox Reborn v149
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -26,6 +26,12 @@ Edit by: Krokko&Teo
     --button-hovered-corner-rounding:11px;
     --container-context-line-speed-animation:0.6s;
 }
+/*-------------------- Miscellaneous variables DO NOT TOUCH THEM --------------------*/
+* {
+ --toolbarbutton-hover-background:var(--urlbar-box-background-color-hover);
+ --toolbarbutton-active-background:var(--urlbar-box-background-color-focus);
+}
+
 
 /*Context line colors, you can edit this part if you want to change your container line colors*/
 .identity-color-blue {
