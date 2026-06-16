@@ -5,7 +5,7 @@
 @import url("quietContexts.css");
 /*
 
-Quietfox Reborn v149
+Quietfox Reborn v152
 
 https://github.com/TheGITofTeo997/quietfoxReborn
 
@@ -30,6 +30,8 @@ Edit by: Krokko&Teo
 * {
  --toolbarbutton-hover-background:var(--urlbar-box-background-color-hover);
  --toolbarbutton-active-background:var(--urlbar-box-background-color-focus);
+ --toolbar-color: var(--toolbar-text-color);
+ --toolbar-bgcolor: var(--toolbar-field-background-color-focus);
 }
 
 
