@@ -1,5 +1,6 @@
 .toolbarbutton-icon, .toolbarbutton-badge-stack {
     background-color: var(--transparent-color) !important;
+    fill: var(--icons-burger-menu-fill-color)
 }
 #forward-button[open='true']{
     background: var(--toolbarbutton-active-background) !important;
@@ -999,11 +1000,6 @@ hbox.urlbar-page-action{
 }
 #trustpanel-header-row{
     height: 40px !important;
-}
-.unified-extensions-list > .unified-extensions-item > .unified-extensions-item-row-wrapper > .subviewbutton{
-    /*min-height: 45px !important;*/
-    padding-top: 24px !important;
-    padding-bottom: 24px !important;
 }
 
 #eme-notification-icon{

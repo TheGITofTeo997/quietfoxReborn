@@ -26,13 +26,14 @@ Edit by: Krokko&Teo
     --button-hovered-corner-rounding:11px;
     --container-context-line-speed-animation:0.6s;
 }
-/*-------------------- Miscellaneous variables DO NOT TOUCH THEM --------------------*/
+/*-------------------- Miscellaneous variables created after the 152 release DO NOT TOUCH THEM --------------------*/
 * {
  --toolbarbutton-hover-background:var(--urlbar-box-background-color-hover);
  --toolbarbutton-active-background:var(--urlbar-box-background-color-focus);
  --toolbar-color: var(--toolbar-text-color);
  --tab-bgcolor: var(--toolbar-background-color);
  --toolbar-bgcolor: var(--toolbar-field-background-color-focus);
+ --panel-background:var(--panel-background-color);
 }
 
 

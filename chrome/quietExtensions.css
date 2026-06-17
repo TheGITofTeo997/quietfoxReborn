@@ -32,7 +32,7 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
     visibility: visible !important;
     transition: var(--hovering-speed) !important;
     -moz-margin-end: initial !important;
-    -moz-margin-start: -7px !important;
+    -moz-margin-start: 0px !important;
 }
 #unified-extensions-area > toolbaritem > .unified-extensions-item-row-wrapper > .unified-extensions-item-action-button{
     height: 60px !important;
@@ -83,6 +83,12 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
 }
 #unified-extensions-button[open]{
   background-color: var(--toolbarbutton-active-background) !important;
+}
+#unified-extensions-panel .unified-extensions-item > unified-extensions-item-messagebar-wrapper{
+    height: 10px !important;
+}
+unified-extensions-item > box > toolbarbutton{
+   margin-top: 10px !important;
 }
 /*#unified-extensions-button[open]:hover{
   background-color:var(--toolbarbutton-hover-background) !important;

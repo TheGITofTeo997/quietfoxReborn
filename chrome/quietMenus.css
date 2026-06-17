@@ -444,6 +444,13 @@ menupopup[needsgutter] {
     margin: 5px !important;
     margin-top: 1px !important;
 }
+button {
+  &:enabled:hover {
+    transition: all var(--hovering-speed) !important;
+    border-radius: var(--button-corner-rounding) !important;
+  }
+}
+
 
 
 @media (prefers-color-scheme:light){
