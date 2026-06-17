@@ -31,6 +31,7 @@ Edit by: Krokko&Teo
  --toolbarbutton-hover-background:var(--urlbar-box-background-color-hover);
  --toolbarbutton-active-background:var(--urlbar-box-background-color-focus);
  --toolbar-color: var(--toolbar-text-color);
+ --tab-bgcolor: var(--toolbar-background-color);
  --toolbar-bgcolor: var(--toolbar-field-background-color-focus);
 }
 

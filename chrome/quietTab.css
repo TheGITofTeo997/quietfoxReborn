@@ -46,7 +46,7 @@ tab[visuallyselected] .tab-background::after {
 tab[visuallyselected] .tab-background::before {
     border-bottom-right-radius: var(--tab-corner-rounding) !important;
     transform: translateX(calc(-1 * var(--tab-corner-rounding))) !important;
-    box-shadow: 4px 4px 4px 4px var(--toolbar-bgcolor) !important;
+    box-shadow: 4px 4px 4px 4px var(--tab-bgcolor) !important;
     transition: var(--animation-speed) !important;
 }
 
@@ -54,7 +54,7 @@ tab[visuallyselected] .tab-background::after {
     border-bottom-left-radius: var(--tab-corner-rounding) !important;
     right: 0px !important;
     transform: translateX(calc(var(--tab-corner-rounding) + 1px)) !important;
-    box-shadow: -4px 4px 4px 4px var(--toolbar-bgcolor) !important;
+    box-shadow: -4px 4px 4px 4px var(---tab-bgcolor) !important;
     transition: var(--animation-speed) !important;
 }
 .titlebar-spacer[type="pre-tabs"] {
@@ -141,7 +141,7 @@ tab[visuallyselected] .tab-background {
 }
 
 .tab-background:is([selected], [multiselected]){
-    background-color:var(--toolbar-bgcolor) !important;        
+    background-color:var(--tab-bgcolor) !important;        
 }
 
 .tab-content {
@@ -265,7 +265,7 @@ tab[visuallyselected] .tab-context-line{
 .tab-background {
   &[multiselected] {
     outline-color: transparent !important;
-    background: background: rgba(0,0,0,0.5); !important;
+    background:  rgba(0,0,0,0.5) !important;
   }
 }
 
