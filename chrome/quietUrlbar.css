@@ -1149,6 +1149,9 @@ hbox#taskbar-tabs-button.urlbar-page-action:hover {
     #tracking-protection-icon-container{
         fill:var(--toolbar-color) !important;
     }
+     #downloads-indicator-anchor{
+        fill:var(--toolbar-color) !important;
+    }
     toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] {
         background-color: var(--toolbarbutton-active-background);
     }
