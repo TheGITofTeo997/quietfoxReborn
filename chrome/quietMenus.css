@@ -46,7 +46,7 @@ menupopup menuseparator {
 }
 menupopup:not(#BMB_bookmarksPopup) {
     border:0 !important;
-    background: var(--panel-background) !important;
+    background: var(--panel-box-shadow)  !important;
     --panel-shadow-margin:0px !important;
 }
 #ContentSelectDropdownPopup{
@@ -113,6 +113,12 @@ menupopup menuseparator
 }
 box.panel-viewstack{
     max-height: 100vh !important;
+}
+#trustpanel-popup-multiView {
+  margin-left: -4px !important;
+}
+#trustpanel-popup-icon {
+  margin-left: 4px;
 }
 
 /*For translate button on menu burger*/

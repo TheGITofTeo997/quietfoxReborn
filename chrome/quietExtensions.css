@@ -64,7 +64,9 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
     transition: all var(--animation-speed) !important;
     -moz-margin-end: -3.2em !important;
 }
-
+.unified-extensions-item > .unified-extensions-item-row-wrapper > .subviewbutton{
+    margin-left: 5px !important;
+}
 
 #unified-extensions-view .unified-extensions-item-name, 
 #unified-extensions-view .unified-extensions-item-message {
@@ -74,8 +76,11 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
 .unified-extensions-item-menu-button.subviewbutton{
     padding-inline-end: revert !important;
 }
+.unified-extensions-item > .unified-extensions-item-row-wrapper > .subviewbutton{
+    min-height: 42px !important;
+}
 .unified-extensions-list .toolbaritem-combined-buttons.unified-extensions-item {
-  margin-top: 10px !important;
+  margin-top: 0px !important;
   margin-bottom: 10px !important;
   margin-left: 3px !important;
   height: initial !important;
