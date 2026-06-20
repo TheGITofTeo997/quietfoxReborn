@@ -471,10 +471,12 @@ hbox#split-view-button.urlbar-page-action:hover{
 }
 #urlbar:hover #pageAction-urlbar-canvasblocker_kkapsner_de{
     transition: all var(--animation-speed) !important;
+    filter: brightness(2) !important;
     opacity: 1;
 }
 #urlbar[focused] #pageAction-urlbar-canvasblocker_kkapsner_de{
     opacity:1;
+     filter: brightness(2) !important;
 }
 
 #star-button-box:hover{
@@ -1092,6 +1094,18 @@ hbox#taskbar-tabs-button.urlbar-page-action:hover {
     .urlbarView-row {
         background-color: var(--transparent-color) !important;
         color:var(--toolbar-color)  !important;
+    }
+    .toolbarbutton-icon{
+        fill:var(--toolbar-color) !important;
+    }
+    #urlbar:hover #pageAction-urlbar-canvasblocker_kkapsner_de{
+    transition: all var(--animation-speed) !important;
+    filter: none !important;
+    opacity: 1;
+    }
+    #urlbar[focused] #pageAction-urlbar-canvasblocker_kkapsner_de{
+    opacity:1;
+     filter: none !important;
     }
     #urlbar-zoom-button .toolbarbutton-text{
        color:var(--toolbar-color) !important;
