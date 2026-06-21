@@ -34,6 +34,7 @@ Edit by: Krokko&Teo
  --tab-bgcolor: var(--toolbar-background-color);
  --toolbar-bgcolor: var(--toolbar-field-background-color-focus);
  --panel-background:var(--panel-background-color);
+  --tab-hover-background-color: var(--urlbar-box-background-color-hover);
 }
 
 
