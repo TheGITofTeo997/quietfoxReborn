@@ -478,6 +478,10 @@ hbox#split-view-button.urlbar-page-action:hover{
     opacity:1;
      filter: brightness(2) !important;
 }
+#pageAction-urlbar-canvasblocker_kkapsner_de[open]{
+    opacity:1;
+     filter: brightness(2) !important;
+}
 
 #star-button-box:hover{
     transition:  all var(--hovering-speed) !important;
