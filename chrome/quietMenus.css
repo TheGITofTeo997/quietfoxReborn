@@ -174,7 +174,7 @@ menucaption {
  margin-right: 0px !important;*/
 }
 #appMenu-mainView > .panel-subview-body > .subviewbutton{
-    margin-right: 5px !important;
+    margin-right: 0px !important;
     margin-left: 1px !important;
 }
 .PanelUI-subView > .panel-subview-body > .subviewbutton {
@@ -236,7 +236,7 @@ panelview toolbarbutton:not(#fxa-manage-account-button) {
 }
 .PanelUI-subView {
   margin-left: 0px !important;
-  margin-right: -4px !important;
+  margin-right: 0px !important;
 }
 #BMB_bookmarksPopup .menu-right {
     height: 23px !important;
