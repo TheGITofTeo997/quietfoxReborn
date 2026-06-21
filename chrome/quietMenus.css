@@ -285,6 +285,9 @@ hbox.menu-right > image{
 #customization-lwtheme-menu-header {
     margin-top: 0px !important;
 }
+#trustpanel-popup-multiView{
+    padding-left:5px !important;
+}
 @-moz-document url("chrome://global/content/alerts/alert.xhtml") {
   #alertBox{
     border-radius: var(--menu-corner-rounding) !important;
