@@ -139,10 +139,15 @@ toolbarbutton.bookmark-item{
 }
 
 
-:root:not([uidensity="touch"]):not([uidensity="compact"]) .urlbar-icon:not(#pocket-button) {
+:root:not([uidensity="touch"]):not([uidensity="compact"]) .urlbar-icon:not(#pocket-button):not(.urlbar-go-button) {
     width:   34px !important;
     padding:  8px !important;
-    height:  initial !important;
+    height:   initial !important;
+}
+.urlbar-go-button {
+    width:   34px !important;
+    height: 22px !important;
+    padding-right:  8px !important;
 }
 
 
@@ -586,7 +591,9 @@ toolbarbutton#library-button.toolbarbutton-1{
     border: none !important;
 }
 #urlbar-input:not(:focus):hover{
-    margin-left:2px !important;
+    margin-left: 2px !important;
+    height: 36px !important;
+    box-sizing: border-box !important;
     border-radius: var(--button-corner-rounding) !important;
     background: var(--toolbarbutton-hover-background) !important;
     transition: var(--animation-speed) !important;
