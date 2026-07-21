@@ -382,10 +382,15 @@ toolbarbutton:not(.titlebar-button):not([class^="findbar-find"]):not([class^="sc
     transition: all var(--hovering-speed) !important;
 }
 #identity-permission-box{
+      height: 34px !important;
      border-radius:var(--button-corner-rounding) !important;
      transition: var(--animation-speed) !important;
      position:  relative !important;
      left: 0px !important;
+     bottom: 3px !important;
+}
+.searchmode-switcher.chromeclass-toolbar-additional {
+  height: 36px !important;
 }
 #reader-mode-button:hover {
   border-radius: var(--button-corner-rounding) !important;
@@ -991,7 +996,7 @@ hbox.urlbar-page-action{
   border-radius: 2px !important;
 }
 #trust-icon-container{
-    height: initial !important;
+    height: 36px !important;
     opacity: 0 !important;
     border-radius: var(--button-corner-rounding) !important;
     transition: all var(--hovering-speed) !important;
