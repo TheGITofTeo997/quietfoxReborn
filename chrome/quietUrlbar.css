@@ -789,6 +789,7 @@ hbox.urlbar-page-action{
 #identity-permission-box[open="true"], #identity-permission-box[hasPermissions], #identity-permission-box[hasSharingIcon] {
   display: -webkit-inline-box;
   margin-right: 1px !important;
+  margin-top: 4px !important;
   margin-left: 1px !important;
   border-radius:var(--button-corner-rounding) !important;
 }
@@ -803,7 +804,13 @@ hbox.urlbar-page-action{
 
 #notification-popup-box:hover{
     border-radius:var(--button-corner-rounding) !important;
-    background-color: var(--toolbarbutton-active-background) !important; 
+    background-color: var(--toolbarbutton-hover-background) !important; 
+}
+#notification-popup-box[open="true"] {
+    -moz-appearance: none !important;
+    appearance: none !important;
+    opacity: 1 !important;
+    background-color: var(--toolbarbutton-hover-background) !important;
 }
 .identity-box-button:hover:active, .identity-box-button[open="true"], #tracking-protection-icon-container:hover:active, #tracking-protection-icon-container[open="true"] {
     background-color: var(--toolbarbutton-active-background) !important;
@@ -1105,7 +1112,9 @@ hbox#taskbar-tabs-button.urlbar-page-action:hover {
 .urlbar-icon.urlbar-go-button {
   margin-right: -7px;
 }
-
+#identity-box:has(> #identity-icon-box) {
+  height: 36px !important;
+}
 @media (prefers-color-scheme:light){
     .urlbarView-row {
         background-color: var(--transparent-color) !important;
