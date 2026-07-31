@@ -136,6 +136,7 @@ toolbarbutton.bookmark-item{
     margin-bottom: 0px !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+    border-radius: 6px !important;
 }
 
 
@@ -572,6 +573,7 @@ toolbarbutton#library-button.toolbarbutton-1{
 }
 .urlbar-input-container {
     height: var(--urlbar-height) !important;
+    border-radius: 6px !important;
     padding: 0 !important;
 }
 #urlbar-background {
@@ -592,7 +594,6 @@ toolbarbutton#library-button.toolbarbutton-1{
 }
 
 #urlbar {
-    border-radius: calc(1px + var(--button-corner-rounding)) !important;
     border: none !important;
 }
 #urlbar-input:not(:focus):hover{
@@ -715,6 +716,7 @@ hbox.urlbar-page-action{
 #urlbar {
     background-color: var(--transparent-color) !important;
     color: var(--lwt-text-color, black) !important;
+    border: calc(1px + var(--button-corner-rounding)) !important;
 }
 #urlbar-go-button:hover{
     background-color: var(--toolbarbutton-hover-background) !important;
