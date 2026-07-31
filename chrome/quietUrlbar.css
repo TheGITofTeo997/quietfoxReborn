@@ -809,8 +809,6 @@ hbox.urlbar-page-action{
     background-color: var(--toolbarbutton-hover-background) !important; 
 }
 #notification-popup-box[open="true"] {
-    -moz-appearance: none !important;
-    appearance: none !important;
     opacity: 1 !important;
     background-color: var(--toolbarbutton-hover-background) !important;
 }
@@ -822,8 +820,6 @@ hbox.urlbar-page-action{
 #identity-box[pageproxystate="valid"].notSecureText > .identity-box-button, #identity-box[pageproxystate="valid"].chromeUI > .identity-box-button, #identity-box[pageproxystate="valid"].extensionPage > .identity-box-button, #urlbar-label-box {
     border-radius:var(--button-corner-rounding) !important;
 }
-
-
 
 #identity-box:active,
 #tracking-protection-icon-container:active,
@@ -1116,6 +1112,14 @@ hbox#taskbar-tabs-button.urlbar-page-action:hover {
 }
 #identity-box:has(> #identity-icon-box) {
   height: 36px !important;
+}
+#allTabsMenu-allTabsView .panel-subview-body > .subviewbutton {
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+}
+#appMenu-libraryView .panel-subview-body > .subviewbutton {
+    margin-left: 6px !important;
+    margin-right: 6px !important;
 }
 @media (prefers-color-scheme:light){
     .urlbarView-row {
