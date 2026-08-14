@@ -1098,7 +1098,16 @@ hbox#taskbar-tabs-button.urlbar-page-action:hover {
   margin-left: -12rem !important;
   opacity: 0 !important;
 }
-
+#translations-button[translationsactive="true"] #translations-button-locale{
+    margin-left: 2px !important;
+    opacity: 0 !important;
+    display: none !important;
+}
+#translations-button[translationsactive="true"] #translations-button-circle-arrows{
+    margin-left: 2px !important;
+    opacity: 0 !important;
+    display: none !important;
+}
 #urlbar:hover #translations-button-locale,
 #urlbar:hover #translations-button-circle-arrows,
 #urlbar[focused] #translations-button-locale,
