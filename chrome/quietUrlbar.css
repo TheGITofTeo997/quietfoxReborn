@@ -597,7 +597,7 @@ toolbarbutton#library-button.toolbarbutton-1{
 }
 #urlbar-input:not(:focus):hover{
     margin-left: 2px !important;
-    height: 36px !important;
+    height: 34px !important;
     box-sizing: border-box !important;
     border-radius: var(--button-corner-rounding) !important;
     background: var(--toolbarbutton-hover-background) !important;
