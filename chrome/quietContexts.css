@@ -14,6 +14,23 @@ panelview#unified-extension-view.cui-widget-panelview{
   padding-top: 22px !important;
   padding-bottom: 23px !important;
 }
+#userContext-icons{
+    height: 36px !important;
+}
+#userContext-label{
+    margin-right: 2px !important;
+}
+#userContext-indicator{
+    margin-top: 2px !important;
+}
+#userContext-icons{
+    -moz-user-focus: normal !important;
+}
+#userContext-icons:focus{
+    opacity: 1 !important;
+    background:var(--identity-tab-color)!important;
+    border-radius: var(--button-corner-rounding) !important;
+}
 /* New Icons to main menu */
 #appMenu-fxa-status2[fxastatus] > toolbarbutton::before,
 #appMenu-protonMainView > .panel-subview-body > toolbarbutton > image{
