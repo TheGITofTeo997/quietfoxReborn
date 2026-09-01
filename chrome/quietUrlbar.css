@@ -571,7 +571,7 @@ toolbarbutton#library-button.toolbarbutton-1{
     inset: initial !important;
 }
 .urlbar-input-container {
-    height: var(--urlbar-height) !important;
+    height: 36px !important;
     padding: 0 !important;
 }
 #urlbar-background {
