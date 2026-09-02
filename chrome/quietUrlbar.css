@@ -875,9 +875,9 @@ hbox.urlbar-page-action{
 
 #userContext-icons{
   opacity:0;
-  margin:auto 3px!important;
+  margin:auto 0px!important;
   border-radius:var(--button-corner-rounding) !important;
-  padding:0 2px 0 5px!important;
+  padding:0 5px 0 5px!important;
   transition: var(--hovering-speed) all !important;
 }
 #urlbar:hover #userContext-icons {

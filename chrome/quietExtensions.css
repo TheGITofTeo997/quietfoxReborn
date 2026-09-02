@@ -26,7 +26,19 @@ vbox.unified-extensions-list > .toolbaritem-combined-buttons vbox {
     /*margin-left:  5px !important;
     margin-right: 5px !important;*/
 }
-
+/*Identity icons colors*/
+.identity-icon-briefcase{
+    fill: var(--identity-tab-color) !important;
+}
+.identity-icon-fingerprint{
+     fill: var(--identity-tab-color) !important;
+}
+.identity-icon-dollar{
+     fill: var(--identity-tab-color) !important;
+}
+.identity-icon-cart{
+    fill: var(--identity-tab-color) !important;
+}
 #unified-extensions-view:hover 
 .unified-extensions-item-menu-button.subviewbutton{ 
     visibility: visible !important;
