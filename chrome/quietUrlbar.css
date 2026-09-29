@@ -1076,9 +1076,19 @@ hbox.urlbar-page-action{
 #urlbar-searchmode-switcher{
     background-color: initial !important;
 }
+.urlbarView{
+    margin-top: -2px !important;
+    margin-left: 5px !important;
+    width: 99.4% !important;
+}
 .urlbarView-body-inner{
     padding-top: 8px !important;
-    padding-bottom: 8px !important;
+    padding-bottom: 4px !important;
+    border-radius: 0 0 var(--button-corner-rounding) var(--button-corner-rounding) !important;
+    background: transparent !important;
+}
+.urlbarView-background{
+    background: var(--panel-background-color) !important;
 }
 .urlbarView-row-inner:hover{
     background: var(--toolbarbutton-hover-background) !important;
