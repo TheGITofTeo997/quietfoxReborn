@@ -23,6 +23,9 @@ tab[visuallyselected] .tab-background::after {
     outline-color: initial !important;
   }
 }
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-context-line{
+  width: initial !important;
+}
 #TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon:-moz-lwtheme, .tab-background[selected]:-moz-lwtheme {
     outline:none !important;
 }
