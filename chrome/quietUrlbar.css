@@ -2,6 +2,19 @@
     background-color: var(--transparent-color) !important;
     fill: var(--icons-burger-menu-fill-color)
 }
+.button-background.labelled{
+    background: transparent !important;
+    border-radius: var(--button-corner-rounding) !important;
+}
+.button-background.labelled:hover{
+    background: var(--toolbarbutton-hover-background) !important;
+    transition: all var(--animation-speed) !important;
+     border-radius: var(--button-corner-rounding) !important;
+}
+#main-button[aria-expanded="true"] > .button-background.labelled {
+  background: var(--toolbarbutton-hover-background) !important;
+  transition: background var(--animation-speed) !important;
+}
 #forward-button[open='true']{
     background: var(--toolbarbutton-active-background) !important;
 }
@@ -643,7 +656,11 @@ span.urlbarView-url {
 #urlbar .searchbar-engine-one-off-item[selected="true"]{
     background: var(--toolbarbutton-active-background) !important;
 }
-
+.urlbar-input-container {
+    .urlbar[popover-open][focused] > & {
+        outline: none !important;        
+    }
+}
 .search-one-offs {
     background-color: var(--toolbar-bgcolor) !important;
     padding-left:15px;
