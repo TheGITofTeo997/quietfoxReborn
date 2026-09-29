@@ -18,6 +18,11 @@ tab[visuallyselected] .tab-background::after {
     background-color: var(--transparent-color) !important;
     transition: var(--animation-speed) !important;
 }
+.tab-background {
+  &:is([selected], [multiselected]) {
+    outline-color: initial !important;
+  }
+}
 #TabsToolbar #firefox-view-button[open] > .toolbarbutton-icon:-moz-lwtheme, .tab-background[selected]:-moz-lwtheme {
     outline:none !important;
 }
