@@ -632,7 +632,7 @@ span.urlbarView-url {
 }
 .urlbarView-body-inner {
     border:none !important;    
-    padding-left:15px;
+    padding-left:0px;
     background-color: var(--toolbar-bgcolor) !important;
 }
 .urlbarView-body-inner .urlbarView-row{
