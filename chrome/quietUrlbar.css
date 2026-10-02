@@ -723,7 +723,7 @@ hbox.urlbar-page-action{
 
 #urlbar-container {
     margin-left: -1px !important;
-    margin-right: -1px !important;
+    margin-right: 0px !important;
 }
 .urlbar-input-box {
     padding: 0px 5px !important;
