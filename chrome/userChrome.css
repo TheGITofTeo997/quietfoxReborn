@@ -37,6 +37,10 @@ Edit by: Krokko&Teo
   --tab-hover-background-color: var(--urlbar-box-background-color-hover);
 }
 
+:root {
+  --popup-border-radius: var(--button-corner-rounding) !important;
+}
+
 
 /*Context line colors, you can edit this part if you want to change your container line colors*/
 .identity-color-blue {
