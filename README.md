@@ -22,6 +22,8 @@ Most of the credits go to the original ![creator](https://github.com/k-amryn)
 ## The Goal ℹ️
 This userChrome mod was created by the original creator to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can pretty much forget that you have a mod installed, it works *quietly* in the background. Our additional goal is to have a smoother and sleeker experience.
 
+💡 Our theme **officially supports** the new Firefox Nova design!
+
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/smoothbar.gif)
 
 Here are some of the notable features:
