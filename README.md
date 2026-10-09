@@ -22,6 +22,8 @@ Most of the credits go to the original ![creator](https://github.com/k-amryn)
 ## The Goal ℹ️
 This userChrome mod was created by the original creator to make the Firefox UI cleaner and more modern without sacrificing any of its original features. You can pretty much forget that you have a mod installed, it works *quietly* in the background. Our additional goal is to have a smoother and sleeker experience.
 
+💡 Our theme **officially supports** the new Firefox Nova design!
+
 ![](https://github.com/TheGITofTeo997/quietfoxReborn/blob/master/images/smoothbar.gif)
 
 Here are some of the notable features:
@@ -37,7 +39,7 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 ```CSS
 /* -------------------- 🎨 Customization 🎨 -------------------- */
     --tab-corner-rounding: 7px;
-    --button-corner-rounding: 7px;
+    --button-corner-rounding: 16px;
     --menu-item-height: 35px;
     --animation-speed: 0.15s;
     --hovering-speed:300ms;
@@ -79,7 +81,7 @@ Quietfox will automatically pick the main color of your theme and will use it fo
 5. Restart Firefox
 
 
-✔️ Tested and working currently on `Firefox 156`, [Nord Polar Dark Theme](https://addons.mozilla.org/en-US/firefox/addon/nord-polar-night-theme/) on Windows 10/11 and MacOS
+✔️ Tested and working currently on `Firefox 157`, [Nord Polar Dark Theme](https://addons.mozilla.org/en-US/firefox/addon/nord-polar-night-theme/) on Windows 10/11 and MacOS
 
 
 ### Older version ℹ️
