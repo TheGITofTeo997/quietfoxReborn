@@ -40,6 +40,9 @@ toolbarbutton:not(#back-button):not(#forward-button):not([disabled]):not([open])
     background-color: var(--toolbarbutton-hover-background) !important;
     transition: all var(--animation-speed) !important;
 }
+:root #tabbrowser-tabs #tabs-newtab-button.toolbarbutton-1:not([disabled]):not([open]):hover {
+    border-radius: 8px !important;
+}
 .tab-close-button {
     transition: fill-opacity var(--animation-speed) !important;
 }
