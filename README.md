@@ -37,7 +37,7 @@ Simply open userChrome.css in a text editor and change the values at the top of 
 ```CSS
 /* -------------------- 🎨 Customization 🎨 -------------------- */
     --tab-corner-rounding: 7px;
-    --button-corner-rounding: 7px;
+    --button-corner-rounding: 16px;
     --menu-item-height: 35px;
     --animation-speed: 0.15s;
     --hovering-speed:300ms;
