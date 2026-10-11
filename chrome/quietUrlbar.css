@@ -34,13 +34,26 @@ toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] 
 #nav-bar .toolbarbutton-1 {
     margin-right: 2px !important;
 }
-toolbarbutton:not(#back-button):not(#forward-button):not([disabled]):not([open]):hover,
-.toolbarbutton-1:not(#back-button):not(#forward-button):not([disabled]):not([open]):hover {
+toolbarbutton:not(#back-button):not(#forward-button):not(#alltabs-button):not(.titlebar-button):not([disabled]):not([open]):hover,
+.toolbarbutton-1:not(#back-button):not(#forward-button):not(#alltabs-button):not(.titlebar-button):not([disabled]):not([open]):hover {
     border-radius: var(--button-corner-rounding) !important;
     background-color: var(--toolbarbutton-hover-background) !important;
     transition: all var(--animation-speed) !important;
 }
 :root #tabbrowser-tabs #tabs-newtab-button.toolbarbutton-1:not([disabled]):not([open]):hover {
+    border-radius: 8px !important;
+}
+:root #tabbrowser-tabs #tabs-newtab-button.toolbarbutton-1:not([disabled]) {
+    border-radius: 8px !important;
+}
+#alltabs-button {
+    border-radius: 8px !important; /* il valore che vuoi */
+}
+#alltabs-button:not([disabled]):not([open]):hover {
+    background-color: var(--toolbarbutton-hover-background) !important;
+    transition: all var(--animation-speed) !important;
+}
+#alltabs-button[open] {
     border-radius: 8px !important;
 }
 .tab-close-button {
@@ -53,10 +66,17 @@ toolbarbutton:not(#back-button):not(#forward-button):not([disabled]):not([open])
 #BMB_bookmarksShowAll {
     display: none !important;
 }
-.titlebar-button{
-    border-radius: var(--button-corner-rounding) !important;
+.titlebar-button {
+    border-radius: 8px !important;
     transition: all var(--hovering-speed) !important;
 }
+.titlebar-button.titlebar-close {
+    border-radius: 8px !important;
+}
+.titlebar-button.titlebar-button:hover{
+     background-color: var(--toolbarbutton-hover-background) !important;
+}
+
 toolbarbutton.bookmark-item[dragover="true"][open="true"]{
     background:var(--toolbarbutton-dragover) !important;
     color:white !important;
