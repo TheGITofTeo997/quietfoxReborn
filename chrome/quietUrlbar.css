@@ -34,14 +34,16 @@ toolbarbutton:not(#back-button)[open], .toolbarbutton-1:not(#back-button)[open] 
 #nav-bar .toolbarbutton-1 {
     margin-right: 2px !important;
 }
-toolbarbutton:not(#back-button):not(#forward-button):not(#alltabs-button):not(.titlebar-button):not([disabled]):not([open]):hover,
-.toolbarbutton-1:not(#back-button):not(#forward-button):not(#alltabs-button):not(.titlebar-button):not([disabled]):not([open]):hover {
+toolbarbutton:not(#back-button):not(#forward-button):not(#alltabs-button):not(#tabs-newtab-button):not(.titlebar-button):not([disabled]):not([open]):hover,
+.toolbarbutton-1:not(#back-button):not(#forward-button):not(#alltabs-button):not(#tabs-newtab-button):not(.titlebar-button):not([disabled]):not([open]):hover {
     border-radius: var(--button-corner-rounding) !important;
     background-color: var(--toolbarbutton-hover-background) !important;
     transition: all var(--animation-speed) !important;
 }
 :root #tabbrowser-tabs #tabs-newtab-button.toolbarbutton-1:not([disabled]):not([open]):hover {
-    border-radius: 8px !important;
+    border-radius: 8px !important; 
+    background-color: var(--toolbarbutton-hover-background) !important;
+    transition: all var(--animation-speed) !important;
 }
 :root #tabbrowser-tabs #tabs-newtab-button.toolbarbutton-1:not([disabled]) {
     border-radius: 8px !important;
