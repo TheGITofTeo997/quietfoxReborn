@@ -1180,6 +1180,32 @@ hbox#taskbar-tabs-button.urlbar-page-action:hover {
     margin-left: 6px !important;
     margin-right: 6px !important;
 }
+
+:root[uidensity="compact"] #urlbar-input:not(:focus):hover {
+  margin-left: 0px !important;
+  height: 28px !important;
+  box-sizing: border-box !important;
+}
+
+:root[uidensity="compact"] .urlbar-go-button,
+:root[uidensity="compact"] #urlbar-go-button2 {
+  height: 18px !important;
+  max-height: 20px !important;
+  padding: 4px !important;
+}
+
+:root[uidensity="compact"] #urlbar {
+  margin: 0 !important;
+  width: calc(var(--urlbar-width) - 0px) !important;
+  inset: initial !important;
+  padding-left: 2px !important;
+}
+
+:root[uidensity="compact"] .urlbar-input-container {
+  height: 28px !important;
+  padding-left: 2px !important;
+}
+
 @media (prefers-color-scheme:light){
     .urlbarView-row {
         background-color: var(--transparent-color) !important;
